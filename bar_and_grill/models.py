@@ -4,7 +4,7 @@ FOOD_TYPE = ((0, 'Starters'), (1, 'Mains'), (2, 'Desserts'), (3, 'New'))
 DRINK_TYPE = ((0, 'Wines'), (1, 'Beers'), (2, 'Cocktails'), (3, 'New'))
 
 # Models for Food and Drinks items
-Class FoodItem(models.Model):
+class FoodItem(models.Model):
     """
     Food item model
     """
