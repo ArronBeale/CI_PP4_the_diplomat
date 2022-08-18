@@ -2,6 +2,7 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
 from django.db import models
+from phonenumber_field.modelfields import PhoneNumberField
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # Restaurant first sitting at noon and last sitting 11pm
@@ -32,7 +33,7 @@ status_options = (
 
 class Table(models.Model):
     """
-    a class for the table model
+    a class for the Table model
     """
     table_id = models.AutoField(primary_key=True)
     table_name = models.CharField(
@@ -48,7 +49,7 @@ class Table(models.Model):
 
 class Booking(models.Model):
     """
-    a class for the booking model
+    a class for the Booking model
     """
     booking_id = models.AutoField(primary_key=True)
     created_date = models.DateTimeField(auto_now_add=True)
@@ -72,3 +73,17 @@ class Booking(models.Model):
 
 
 class User(models.Model):
+    """
+    a class for the User model
+    """
+    user_id = models.AutoField(primary_key=True)
+    created_date = models.DateTimeField(auto_now_add=True)
+    name = models.CharField(max_length=80)
+    email = models.EmailField(max_length=254, default="")
+    phone =
+
+    class Meta:
+        ordering = ['-created_date']
+
+    def __str__(self):
+        return self.user_id
