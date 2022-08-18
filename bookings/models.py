@@ -47,6 +47,23 @@ class Table(models.Model):
         return self.table_name
 
 
+class User(models.Model):
+    """
+    a class for the User model
+    """
+    user_id = models.AutoField(primary_key=True)
+    created_date = models.DateTimeField(auto_now_add=True)
+    name = models.CharField(max_length=80)
+    email = models.EmailField(max_length=254, default="")
+    phone = PhoneNumberField()
+
+    class Meta:
+        ordering = ['-created_date']
+
+    def __str__(self):
+        return self.user_id
+
+
 class Booking(models.Model):
     """
     a class for the Booking model
@@ -64,26 +81,17 @@ class Booking(models.Model):
     status = models.CharField(
         max_length=25, choices=status_options,
         default='awaiting confirmation', unique=True)
+    seats = (
+        (1, "1 guest"),
+        (2, "2 guests"),
+        (3, "3 guests"),
+        (4, "4 guests"),
+        (5, "5 guests"),
+        (6, "6 guests"),
+        )
 
     class Meta:
         ordering = ['-requested_time']
 
     def __str__(self):
         return self.booking_id
-
-
-class User(models.Model):
-    """
-    a class for the User model
-    """
-    user_id = models.AutoField(primary_key=True)
-    created_date = models.DateTimeField(auto_now_add=True)
-    name = models.CharField(max_length=80)
-    email = models.EmailField(max_length=254, default="")
-    phone = PhoneNumberField()
-
-    class Meta:
-        ordering = ['-created_date']
-
-    def __str__(self):
-        return self.user_id
