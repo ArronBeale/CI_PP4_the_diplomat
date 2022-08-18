@@ -1,5 +1,6 @@
 from django.db import models
 
+# Restaurant first sitting begins at noon and last sitting is 11pm to close at midnight
 time_slots = (
     ('12:00', '12:00'),
     ('13:00', '13:00'),
@@ -13,6 +14,15 @@ time_slots = (
     ('21:00', '21:00'),
     ('22:00', '22:00'),
     ('23:00', '23:00'),
+)
+
+
+# Status options inspired by the JustEat status' when ordering
+status_options = (
+    ('awaiting confirmation', 'awaiting confirmation'),
+    ('booking confirmed', 'booking confirmed'),
+    ('booking rejected', 'booking rejected'),
+    ('booking expired', 'booking expired'),
 )
 
 
