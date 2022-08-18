@@ -80,7 +80,7 @@ class User(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     name = models.CharField(max_length=80)
     email = models.EmailField(max_length=254, default="")
-    phone =
+    phone = PhoneNumberField()
 
     class Meta:
         ordering = ['-created_date']
