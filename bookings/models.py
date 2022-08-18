@@ -1,6 +1,10 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.db import models
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-# Restaurant first sitting begins at noon and last sitting is 11pm to close at midnight
+# Restaurant first sitting at noon and last sitting 11pm
 time_slots = (
     ('12:00', '12:00'),
     ('13:00', '13:00'),
@@ -56,7 +60,9 @@ class Booking(models.Model):
         null=True)
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="user", null=True)
-    status = models.CharField(max_length=25, choices=status_options, default='awaiting confirmation', unique=True)
+    status = models.CharField(
+        max_length=25, choices=status_options,
+        default='awaiting confirmation', unique=True)
 
     class Meta:
         ordering = ['-requested_time']
@@ -66,4 +72,3 @@ class Booking(models.Model):
 
 
 class User(models.Model):
-    
