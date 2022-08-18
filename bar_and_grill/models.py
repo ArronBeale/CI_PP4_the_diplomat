@@ -7,7 +7,7 @@ DRINK_TYPE = ((0, 'Wines'), (1, 'Beers'), (2, 'Cocktails'), (3, 'New'))
 # Models for Food and Drinks items
 class FoodItem(models.Model):
     """
-    Food item model
+    a class for the food item model
     """
     food_id = models.AutoField(primary_key=True)
     food_name = models.CharField(max_length=50, unique=True)
@@ -25,7 +25,7 @@ class FoodItem(models.Model):
 
 class DrinkItem(models.Model):
     """
-    Drink item model
+    a class for the drink item model
     """
     drink_id = models.AutoField(primary_key=True)
     drink_name = models.CharField(max_length=50, unique=True)
