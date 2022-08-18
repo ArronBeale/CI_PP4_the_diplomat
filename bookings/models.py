@@ -56,7 +56,7 @@ class Booking(models.Model):
         null=True)
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="user", null=True)
-    status = models.CharField(max_length=25, unique=True)
+    status = models.CharField(max_length=25, choices=status_options, default='awaiting confirmation', unique=True)
 
     class Meta:
         ordering = ['-requested_time']
@@ -66,3 +66,4 @@ class Booking(models.Model):
 
 
 class User(models.Model):
+    
