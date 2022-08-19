@@ -38,7 +38,7 @@ class Table(models.Model):
     table_id = models.AutoField(primary_key=True)
     table_name = models.CharField(
         max_length=50, default='New Table', unique=True)
-    max_seats = models.IntegerField()
+    max_seats = models.PositiveIntegerField(default=2)
 
     class Meta:
         ordering = ['-max_seats']
