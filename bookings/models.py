@@ -24,10 +24,10 @@ time_slots = (
 
 # Status options inspired by the JustEat status' when ordering
 status_options = (
-    ('awaiting confirmation', 'awaiting confirmation'),
-    ('booking confirmed', 'booking confirmed'),
-    ('booking rejected', 'booking rejected'),
-    ('booking expired', 'booking expired'),
+    ('Awaiting confirmation', 'Awaiting Confirmation'),
+    ('Booking Confirmed', 'Booking Confirmed'),
+    ('Booking Rejected', 'Booking Rejected'),
+    ('Booking Expired', 'Booking Expired'),
 )
 
 
@@ -61,7 +61,7 @@ class User(models.Model):
         ordering = ['-created_date']
 
     def __str__(self):
-        return self.user_id
+        return self.name
 
 
 class Booking(models.Model):
@@ -80,14 +80,14 @@ class Booking(models.Model):
         User, on_delete=models.CASCADE, related_name="user", null=True)
     status = models.CharField(
         max_length=25, choices=status_options,
-        default='awaiting confirmation', unique=True)
+        default='awaiting confirmation')
     seats = (
-        (1, "1 guest"),
-        (2, "2 guests"),
-        (3, "3 guests"),
-        (4, "4 guests"),
-        (5, "5 guests"),
-        (6, "6 guests"),
+        (1, "1 Guest"),
+        (2, "2 Guests"),
+        (3, "3 Guests"),
+        (4, "4 Guests"),
+        (5, "5 Guests"),
+        (6, "6 Guests"),
         )
     guest_count = models.IntegerField(choices=seats, default=2)
 
@@ -95,4 +95,4 @@ class Booking(models.Model):
         ordering = ['-requested_time']
 
     def __str__(self):
-        return self.booking_id
+        return self.status
