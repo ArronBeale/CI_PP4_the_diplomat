@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'phonenumber_field',
     'django_summernote',
+    'rangefilter',
     'bar_and_grill',
     'bookings',
 ]
