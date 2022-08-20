@@ -47,11 +47,11 @@ class Table(models.Model):
         return self.table_name
 
 
-class User(models.Model):
+class Guest(models.Model):
     """
-    a class for the User model
+    a class for the Guest model
     """
-    user_id = models.AutoField(primary_key=True)
+    guest_id = models.AutoField(primary_key=True)
     created_date = models.DateTimeField(auto_now_add=True)
     name = models.CharField(max_length=80)
     email = models.EmailField(max_length=254, default="")
@@ -76,8 +76,8 @@ class Booking(models.Model):
     table = models.ForeignKey(
         Table, on_delete=models.CASCADE, related_name="table_reserved",
         null=True)
-    user = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name="user", null=True)
+    guest = models.ForeignKey(
+        Guest, on_delete=models.CASCADE, related_name="user", null=True)
     status = models.CharField(
         max_length=25, choices=status_options,
         default='awaiting confirmation')

@@ -4,7 +4,7 @@
 from django.contrib import admin
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Internal:
-from .models import Table, User, Booking
+from .models import Table, Guest, Booking
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -13,13 +13,19 @@ class TableAdmin(admin.ModelAdmin):
     list_display = ('table_id', 'table_name', 'max_seats')
 
 
-@admin.register(User)
-class UserAdmin(admin.ModelAdmin):
-    list_display = ('user_id', 'name', 'email', 'phone')
+@admin.register(Guest)
+class GuestAdmin(admin.ModelAdmin):
+    list_display = ('guest_id', 'name', 'email', 'phone')
 
 
 @admin.register(Booking)
 class BookingAdmim(admin.ModelAdmin):
-    list_filter = ('guest_count', 'status', 'table_id')
-    list_display = ('booking_id', 'user', 'guest_count', 'status',
+    list_filter = (
+        'guest_count',
+        'status',
+        'table_id',
+        'requested_date',
+        'requested_time'
+        )
+    list_display = ('booking_id', 'guest', 'guest_count', 'status',
                     'table', 'requested_date', 'requested_time')
