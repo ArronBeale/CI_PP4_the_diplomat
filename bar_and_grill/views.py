@@ -9,14 +9,22 @@ from .models import FoodItem, DrinkItem
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+def food_menu(request):
+    return render(request, 'food_menu.html')
+
+
+def drink_menu(request):
+    return render(request, 'drink_menu.html')
+
+
 class FoodList(generic.ListView):
     """
     This is the view for all food items available on
     the food menu
     """
     model = FoodItem
-    queryset = FoodItem.objects.filter(available=1).order_by('-food_name')
-    template_name = 'menu.html'
+    queryset = FoodItem.objects.filter(available=1).order_by('-food_type')
+    template_name = 'food_menu.html'
 
 
 class DrinkList(generic.ListView):
@@ -25,5 +33,5 @@ class DrinkList(generic.ListView):
     the drink menu
     """
     model = DrinkItem
-    queryset = DrinkItem.objects.filter(available=1).order_by('-drink_name')
-    template_name = 'menu.html'
+    queryset = DrinkItem.objects.filter(available=1).order_by('-drink_type')
+    template_name = 'drink_menu.html'
