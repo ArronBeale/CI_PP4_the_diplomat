@@ -2,7 +2,7 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
 from django.contrib import admin
-from rangefilter.filters import DateRangeFilter, DateTimeRangeFilter
+from rangefilter.filters import DateRangeFilter
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Internal:
 from .models import Table, Guest, Booking
