@@ -23,15 +23,37 @@ class FoodList(generic.ListView):
     the food menu
     """
     model = FoodItem
-    queryset = FoodItem.objects.filter(available=1).order_by('-food_type')
     template_name = 'food_menu.html'
+    context = 'food_item'
+
+    def get_queryset(self):
+        queryset = {
+            'starter_items': FoodItem.objects.all().filter(
+                available=True, food_type=0),
+            'main_items': FoodItem.objects.all().filter(
+                available=True, food_type=1),
+            'dessert_items': FoodItem.objects.all().filter(
+                available=True, food_type=2)
+        }
+        return queryset
 
 
 class DrinkList(generic.ListView):
     """
-    This is the view for all drink items available on
-    the drink menu
+    This is the view for all food items available on
+    the food menu
     """
     model = DrinkItem
-    queryset = DrinkItem.objects.filter(available=1).order_by('-drink_type')
     template_name = 'drink_menu.html'
+    context = 'drink_item'
+
+    def get_queryset(self):
+        queryset = {
+            'wine_items': DrinkItem.objects.all().filter(
+                available=True, drink_type=0),
+            'beer_items': DrinkItem.objects.all().filter(
+                available=True, drink_type=1),
+            'cocktail_items': DrinkItem.objects.all().filter(
+                available=True, drink_type=2)
+        }
+        return queryset
