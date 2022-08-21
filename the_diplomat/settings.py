@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     'rangefilter',
     'bar_and_grill',
     'bookings',
+    'home',
 ]
 
 MIDDLEWARE = [
