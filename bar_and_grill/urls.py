@@ -8,6 +8,6 @@ from . import views
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 urlpatterns = [
-    path('food_menu', views.all_foods, name='food_menu'),
-    path('drink_menu', views.all_drinks, name='drink_menu'),
+    path('food_menu/', views.all_foods, name='food_menu'),
+    path('drink_menu/', views.all_drinks, name='drink_menu'),
 ]
