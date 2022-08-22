@@ -9,7 +9,7 @@ import os
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-def index(request):
+def home(request):
     """
     a view to display the homepage
     """
