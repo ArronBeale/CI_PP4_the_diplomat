@@ -9,12 +9,14 @@ from .models import FoodItem, DrinkItem
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-def food_menu(request):
-    return render(request, 'food_menu.html')
+def all_foods(request):
+    food_list = FoodItem.objects.all()
+    return render(request, 'food_menu.html', {'food_list': food_list})
 
 
-def drink_menu(request):
-    return render(request, 'drink_menu.html')
+def all_drinks(request):
+    drink_list = DrinkItem.objects.all()
+    return render(request, 'drink_menu.html', {'drink_list': drink_list})
 
 
 class FoodList(generic.ListView):

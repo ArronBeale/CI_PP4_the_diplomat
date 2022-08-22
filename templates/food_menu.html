@@ -4,7 +4,18 @@
 
 <div class="container-fluid">
     <div class="row">
-        <h1>Test</h1>
+        <h1>Test Food</h1>
+
+        <div class="col-12">
+            {% for food in food_list %}
+            <ul>
+            <li>Name: {{ food.food_name }}</li>
+            <li>Description: {{ food.description }}</li>
+            <li>Price: €{{ food.price }}</li>
+            </ul>
+
+            {% endfor %}
+        </div>
     </div>
 </div>
 

@@ -27,6 +27,9 @@
 </head>
 
 <body>
+
+  <!-- Navigation -->
+
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">The Diplomat</a>
@@ -55,6 +58,18 @@
       </div>
     </div>
   </nav>
+
+  <main class="flex-shrink-0 main-bg">
+    {% block content %}
+    
+    {% endblock content %}
+</main>
+
+<!-- footer -->
+<footer>
+
+</footer>
+
 </body>
 
 </html>
