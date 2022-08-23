@@ -19,6 +19,9 @@
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
   </script>
 
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/f561b9867c.js" crossorigin="anonymous"></script>
+
   <!-- Personal CSS -->
   <link rel="stylesheet" href="{% static 'css/style.css' %}">
 
@@ -44,10 +47,11 @@
           </li>
           <li class="nav-item">
             <div class="dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
                 Menus
               </a>
-            
+
               <ul class="dropdown-menu">
                 <li><a class="dropdown-item" href="{% url 'food_menu' %}">Food Menu</a></li>
                 <li><a class="dropdown-item" href="{% url 'drink_menu' %}">Drinks Menu</a></li>
@@ -70,14 +74,35 @@
 
   <main class="flex-shrink-0 main-bg">
     {% block content %}
-    
+
     {% endblock content %}
-</main>
+  </main>
 
-<!-- footer -->
-<footer>
+  <!-- footer -->
+  <footer class="bg-dark text-center text-white">
+    <div class="container p-4 pb-0">
 
-</footer>
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.twitter.com" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Linkedin -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/arronbeale/"
+          role="button"><i class="fab fa-linkedin-in"></i></a>
+
+        <!-- Github -->
+        <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/ArronBeale" role="button"><i
+            class="fab fa-github"></i></a>
+      </section>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2022 Copyright:
+      <a class="text-white" href="{% url 'home' %}">The Diplomat | Bar & Grill</a>
+    </div>
+
+  </footer>
 
 </body>
 
