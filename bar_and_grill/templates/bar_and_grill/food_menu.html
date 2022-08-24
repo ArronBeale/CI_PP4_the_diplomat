@@ -5,12 +5,48 @@
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
         <div class="col-sm-8">
-            <h2 class="text-center">Food Menu</span></h2><hr>
+            <h2 class="text-center">Food Menu</span></h2>
+            <hr>
         </div>
     </div>
     <div class="row justify-content-center">
 
         <div class="col-sm-8">
+            <h4>Starters</h4>
+            <hr>
+            {% if food_item.starter_items %}
+
+            {% for food in food_item.starter_items. %}
+
+            <h5>{{ food.food_name }}</h5>
+            <p><em>{{ food.description | safe }} €{{ food.price }}</em></p>
+
+            {% endfor %}
+
+            {% else %}
+            <p>Menu is currently under maintenance</p>
+            <p>We won't be long!</p>
+
+            {% endif %}
+        </div>
+
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-sm-8">
+            <hr>
+            <h4>Mains</h4>
+            <hr>
+            {% for food in food_list %}
+            <h5>{{ food.food_name }}</h5>
+            <p><em>{{ food.description | safe }} €{{ food.price }}</em></p>
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-sm-8">
+            <hr>
+            <h4>Desserts</h4>
+            <hr>
             {% for food in food_list %}
             <h5>{{ food.food_name }}</h5>
             <p><em>{{ food.description | safe }} €{{ food.price }}</em></p>
