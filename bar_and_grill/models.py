@@ -21,7 +21,7 @@ class FoodItem(models.Model):
     available = models.BooleanField(default=False)
 
     class Meta:
-        ordering = ['-available']
+        ordering = ['-food_type']
 
     def __str__(self):
         return self.food_name

@@ -5,18 +5,51 @@
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
         <div class="col-sm-8">
-            <h2 class="text-center">Drinks Menu</span></h2>
-            <hr>
+            <h2 class="text-center">Drinks Menu</h2>
         </div>
     </div>
     <div class="row justify-content-center">
+        <!-- Starter Food Items-->
         <div class="col-sm-8">
+            <hr><h4>Wines</h4><hr>
             {% for drink in drink_list %}
+            {% if drink.drink_type == 0 %}
             <h5>{{ drink.drink_name }}</h5>
-            <p><em>€{{ drink.price }}</em></p>
+            <p><em>{{ drink.description | safe }} €{{ drink.price }}</em></p>
 
+            {% endif %}
             {% endfor %}
+
         </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Starter Food Items-->
+        <div class="col-sm-8">
+            <hr><h4>Beers</h4><hr>
+            {% for drink in drink_list %}
+            {% if drink.drink_type == 1 %}
+            <h5>{{ drink.drink_name }}</h5>
+            <p><em>{{ drink.description | safe }} €{{ drink.price }}</em></p>
+
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <!-- Starter Food Items-->
+        <div class="col-sm-8">
+            <hr><h4>Cocktails</h4><hr>
+            {% for drink in drink_list %}
+            {% if drink.drink_type == 2 %}
+            <h5>{{ drink.drink_name }}</h5>
+            <p><em>{{ drink.description | safe }} €{{ drink.price }}</em></p>
+
+            {% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
     </div>
 </div>
 

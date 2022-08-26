@@ -28,7 +28,7 @@ class FoodList(generic.ListView):
     """
     model = FoodItem
     template_name = 'food_menu.html'
-    context = 'food_item'
+    context_object_name = 'food_items'
 
     def get_queryset(self):
         queryset = {
@@ -49,7 +49,7 @@ class DrinkList(generic.ListView):
     """
     model = DrinkItem
     template_name = 'drink_menu.html'
-    context = 'drink_item'
+    context_object_name = 'drink_items'
 
     def get_queryset(self):
         queryset = {
