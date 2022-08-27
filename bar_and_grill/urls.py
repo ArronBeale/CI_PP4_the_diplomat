@@ -4,7 +4,7 @@
 from django.urls import path
 
 # Internal:
-from . import views
+from bar_and_grill import views
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 urlpatterns = [
