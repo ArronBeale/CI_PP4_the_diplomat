@@ -1,5 +1,6 @@
 asgiref==3.5.2
 cloudinary==1.29.0
+crispy-bootstrap5==0.6
 dj-database-url==1.0.0
 dj3-cloudinary-storage==0.0.6
 Django==3.2.15
