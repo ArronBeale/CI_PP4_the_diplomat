@@ -3,7 +3,8 @@ from django import forms
 
 
 class BookingForm(forms.ModelForm):
-    requested_date = forms.DateField()
+    requested_date = forms.DateField(
+        widget=forms.DateInput(attrs={'type': 'date'}))
 
     class Meta:
         model = Booking
