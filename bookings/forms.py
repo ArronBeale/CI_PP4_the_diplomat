@@ -37,4 +37,9 @@ class GuestForm(forms.ModelForm):
 
     class Meta:
         model = Guest
+        widgets = {
+            'name': forms.TextInput(attrs={'placeholder': 'Full name'}),
+            'email': forms.EmailInput(
+                attrs={'placeholder': 'Email address'}),
+        }
         fields = ('name', 'email')
