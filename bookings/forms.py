@@ -35,7 +35,7 @@ class GuestForm(forms.ModelForm):
         self.helper.add_input(Submit('submit', 'Submit'))
 
     phone_number = PhoneNumberField(widget=forms.TextInput(
-        attrs={'placeholder': ('Enter phone number including +353')}))
+        attrs={'placeholder': ('+353')}))
 
     class Meta:
         model = Guest

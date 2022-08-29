@@ -6,7 +6,7 @@ from django.views import generic
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Internal:
 from .models import Table, Guest, Booking
-from .forms import BookingForm
+from .forms import BookingForm, GuestForm
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -14,7 +14,7 @@ def reservations(request):
     """
     a view to display the booking list
     """
-    context = {'form': BookingForm()}
+    context = {'booking_form': BookingForm(), 'guest_form': GuestForm()}
 
     return render(
         request, 'bookings/reservations.html', context)
