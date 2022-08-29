@@ -17,7 +17,6 @@ class BookingForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper(self)
-        self.helper.add_input(Submit('submit', 'Submit'))
 
     requested_date = forms.DateField(
         widget=forms.DateInput(
@@ -32,11 +31,10 @@ class GuestForm(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.helper = FormHelper(self)
-        self.helper.add_input(Submit('submit', 'Submit'))
 
     phone_number = PhoneNumberField(widget=forms.TextInput(
         attrs={'placeholder': ('+353')}))
 
     class Meta:
         model = Guest
-        fields = ('name', 'email', 'phone')
+        fields = ('name', 'email')
