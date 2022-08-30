@@ -7,5 +7,5 @@ from bookings import views
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 urlpatterns = [
-    path('reservations/', views.reservations, name='reservations'),
+    path('reservations/', views.Reservations.as_view(), name='reservations'),
 ]
