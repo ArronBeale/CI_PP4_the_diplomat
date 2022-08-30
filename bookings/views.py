@@ -13,16 +13,39 @@ from .forms import BookingForm, GuestForm
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+def get_guest_instance(request, User):
+    """ retrieves user details if logged in """
+
+    guest_email = request.user.email
+    guest = Guest.objects.filter(email=guest_email).first()
+
+    return guest
+
+
 class Reservations(View):
     """ Reservation view for guests to make bookings """
 
-    def get(self, request, *args, **kwargs):
+    template_name = 'bookings/reservations.html'
 
-        template_name = "bookings/reservations.html"
+    def get(self, request, *args, **kwargs):
+        booking_form = BookingForm()
+
+        if request.user.is_authenticated:
+            guest = get_guest_instance(request, User)
+            if guest is None:
+                email = request.user.email
+                guest_form = GuestForm(initial={'email': email})
+            else:
+                guest_form = GuestForm(instance=guest)
+                booking_form = BookingForm()
+
+        else:
+            guest_form = GuestForm()
+            booking_form = BookingForm()
 
         return render(request, "bookings/reservations.html",
-                      {'guest_form': GuestForm(),
-                       'booking_form': BookingForm()})
+                      {'guest_form': guest_form,
+                       'booking_form': booking_form})
 
     def post(self, request, User=User, *args, **kwargs):
 
@@ -35,7 +58,6 @@ class Reservations(View):
             guest_count = request.POST.get('guest_count')
         else:
             booking_form = BookingForm()
-
 
         return render(request, "bookings/reservations.html",
                       {'guest_form': guest_form,
