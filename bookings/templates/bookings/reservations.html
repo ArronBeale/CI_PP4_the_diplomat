@@ -6,13 +6,13 @@
 <div class="container">
     <div class="row">
         <div class="col-md-4 mt-3 offset-md-2">
-            <form method="POST">
+            <form method="post">
 
                 {% csrf_token %}
 
                 <!-- guest form & booking form -->
-                {% crispy guest_form %}
-                {% crispy booking_form %}
+                {{ guest_form| crispy }}
+                {{ booking_form| crispy }}
 
                 <button class="btn btn-primary" type="submit">Submit</button>
             </form>
