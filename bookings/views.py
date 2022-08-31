@@ -8,22 +8,25 @@ from django.views import generic
 from django.contrib.auth.models import User
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Internal:
-from .models import Table, Guest, Booking
-from .forms import BookingForm, GuestForm
+from .models import Table, Booking
+from .forms import BookingForm
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-def get_guest_instance(request, User):
+def get_user_instance(request, User):
     """ retrieves user details if logged in """
 
-    guest_email = request.user.email
-    guest = Guest.objects.filter(email=guest_email).first()
+    user_email = request.user.email
+    user = User.objects.filter(email=user_email).first()
 
-    return guest
+    return user
 
 
 class Reservations(View):
-    """ Reservation view for guests to make bookings """
+    """
+    Renders booking form page
+    If user is logged in their email is set as guest email
+    """
 
     template_name = 'bookings/reservations.html'
 
@@ -31,34 +34,29 @@ class Reservations(View):
         booking_form = BookingForm()
 
         if request.user.is_authenticated:
-            guest = get_guest_instance(request, User)
-            if guest is None:
+            user = get_user_instance(request, User)
+            if user is None:
                 email = request.user.email
-                guest_form = GuestForm(initial={'email': email})
+                booking_form = BookingForm(initial={'email': email})
             else:
-                guest_form = GuestForm(instance=guest)
                 booking_form = BookingForm()
 
         else:
-            guest_form = GuestForm()
             booking_form = BookingForm()
 
         return render(request, "bookings/reservations.html",
-                      {'guest_form': guest_form,
-                       'booking_form': booking_form})
+                      {'booking_form': booking_form})
 
     def post(self, request, User=User, *args, **kwargs):
 
-        guest_form = GuestForm(data=request.POST)
         booking_form = BookingForm(request.POST)
 
-        if booking_form.is_valid() and guest_form.is_valid():
-            guest_requested_date = request.POST.get('requested_date')
-            guest_requested_time = request.POST.get('requested_time')
+        if booking_form.is_valid():
+            user_requested_date = request.POST.get('requested_date')
+            user_requested_time = request.POST.get('requested_time')
             guest_count = request.POST.get('guest_count')
         else:
             booking_form = BookingForm()
 
         return render(request, "bookings/reservations.html",
-                      {'guest_form': guest_form,
-                       'booking_form': booking_form})
+                      {'booking_form': booking_form})
