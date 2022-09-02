@@ -1,9 +1,8 @@
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
-from django.shortcuts import render, reverse, get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.views import View
-from django.http import HttpResponseRedirect
 from django.views import generic
 from django.contrib.auth.models import User
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -25,38 +24,47 @@ def get_user_instance(request, User):
 class Reservations(View):
     """
     Renders booking form page
-    If user is logged in their email is set as guest email
+    The user email is set as booking email
     """
 
     template_name = 'bookings/reservations.html'
 
     def get(self, request, *args, **kwargs):
-        booking_form = BookingForm()
+        """
+        Retrieves users email and inputs into email input
+        """
 
         if request.user.is_authenticated:
-            user = get_user_instance(request, User)
-            if user is None:
-                email = request.user.email
-                booking_form = BookingForm(initial={'email': email})
-            else:
-                booking_form = BookingForm()
-
+            email = request.user.email
+            booking_form = BookingForm(initial={'email': email})
         else:
             booking_form = BookingForm()
-
-        return render(request, "bookings/reservations.html",
+        return render(request, 'bookings/reservations.html',
                       {'booking_form': booking_form})
 
-    def post(self, request, User=User, *args, **kwargs):
+    def post(self, request):
+        """
+        Checks that the provided info is valid format
+        and then posts to database
+        """
 
-        booking_form = BookingForm(request.POST)
+        booking_form = BookingForm(data=request.POST)
 
         if booking_form.is_valid():
-            user_requested_date = request.POST.get('requested_date')
-            user_requested_time = request.POST.get('requested_time')
-            guest_count = request.POST.get('guest_count')
+            booking = booking_form.save(commit=False)
+            booking.user = request.user
+            booking.save()
         else:
             booking_form = BookingForm()
 
-        return render(request, "bookings/reservations.html",
-                      {'booking_form': booking_form})
+        return render(request, 'confirmed')
+
+
+class Confirmed(generic.DetailView):
+    """
+    Renders the confirmation page
+    """
+    template_name = 'bookings/confirmed.html'
+
+    def get(self, request):
+        return render(request, 'bookings/confirmed.html')

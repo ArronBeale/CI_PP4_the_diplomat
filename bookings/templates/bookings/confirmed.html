@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Booking Confirmed!</h2>
+                <h3>We look forward to seeing you!</h3>
+                <h4>Return home, <a href="{% url 'home/index.html' %}">click</a></h4>
+                <h5>Visit our menu <a href="{% url 'bar_and_grill/food_menu' %}">click</a></h5>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+{%endblock%}
