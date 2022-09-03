@@ -54,6 +54,7 @@ class Reservations(View):
             booking = booking_form.save(commit=False)
             booking.user = request.user
             booking.save()
+            return redirect(Confirmed())
         else:
             booking_form = BookingForm()
 
