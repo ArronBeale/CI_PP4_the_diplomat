@@ -1,7 +1,29 @@
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
 
 {% block content %}
 
+<main class=" container">
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-6 mt-3 offset-md-2">
+            <div class="col-md-6 bg-light">
+                <div class="row text-center">
+                    <div class="col-12">
+                        <h5 class="fw-bold mt-3">Edit Booking</h5>
+                    </div>
+                </div>
+                <form action="{% url 'edit_booking' booking.pk %}" method="POST" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <div>
+                        {{ form|crispy }}
+                    </div>
+                    <div>
+                        <button class="btn btn-success" type="submit">Update</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</main>
 
-
-{%endblock%}
+{% endblock %}

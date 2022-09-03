@@ -1,10 +1,12 @@
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
-from django.shortcuts import render, redirect, get_object_or_404
+from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.views import View
 from django.views import generic
 from django.contrib.auth.models import User
+from django.contrib.messages.views import SuccessMessageMixin
+from django.views.generic.edit import UpdateView
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Internal:
 from .models import Table, Booking
@@ -17,7 +19,6 @@ def get_user_instance(request):
 
     user_email = request.user.email
     user = User.objects.filter(email=user_email).first()
-
     return user
 
 
@@ -26,14 +27,12 @@ class Reservations(View):
     Renders booking form page for registered user
     The user email is set as booking email
     """
-
     template_name = 'bookings/reservations.html'
 
     def get(self, request, *args, **kwargs):
         """
         Retrieves users email and inputs into email input
         """
-
         if request.user.is_authenticated:
             email = request.user.email
             booking_form = BookingForm(initial={'email': email})
@@ -47,7 +46,6 @@ class Reservations(View):
         Checks that the provided info is valid format
         and then posts to database
         """
-
         booking_form = BookingForm(data=request.POST)
 
         if booking_form.is_valid():
@@ -57,7 +55,6 @@ class Reservations(View):
             return render(request, 'bookings/confirmed.html')
         else:
             booking_form = BookingForm()
-
         return render(request, 'bookings/reservations.html',
                       {'booking_form': booking_form})
 
@@ -77,34 +74,26 @@ class BookingList(generic.DetailView):
     This view will display all the bookings
     a particular user has made
     """
-
     template_name = 'booking_list.html'
 
     def get(self, request, *args, **kwargs):
         if request.user.is_authenticated:
             bookings = Booking.objects.filter(user=request.user)
-
             return render(
                 request, 'bookings/booking_list.html', {'bookings': bookings})
         else:
             return redirect('accounts/login.html')
 
 
-def edit_booking(request, booking_id):
+class EditBooking(SuccessMessageMixin, UpdateView):
     """
-    This view will allow regisetered user to edit their existing
-    bookings from the booking list page via an edit button
+    This view will display the booking by it's primary key
+    so the user can then edit it
     """
-    booking = get_object_or_404(Booking, id=booking_id)
+    model = Booking
+    form_class = BookingForm
+    template_name = 'bookings/edit_booking.html'
+    success_message = 'Booking has been updated.'
 
-    if request.method == 'POST':
-        form = BookingForm(data=request.POST, instance=booking)
-        if form.is_valid():
-            form.save()
-            return redirect('bookings/booking_list.html')
-
-    form = BookingForm(instance=booking)
-
-    return render(
-        request, 'edit_booking.html', {'form': form})
-        
+    def get_success_url(self, **kwargs):
+        return reverse('booking_list')

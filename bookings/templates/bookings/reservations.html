@@ -4,36 +4,41 @@
 {% block content %}
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-4 mt-3 offset-md-2">
-
-            {% if not user.is_authenticated %}
-            <div class="container">
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-6 mt-3 offset-md-2">
+            <div class="col-md-6 bg-light">
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-12">
+
+                        <!-- Display if user is not logged in -->
+                        {% if not user.is_authenticated %}
+
                         <h3>Login Required</h3>
                         <p>Please login to book a table</p>
                         <a href="{% url 'account_login' %}">login</a>
+
+                        {% else %}
+
+                        <!-- Display form if user is logged in-->
+                        {% if user.is_authenticated %}
+                        <div class="row text-center">
+                            <div class="col-12">
+                                <h5 class="fw-bold mt-3">Your Booking</h5>
+                            </div>
+                        </div>
+                        <form action="" method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+
+                            <!-- booking form -->
+                            {{ booking_form| crispy }}
+
+                            <button class="btn btn-success" type="submit">Submit</button>
+                        </form>
+                        {% endif %}
+                        {% endif %}
                     </div>
                 </div>
             </div>
-
-            {% else %}
-            {% if user.is_authenticated %}
-
-            <form action = "" method="POST">
-
-                {% csrf_token %}
-
-                <!-- booking form -->
-                {{ booking_form| crispy }}
-
-                <button class="btn btn-success" type="submit">Submit</button>
-            </form>
-
-            {% endif %}
-            {% endif %}
-
         </div>
     </div>
 </div>
