@@ -16,8 +16,8 @@
                         <h6 class="card-subtitle mb-2">Booking status: {{ booking.status }}.</h6>
                         <p class="card-text">No. of Guests: {{ booking.guest_count }}.</p>
                         <p class="card-text">Table: {{booking.table}}</p>
-                        <a href="" class="btn btn-success">Edit</a>
-                        <a href="" class="btn btn-success">Cancel</a>
+                        <a href="bookings/edit_booking/{{booking.id}}" class="btn btn-success">Edit</a>
+                        <a href="" class="btn btn-secondary">Cancel</a>
                     </div>
                 </div>
             </div>
