@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section>
+    <div class="container">
+        <h2>My Bookings:</h2>
+        <div class="row">
+            {% for booking in bookings %}
+            <div class="col-md-5">
+                <div class="card mb-5">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ booking.name }}</h5>
+                        <h6 class="card-subtitle mb-2 text-muted">{{ booking.requested_date }} at
+                            {{ booking.requested_time }}</h6><br>
+                        <h6 class="card-subtitle mb-2">Booking status: {{ booking.status }}.</h6>
+                        <p class="card-text">No. of Guests: {{ booking.guest_count }}.</p>
+                        <p class="card-text">Table: {{booking.table}}</p>
+                        <a href="" class="btn btn-success">Edit</a>
+                        <a href="" class="btn btn-success">Cancel</a>
+                    </div>
+                </div>
+            </div>
+            {%endfor%}
+        </div>
+    </div>
+</section>
+
+{%endblock%}

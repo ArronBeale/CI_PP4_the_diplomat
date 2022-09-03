@@ -12,7 +12,7 @@ from .forms import BookingForm
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-def get_user_instance(request, User):
+def get_user_instance(request):
     """ retrieves user details if logged in """
 
     user_email = request.user.email
@@ -23,7 +23,7 @@ def get_user_instance(request, User):
 
 class Reservations(View):
     """
-    Renders booking form page
+    Renders booking form page for registered user
     The user email is set as booking email
     """
 
@@ -54,11 +54,12 @@ class Reservations(View):
             booking = booking_form.save(commit=False)
             booking.user = request.user
             booking.save()
-            return redirect(Confirmed())
+            return render(request, 'bookings/confirmed.html')
         else:
             booking_form = BookingForm()
 
-        return render(request, 'bookings/confirmed.html')
+        return render(request, 'bookings/reservations.html',
+                      {'booking_form': booking_form})
 
 
 class Confirmed(generic.DetailView):
@@ -68,4 +69,22 @@ class Confirmed(generic.DetailView):
     template_name = 'bookings/confirmed.html'
 
     def get(self, request):
-        return render(request, 'bookings/confirmed.html')
+        return render(request, 'bookings/reservations.html')
+
+
+class BookingList(generic.DetailView):
+    """
+    This view will display all the bookings
+    a particular user has made
+    """
+
+    template_name = 'booking_list.html'
+
+    def get(self, request, *args, **kwargs):
+        if request.user.is_authenticated:
+            bookings = Booking.objects.filter(user=request.user)
+
+            return render(
+                request, 'bookings/booking_list.html', {'bookings': bookings})
+        else:
+            return redirect('accounts/login.html')

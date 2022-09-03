@@ -48,7 +48,6 @@ class Table(models.Model):
         return self.table_name
 
 
-
 class Booking(models.Model):
     """
     a class for the Booking model
