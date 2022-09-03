@@ -5,6 +5,7 @@ from django.shortcuts import render, reverse, redirect, get_object_or_404
 from django.views import View
 from django.views import generic
 from django.contrib.auth.models import User
+from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import UpdateView
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -28,6 +29,7 @@ class Reservations(View):
     The user email is set as booking email
     """
     template_name = 'bookings/reservations.html'
+    success_message = 'Booking has been made.'
 
     def get(self, request, *args, **kwargs):
         """
@@ -54,6 +56,8 @@ class Reservations(View):
             booking.save()
             return render(request, 'bookings/confirmed.html')
         else:
+            messages.warning(
+                request, 'Please use correct format')
             booking_form = BookingForm()
         return render(request, 'bookings/reservations.html',
                       {'booking_form': booking_form})
