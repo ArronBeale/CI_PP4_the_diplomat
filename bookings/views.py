@@ -57,7 +57,7 @@ class Reservations(View):
         else:
             booking_form = BookingForm()
 
-        return render(request, 'confirmed')
+        return render(request, 'bookings/confirmed.html')
 
 
 class Confirmed(generic.DetailView):
