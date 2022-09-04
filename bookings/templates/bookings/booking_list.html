@@ -17,7 +17,7 @@
                         <p class="card-text">No. of Guests: {{ booking.guest_count }}.</p>
                         <p class="card-text">Table: {{booking.table}}</p>
                         <a href="{% url 'edit_booking' booking.pk %}" class="btn btn-success">Edit</a>
-                        <a href="{% url 'cancel_booking' booking.pk %}" class="btn btn-secondary">Cancel</a>
+                        <a href="{% url 'cancel_booking' booking.pk %}" class="btn btn-danger">Cancel</a>
                     </div>
                 </div>
             </div>

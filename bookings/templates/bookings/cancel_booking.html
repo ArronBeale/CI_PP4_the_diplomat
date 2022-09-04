@@ -45,8 +45,13 @@
                         <h6 class="card-subtitle mb-2">Booking status: {{ booking.status }}.</h6>
                         <p class="card-text">No. of Guests: {{ booking.guest_count }}.</p>
                         <p class="card-text">Table: {{booking.table}}</p>
-                        <a href="" class="btn btn-danger">Delete Booking</a>
-                        <a href="{% url 'booking_list' %}" class="btn btn-secondary">Return</a>
+                        <form method="POST">
+                            {% csrf_token %}
+                            <a><button class="btn btn-danger" type="submit">YES</button></a>
+                            <a href="{% url 'booking_list' %}" class="btn btn-secondary">Return</a>
+                        </form>
+                        <!-- <a href="{}" class="btn btn-danger">Delete Booking</a>
+                        <a href="{% url 'booking_list' %}" class="btn btn-secondary">Return</a> -->
                     </div>
                 </div>
             </div>
