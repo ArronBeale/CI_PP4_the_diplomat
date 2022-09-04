@@ -25,8 +25,9 @@ def get_user_instance(request):
 
 class Reservations(View):
     """
-    Renders booking form page for registered user
-    The user email is set as booking email
+    This view displays the booking form if the user
+    is registered and inserts the users email into the
+    email field
     """
     template_name = 'bookings/reservations.html'
     success_message = 'Booking has been made.'
@@ -65,7 +66,7 @@ class Reservations(View):
 
 class Confirmed(generic.DetailView):
     """
-    Renders the confirmation page
+    This view will display confirmation on a successful booking
     """
     template_name = 'bookings/confirmed.html'
 
@@ -101,3 +102,17 @@ class EditBooking(SuccessMessageMixin, UpdateView):
 
     def get_success_url(self, **kwargs):
         return reverse('booking_list')
+
+
+def cancel_booking(request, pk):
+    """
+    Deletes the booking identified by it's primary key by th user
+    """
+    booking = Booking.objects.get(pk=pk)
+
+    if request.method == 'POST':
+        booking.delete()
+        return redirect('booking_list.html')
+
+    return render(
+        request, 'bookings/cancel_booking.html', {'booking': booking})
