@@ -106,7 +106,7 @@ class EditBooking(SuccessMessageMixin, UpdateView):
 
 def cancel_booking(request, pk):
     """
-    Deletes the booking identified by it's primary key by th user
+    Deletes the booking identified by it's primary key by the user
     """
     booking = Booking.objects.get(pk=pk)
 
