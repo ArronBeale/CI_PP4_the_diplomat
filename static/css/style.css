@@ -14,3 +14,17 @@
     color: red;
     border-bottom: 3px solid rgb(255, 255, 255);
   }
+
+  .grow { 
+    transition: all .2s ease-in-out; 
+}
+
+.grow:hover { 
+    transform: scale(1.1); 
+    color: #272343;
+}
+
+.card {
+    background-color: #D3D3D3;
+    padding: 20px;
+}

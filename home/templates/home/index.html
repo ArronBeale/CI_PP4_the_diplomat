@@ -7,16 +7,13 @@
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="/static/images/image-carousel-1.jpg"
-                class="d-block w-100" alt="Image of a restaurant">
+            <img src="/static/images/image-carousel-1.jpg" class="d-block w-100" alt="Image of a restaurant">
         </div>
         <div class="carousel-item">
-            <img src="/static/images/image-carousel-2.jpg"
-                class="d-block w-100" alt="Image of food">
+            <img src="/static/images/image-carousel-2.jpg" class="d-block w-100" alt="Image of food">
         </div>
         <div class="carousel-item">
-            <img src="/static/images/image-carousel-3.jpg"
-                class="d-block w-100" alt="Image of wine glasses">
+            <img src="/static/images/image-carousel-3.jpg" class="d-block w-100" alt="Image of wine glasses">
         </div>
     </div>
 </div>
@@ -33,38 +30,34 @@
             <a href="{% url 'reservations' %}" class="text-decoration-none home-cards-a">
                 <div class="card">
                     <img src="/static/images/image-book.jpg" class="card-img-top" alt="Image of a teble setting">
-                </a>
-                    <div class="card-body">
-                        <h2 class="card-title">Book</h2>
-                        <p class="card-text">Book a table with us now!</p>
-                    </div>
-                </div>
+            </a>
+            <div class="card-body">
+                <h2 class="card-title">Book</h2>
+                <p class="card-text">Book a table with us now!</p>
+            </div>
         </div>
-        <div class="col-10 col-md-4 mt-4 grow">
-            <a href="{% url 'food_menu' %}" class="text-decoration-none home-cards-a">
-                <div class="card">
-                    <img src="/static/images/image-food-menu2.jpg" class="card-img-top" alt="Image of food">
-                </a>
-                    <div class="card-body">
-                        <h2 class="card-title">Food Menu</h2>
-                        <p class="card-text">View our food menu</p>
-                    </div>
-                </div>
+    </div>
+    <div class="col-10 col-md-4 mt-4 grow">
+        <a href="{% url 'food_menu' %}" class="text-decoration-none home-cards-a">
+            <div class="card">
+                <img src="/static/images/image-food-menu2.jpg" class="card-img-top" alt="Image of food">
+        </a>
+        <div class="card-body">
+            <h2 class="card-title">Food Menu</h2>
+            <p class="card-text">View our food menu</p>
         </div>
-        <div class="col-10 col-md-4 mt-4 grow">
-            <a href="{% url 'drink_menu' %}" class="text-decoration-none home-cards-a">
-                <div class="card">
-                    <img src="/static/images/image-drinks-menu2.jpg" class="card-img-top" alt="Image of a glass of whiskey">
-                </a>
-                    <div class="card-body">
-                        <h2 class="card-title">Drinks Menu</h2>
-                        <p class="card-text">View our wide selection of drinks</p>
-                    </div>
-                </div>
+    </div>
+    </div>
+    <div class="col-10 col-md-4 mt-4 grow">
+        <a href="{% url 'drink_menu' %}" class="text-decoration-none home-cards-a">
+            <div class="card">
+                <img src="/static/images/image-drinks-menu2.jpg" class="card-img-top" alt="Image of a glass of whiskey">
+        </a>
+        <div class="card-body">
+            <h2 class="card-title">Drinks Menu</h2>
+            <p class="card-text">View our wide selection of drinks</p>
         </div>
     </div>
 </section>
-
-
 
 {%endblock%}
