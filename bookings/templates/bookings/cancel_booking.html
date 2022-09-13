@@ -2,34 +2,6 @@
 
 {% block content %}
 
-<!-- <main class=" container">
-    <div class="row justify-content-center mt-3">
-        <div class="col-md-6 mt-3 offset-md-2">
-            <div class="col-md-6 bg-light">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <h5 class="fw-bold mt-3">Cancel Booking</h5>
-                    </div>
-                    <div class="col-md-5">
-                        <div class="card mb-5">
-                            <div class="card-body">
-                                <h5 class="card-title">{{ booking.name }}</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">{{ booking.requested_date }} at
-                                    {{ booking.requested_time }}</h6><br>
-                                <h6 class="card-subtitle mb-2">Booking status: {{ booking.status }}.</h6>
-                                <p class="card-text">No. of Guests: {{ booking.guest_count }}.</p>
-                                <p class="card-text">Table: {{booking.table}}</p>
-                                <a href="" class="btn btn-success">Yes</a>
-                                <a href="" class="btn btn-secondary">No</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</main> -->
-
 <section>
     <div class="container">
 
@@ -37,7 +9,7 @@
             <div class="col-md-5">
                 <h2>Are you sure?:</h2>
                 <div class="card mb-5">
-                    <div class="card-body bg-light">
+                    <div class="card-body bg-secondary">
                         <h5 class="card-title">{{ booking.name }}</h5>
                         <h6 class="card-subtitle mb-2 text-muted">{{ booking.requested_date }} at
                             {{ booking.requested_time }}</h6><br>
