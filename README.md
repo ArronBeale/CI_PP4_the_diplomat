@@ -8,8 +8,8 @@ Developer: **Arron Beale**
 
 
 
-Deployed Site:
-[Github](https://ci-pp4-the-diplomat.herokuapp.com/)
+
+Deployed: [The Diplomat | Bar & Grill](https://ci-pp4-the-diplomat.herokuapp.com/)
 
 
 
