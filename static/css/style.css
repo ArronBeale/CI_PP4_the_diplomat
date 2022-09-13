@@ -12,7 +12,9 @@ a:hover {
 body {
     background-color: #212529;
     font-family: 'Montserrat', sans-serif;
+    color: #ffff;
 }
+
 .active{
     color: red;
     border-bottom: 3px solid rgb(255, 255, 255);
