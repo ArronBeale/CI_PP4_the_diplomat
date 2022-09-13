@@ -20,7 +20,7 @@
 <div class="container-fluid">
     <div class="row text-center mt-5">
         <h2>Welcome to The Diplomat Bar & Grill</h2>
-        <p>We look forward to your visit!</p>
+        <p>We strive to ensure that your dining experience with us is unforgettable.</p>
     </div>
 </div>
 <!-- cards -->
@@ -28,31 +28,31 @@
     <div class="row d-flex my-5 justify-content-center text-center">
         <div class="col-10 col-md-4 mt-4 grow">
             <a href="{% url 'reservations' %}" class="text-decoration-none home-cards-a">
-                <div class="card">
+                <div class="card shadow">
                     <img src="/static/images/image-book.jpg" class="card-img-top" alt="Image of a teble setting">
             </a>
             <div class="card-body">
-                <h2 class="card-title">Book</h2>
+                <a href="{% url 'reservations' %}"><h2 class="card-title">Book a Table</h2></a>
             </div>
         </div>
     </div>
     <div class="col-10 col-md-4 mt-4 grow">
         <a href="{% url 'food_menu' %}" class="text-decoration-none home-cards-a">
-            <div class="card">
+            <div class="card shadow">
                 <img src="/static/images/image-food-menu2.jpg" class="card-img-top" alt="Image of food">
         </a>
         <div class="card-body">
-            <h2 class="card-title">Food Menu</h2>
+            <a href="{% url 'food_menu' %}"><h2 class="card-title">Food Menu</h2></a>
         </div>
     </div>
     </div>
     <div class="col-10 col-md-4 mt-4 grow">
         <a href="{% url 'drink_menu' %}" class="text-decoration-none home-cards-a">
-            <div class="card">
+            <div class="card shadow">
                 <img src="/static/images/image-drinks-menu2.jpg" class="card-img-top" alt="Image of a glass of whiskey">
         </a>
         <div class="card-body">
-            <h2 class="card-title">Drinks Menu</h2>
+            <a href="{% url 'drink_menu' %}"><h2 class="card-title">Drinks Menu</h2></a>
         </div>
     </div>
 </section>
