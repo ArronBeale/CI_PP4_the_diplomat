@@ -3,24 +3,24 @@
 
 {% block content %}
 
-<main class=" container">
+<main class="container">
     <div class="row justify-content-center mt-3">
-        <div class="col-md-6 mt-3 offset-md-2">
-            <div class="col-md-6 bg-light">
-                <div class="row text-center">
-                    <div class="col-12">
-                        <h5 class="fw-bold mt-3">Edit Booking</h5>
+        <div class="col-md-5">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12 p-5 bg-secondary rounded">
+                        <h1>Edit Booking</h1>
+                        <form action="{% url 'edit_booking' booking.pk %}" method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div>
+                                {{ form|crispy }}
+                            </div>
+                            <div>
+                                <button class="btn btn-success" type="submit">Update</button>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <form action="{% url 'edit_booking' booking.pk %}" method="POST" enctype="multipart/form-data">
-                    {% csrf_token %}
-                    <div>
-                        {{ form|crispy }}
-                    </div>
-                    <div>
-                        <button class="btn btn-success" type="submit">Update</button>
-                    </div>
-                </form>
             </div>
         </div>
     </div>
