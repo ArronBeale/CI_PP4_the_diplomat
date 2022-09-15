@@ -33,3 +33,7 @@ body {
     background-color: #6c757d;
     padding: 20px;
 }
+
+.bg-darker {
+    background-color: rgb(0,0,0,0.2);
+}
