@@ -1,24 +1,12 @@
+<h1 align=center> The Diplomat | Bar & Grill</h1>
+<img src="docs/image-am-i-responsive.PNG">
 
 Developer: **Arron Beale**
 
-## Introduction
-### **The Diplomat | Bar & Grill** 
-* (In Progress)
-
-
-
-
-
 Deployed: [The Diplomat | Bar & Grill](https://ci-pp4-the-diplomat.herokuapp.com/)
+(Note: Ctrl + click to open in a new tab)  
+  
 
-
-
-# Main features
-* Admin functionality -
-
-
-[Deployed Site](https://witch-kodefox.herokuapp.com/)  
-(Note: Ctrl + click to open in a new tab)    
 
 
 ## Table of Content
@@ -45,12 +33,14 @@ Deployed: [The Diplomat | Bar & Grill](https://ci-pp4-the-diplomat.herokuapp.com
 11. [Acknowledgements](#ackowledgements)
 
 ## Project Goals
+To Create a web app for a fictional local restaurant that has a booking system to allow users to book a table online.
 
 ### User Goals
-- 
-- 
-- 
-- 
+- To be able to book a table using an online booking system
+- To be able to view a food menu
+- To be able to view a drinks menu
+- To be able to edit, or cancel bookings
+- To be able to view all bookings made
 
 ### Site Owner Goals
 - 
