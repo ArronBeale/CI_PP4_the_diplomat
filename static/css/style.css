@@ -30,8 +30,12 @@ body {
 }
 
 .card {
-    background-color: #6c757d;
+    background-color: rgb(0,0,0,0.2);
     padding: 20px;
+}
+
+.booking-card {
+    color:#ced4da;
 }
 
 .bg-darker {

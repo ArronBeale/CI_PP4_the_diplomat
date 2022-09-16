@@ -8,7 +8,7 @@
         <div class="col-md-5">
             <div class="card-body">
                 <div class="row">
-                    <div class="col-12 p-5 bg-secondary rounded">
+                    <div class="col-12 p-5 bg-darker rounded booking-card">
                         <h1>Edit Booking</h1>
                         <form action="{% url 'edit_booking' booking.pk %}" method="POST" enctype="multipart/form-data">
                             {% csrf_token %}
