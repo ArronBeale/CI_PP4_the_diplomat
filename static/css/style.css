@@ -15,17 +15,17 @@ body {
     color: #ffff;
 }
 
-.active{
+.active {
     color: red;
     border-bottom: 3px solid rgb(255, 255, 255);
-  }
-
-  .grow { 
-    transition: all .2s ease-in-out; 
 }
 
-.grow:hover { 
-    transform: scale(1.1); 
+.grow {
+    transition: all .2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.1);
     /* color: #000000; */
 }
 
@@ -37,3 +37,4 @@ body {
 .bg-darker {
     background-color: rgb(0,0,0,0.2);
 }
+
