@@ -9,18 +9,12 @@
 
 {% block content %}
 <div class="container">
-  <div class="row">
-    <div class="col-md-8 mt-3 offset-md-2">
-
+  
+  <div class="row bg-darker mt-5 rounded booking-card">
+    <div class="col-md-4 offset-md-2 p-3 mb-5 mx-auto">
       <h1>{% trans "Login" %}</h1>
-
       <p>{% blocktrans %}If you have not created an account yet, then please
         <a href="{{ signup_url }}">register</a> first.{% endblocktrans %}</p>
-    </div>
-  </div>
-  <div class="row">
-    <div class="col-md-4 mt-3 offset-md-2">
-
       <form class="login" method="POST" action="{% url 'account_login' %}">
         {% csrf_token %}
         {{ form| crispy }}
