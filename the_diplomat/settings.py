@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'bar_and_grill',
     'bookings',
     'home',
+    'blog',
 ]
 
 SITE_ID = 1
