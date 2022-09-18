@@ -8,5 +8,5 @@ from . import views
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 urlpatterns = [
-    path('posts/', views.PublishedPosts.as_view(), name='posts'),
+    path('blog/', views.PublishedPosts.as_view(), name='blog'),
 ]
