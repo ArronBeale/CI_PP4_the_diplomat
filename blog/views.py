@@ -17,6 +17,7 @@ class PublishedPosts(generic.ListView):
 
     def get(self, request, *args, **kwargs):
         """
-
+        This view renders the blog page and also all published posts
         """
-        return render(request, 'blog/blog.html')
+        posts = Post.objects.all()
+        return render(request, 'blog/blog.html',  {'posts': posts})
