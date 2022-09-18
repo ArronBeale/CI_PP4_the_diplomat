@@ -2,6 +2,14 @@
 
 {% block content %}
 
-
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-12 mx-auto">
+            <h1>{{ post.title }}</h1>
+            <img src="{{ post.features_image.url }}" alt="">
+            <p>{{ post.content| safe }}</p>
+        </div>
+    </div>
+</div>
 
 {% endblock content %}
