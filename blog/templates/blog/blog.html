@@ -8,7 +8,7 @@
         <div class="row d-flex my-5 justify-content-center text-center">
             {% for post in posts %}
 
-            <div class="col-10 col-md-4 mt-4 grow">
+            <div class="col-md-4 m-5 grow bg-darker rounded">
                 {% if 'placeholder' in post.featured_image.url %}
                 <a href="{% url 'post_expand' post.slug %}"><img
                         src="https://images.pexels.com/photos/2403392/pexels-photo-2403392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"

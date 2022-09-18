@@ -35,7 +35,7 @@ class PostExpand(View):
             liked = True
 
         return render(
-            request, 'blog_expand.html',
+            request, 'blog/blog_expand.html',
             {'post': post,
              'comments': comments,
              'liked': liked},
