@@ -15,10 +15,11 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['ci-pp4-the-diplomat.herokuapp.com', 'localhost']
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-arronbeale-cipp4thedipl-15t64w2rnm3.ws-eu64.gitpod.io/', 'https://www.heroku.com/']
 
 # Application definition
 
