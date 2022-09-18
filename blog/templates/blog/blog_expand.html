@@ -1,15 +1,54 @@
 {% extends 'base.html' %}
 
 {% block content %}
+{% load crispy_forms_tags %}
 
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-12 mx-auto">
+        <div class="col-8 mx-auto">
             <h1>{{ post.title }}</h1>
             <img src="{{ post.features_image.url }}" alt="">
             <p>{{ post.content| safe }}</p>
         </div>
     </div>
+</div>
+
+<!-- Comments -->
+<div class="container-fluid">
+    <div class="row justify-content-center">
+        {% for comment in comments %}
+        <div class="col-8 mx-auto bg-darker rounded p-3 mt-3 mb-3">
+            <h6>{{ comment.name }}</h6>
+            <p>{{ comment.body | linebreaks }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+<!-- Add comment -->
+<div class="container-fluid">
+
+    {% if commented %}
+    <div class="alert alert-success" role="alert">
+        Comment is pending approval
+    </div>
+    {% else %}
+
+    {% if user.is_authenticated %}
+    <div class="row justify-content-center">
+        <div class="col-8 mx-auto">
+            <h4>Add a Comment</h4>
+            <p>Post as: {{ user.username }}</p>
+            <form method="POST">
+                {{ comment_form| crispy }}
+                {% csrf_token %}
+                <button type="submit" class="btn btn-success">Comment</button>
+            </form>
+        </div>
+    </div>
+    {% endif %}
+    {% endif %}
+
 </div>
 
 {% endblock content %}
