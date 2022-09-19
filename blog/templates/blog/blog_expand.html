@@ -3,11 +3,21 @@
 {% block content %}
 {% load crispy_forms_tags %}
 
+<!-- Blog Post -->
 <div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-md-10 mx-auto bg-darker mt-5">
+        <div class="col-md-8 mx-auto bg-darker mt-5 rounded p-3">
+            {% if 'placeholder' in post.featured_image.url %}
+                <a href="{% url 'post_expand' post.slug %}"><img
+                        src="https://images.pexels.com/photos/2403392/pexels-photo-2403392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                        class="card-img-top rounded" alt="A Chef cooking"></a>
+                {% else %}
+                <a href="{% url 'post_expand' post.slug %}"><img src="{{ post.featured_image.url }}" class="card-img-top rounded"
+                        alt="Post featured image"></a>
+                {% endif %}
             <h1>{{ post.title }}</h1>
             <p>{{ post.content| safe }}</p>
+            <p>{{ post.image.url }}</p>
         </div>
     </div>
 </div>
@@ -16,7 +26,7 @@
 <div class="container-fluid">
     <div class="row justify-content-center">
         {% for comment in comments %}
-        <div class="col-md-6 mx-auto bg-darker rounded p-3 mt-3 mb-3">
+        <div class="col-md-8 mx-auto bg-darker rounded p-3 mt-3 mb-3">
             <h6>{{ comment.name }}</h6>
             <p>{{ comment.body | linebreaks }}</p>
         </div>
@@ -35,7 +45,7 @@
 
     {% if user.is_authenticated %}
     <div class="row justify-content-center">
-        <div class="col-md-6 mx-auto mt-5">
+        <div class="col-md-8 mx-auto mt-5 p-3 bg-darker rounded">
             <h4>Add a Comment</h4>
             <p>Post as: {{ user.username }}</p>
             <form method="POST">
