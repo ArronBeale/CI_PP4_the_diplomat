@@ -31,16 +31,12 @@ class PostExpand(View):
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(
             approved=True).order_by('-created_date')
-        liked = False
-        if post.likes.filter(id=self.request.user.id).exists():
-            liked = True
 
         return render(
             request, 'blog/blog_expand.html',
             {'post': post,
              'comments': comments,
              'commented': False,
-             'liked': liked,
              'comment_form': CommentForm()
              }
         )
@@ -50,9 +46,6 @@ class PostExpand(View):
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(
             approved=True).order_by('-created_date')
-        liked = False
-        if post.likes.filter(id=self.request.user.id).exists():
-            liked = True
 
         comment_form = CommentForm(data=request.POST)
 
@@ -70,7 +63,6 @@ class PostExpand(View):
             {'post': post,
              'comments': comments,
              'commented': True,
-             'liked': liked,
              'comment_form': CommentForm()
              }
         )
