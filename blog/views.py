@@ -3,6 +3,7 @@
 # 3rd party:
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
+from django.core.paginator import Paginator
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Internal:
 from .models import Post
@@ -21,7 +22,12 @@ class PublishedPosts(generic.ListView):
         This view renders the blog page and also all published posts
         """
         posts = Post.objects.all()
-        return render(request, 'blog/blog.html',  {'posts': posts})
+        paginator = Paginator(Post.objects.all(), 4)
+        page = request.GET.get('page')
+        postings = paginator.get_page(page)
+
+        return render(
+            request, 'blog/blog.html',  {'posts': posts, 'postings': postings})
 
 
 class PostExpand(View):
