@@ -4,18 +4,18 @@
 
 <section>
     <div class="container">
-        <div class="row justify-content-center mt-3 bg-secondary">
-            <div class="col-md-5">
-                <div class="card-body bg-secondary">
+        <div class="row justify-content-center">
+            <div class="col-md-4 mt-5 mb-5 p-5 bg-darker rounded">
+                <div class="card-body">
                     <div class="row">
-                        <div class="col-12 p-5">
+                        
                         <h2>Booking Successful</h2><br>
                         <hr>
-                        <h3>We look forward to seeing you!</h3><br>
-                        <h4>Visit food menu, <a href="{% url 'food_menu' %}">click</a></h4>
-                        <h4>Visit drinks menu, <a href="{% url 'drink_menu' %}">click</a></h4><br>
-                        <h4>Return home, <a href="{% url 'home' %}">click</a></h4>
-                        </div>  
+                        <p>We look forward to seeing you!</p><br>
+                        <h5>Visit food menu, <a href="{% url 'food_menu' %}" class="booking-success-button">click</a></h5>
+                        <h5>Visit drinks menu, <a href="{% url 'drink_menu' %}" class="booking-success-button">click</a></h5><br>
+                        <h5>Return home, <a href="{% url 'home' %}" class="booking-success-button">click</a></h5>
+                         
                     </div>            
                 </div>
             </div>
