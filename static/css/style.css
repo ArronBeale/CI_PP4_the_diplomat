@@ -42,3 +42,6 @@ body {
     background-color: rgb(0,0,0,0.2);
 }
 
+.booking-success-button {
+    color:green
+}
