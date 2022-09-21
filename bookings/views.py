@@ -2,12 +2,12 @@
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
 from django.shortcuts import render, reverse, redirect, get_object_or_404
-from django.views import View
-from django.views import generic
+from django.views import generic, View
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic.edit import UpdateView
+from django.core.paginator import Paginator
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Internal:
 from .models import Table, Booking
@@ -16,7 +16,9 @@ from .forms import BookingForm
 
 
 def get_user_instance(request):
-    """ retrieves user details if logged in """
+    """
+    retrieves user details if logged in
+    """
 
     user_email = request.user.email
     user = User.objects.filter(email=user_email).first()
@@ -75,18 +77,32 @@ class Confirmed(generic.DetailView):
         return render(request, 'bookings/reservations.html')
 
 
-class BookingList(generic.DetailView):
+class BookingList(generic.ListView):
     """
     This view will display all the bookings
     a particular user has made
     """
+    model = Booking
+    queryset = Booking.objects.filter().order_by('-created_date')
     template_name = 'booking_list.html'
+    paginated_by = 4
 
     def get(self, request, *args, **kwargs):
+
+        booking = Booking.objects.all()
+        paginator = Paginator(Booking.objects.all(), 4)
+        page = request.GET.get('page')
+        booking_page = paginator.get_page(page)
+
         if request.user.is_authenticated:
             bookings = Booking.objects.filter(user=request.user)
             return render(
-                request, 'bookings/booking_list.html', {'bookings': bookings})
+                request,
+                'bookings/booking_list.html',
+                {
+                    'booking': booking,
+                    'bookings': bookings,
+                    'booking_page': booking_page})
         else:
             return redirect('accounts/login.html')
 

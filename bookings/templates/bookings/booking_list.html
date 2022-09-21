@@ -7,7 +7,7 @@
         
         <div class="row justify-content-center mt-3">
             <h2>My Bookings:</h2><hr>
-            {% for booking in bookings %}
+            {% for booking in booking_page %}
             <div class="col-md-5">
                 <div class="card mb-5">
                     <div class="card-body bg-darker grow booking-card">
@@ -24,6 +24,24 @@
             </div>
             {%endfor%}
         </div>
+    </div>
+    <!-- pagination -->
+    <div class="row d-flex my-5 justify-content-center text-center">
+
+        {% if booking_page.has_previous %}
+
+        <a href="?page=1">&laquo First</a>
+        <a href="?page={{ booking_page.previous_page_number }}">Previous</a>
+        
+        {% endif %}
+        Page {{ booking_page.number }} of {{booking_page.paginator.num_pages }}
+
+        {% if booking_page.has_next %}
+
+        <a href="?page={{ booking_page.next_page_number }}">Next</a>
+        <a href="?page={{ booking_page.paginator.num_pages }}">Last &raquo</a>
+
+        {% endif %}
     </div>
 </section>
 
