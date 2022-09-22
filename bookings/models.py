@@ -80,6 +80,7 @@ class Booking(models.Model):
 
     class Meta:
         ordering = ['-requested_time']
+        unique_together = ('requested_date', 'requested_time', 'table')
 
     def __str__(self):
         return self.status
