@@ -36,7 +36,9 @@
                     <img src="{% static 'images/image-book.jpg' %}" class="card-img-top rounded"
                         alt="Image of a table setting">
             </a>
-            <a href="{% url 'reservations' %}"><h5>Book a Table</h5></a>
+            <div class="row mt-3 mb-3">
+                <a href="{% url 'reservations' %}"><h5>Book a Table</h5></a>
+            </div>
         </div>
     </div>
     <div class="col-10 col-md-4 mt-4 grow">
@@ -44,7 +46,9 @@
             <div class="card shadow">
                 <img src="{% static 'images/image-food-menu2.jpg' %}" class="card-img-top rounded" alt="Image of food">
         </a>
-        <a href="{% url 'food_menu' %}"><h5>Food Menu</h5></a>
+        <div class="row mt-3 mb-3">
+            <a href="{% url 'food_menu' %}"><h5>Food Menu</h5></a>
+        </div>
     </div>
     </div>
     <div class="col-10 col-md-4 mt-4 grow">
@@ -53,7 +57,9 @@
                 <img src="{% static 'images/image-drinks-menu2.jpg' %}" class="card-img-top rounded"
                     alt="Image of a glass of whiskey">
         </a>
-        <a href="{% url 'drink_menu' %}"><h5>Drinks Menu</h5></a>
+        <div class="row mt-3 mb-3">
+            <a href="{% url 'drink_menu' %}"><h5>Drinks Menu</h5></a>
+        </div>
     </div>
 </section>
 <div class="container-fluid">
