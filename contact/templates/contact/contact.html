@@ -20,7 +20,7 @@
                         {% if user.is_authenticated %}
                         <div class="row text-center">
                             <div class="col-12">
-                                <h5 class="fw-bold mt-3">Contact Us</h5>
+                                <h5 class="fw-bold mt-3">Contact Us</h5><hr>
                             </div>
                         </div>
                         <form action="" method="POST" enctype="multipart/form-data">
@@ -36,17 +36,41 @@
                         {% if contact_form.errors %}
                         {% for field in contact_form %}
                         {% for error in field.errors %}
-                            <div class="alert alert-danger">
-                                <strong>{{ error|escape }}</strong>
-                            </div>
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
                         {% endfor %}
                         {% endfor %}
                         {% for error in contact_form.non_field_errors %}
-                            <div class="alert alert-danger">
-                                <strong>{{ error|escape }}</strong>
-                            </div>
+                        <div class="alert alert-danger">
+                            <strong>{{ error|escape }}</strong>
+                        </div>
                         {% endfor %}
                         {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-6 mt-5 mb-5 p-3 bg-darker rounded">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col">
+                        <h4>The Diplomat Bar & Grill</h4><hr>
+                        <p>2 Hanover Quay</p>
+                        <p>Grand Canal Dock</p>
+                        <p>Dulin 2</p>
+                        <p>thediplomat@thediplomat.com</p>
+                        <p>+353 (0)1 123456</p>
+                    </div>
+                    <div class="col-12 rounded booking-card map-responsive">
+                        <!-- Google map -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d595.5022273167485!2d-6.237289195626026!3d53.34396607819371!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670eed1b7edb89%3A0xda122b4946e3de07!2s2%20Hanover%20Quay%2C%20Grand%20Canal%20Dock%2C%20Dublin!5e0!3m2!1sen!2sie!4v1664035777040!5m2!1sen!2sie"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
             </div>
