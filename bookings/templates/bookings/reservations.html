@@ -9,16 +9,13 @@
             <div class="card-body">
                 <div class="row">
                     <div class="col-12 p-5 bg-darker rounded booking-card">
-
                         <!-- Display if user is not logged in -->
                         {% if not user.is_authenticated %}
-
                         <h3>Login Required</h3>
                         <p>Please login to book a table</p>
-                        <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login Page</a></button>
-
+                        <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
+                                Page</a></button>
                         {% else %}
-
                         <!-- Display form if user is logged in-->
                         {% if user.is_authenticated %}
                         <div class="row text-center">
@@ -28,13 +25,27 @@
                         </div>
                         <form action="" method="POST" enctype="multipart/form-data">
                             {% csrf_token %}
-
                             <!-- booking form -->
                             {{ booking_form| crispy }}
 
                             <button class="btn btn-success" type="submit">Submit</button>
                         </form>
                         {% endif %}
+                        {% endif %}
+                        <!-- Form Errors -->
+                        {% if booking_form.errors %}
+                        {% for field in booking_form %}
+                        {% for error in field.errors %}
+                            <div class="alert alert-danger">
+                                <strong>{{ error|escape }}</strong>
+                            </div>
+                        {% endfor %}
+                        {% endfor %}
+                        {% for error in booking_form.non_field_errors %}
+                            <div class="alert alert-danger">
+                                <strong>{{ error|escape }}</strong>
+                            </div>
+                        {% endfor %}
                         {% endif %}
                     </div>
                 </div>
