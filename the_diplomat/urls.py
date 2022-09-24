@@ -14,6 +14,6 @@ urlpatterns = [
     path('', include('bar_and_grill.urls')),
     path('', include('bookings.urls')),
     path('accounts/', include('allauth.urls')),
-    path('', include('blog.urls')),
     path('', include('contact.urls')),
+    path('', include('blog.urls')),
 ]

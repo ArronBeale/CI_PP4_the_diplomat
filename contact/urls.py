@@ -7,7 +7,6 @@ from contact import views
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 urlpatterns = [
-    path('contact/', views.Contact.as_view(), name='contact'),
-    # path('sent/', views.Confirmed.as_view(), name='sent'),
-
+    path('contact/', views.ContactMessage.as_view(), name='contact'),
+    
 ]
