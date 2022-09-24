@@ -15,7 +15,17 @@ from .forms import ContactForm
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-class Contact(View):
+def get_user_instance(request):
+    """
+    retrieves user details if logged in
+    """
+
+    user_email = request.user.email
+    user = User.objects.filter(email=user_email).first()
+    return user
+
+
+class ContactMessage(View):
     """
     This view displays the contact form and if the user
     is registered and inserts the user email into the
@@ -49,7 +59,7 @@ class Contact(View):
             contact.save()
             messages.success(
                 request, "Message has been sent")
-            return render(request, 'contact/contact.html')
+            return render(request, 'contact/received.html')
 
         return render(request, 'contact/contact.html',
                       {'contact_form': contact_form})

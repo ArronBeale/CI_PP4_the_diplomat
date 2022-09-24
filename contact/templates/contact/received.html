@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-4 mt-5 mb-5 p-5 bg-darker rounded">
+                <div class="card-body">
+                    <div class="row">
+                        
+                        <h2>Message Received</h2><br>
+                        <hr>
+                        <p>We will get back to you soon!</p><br>
+                        <h5>Return home, <a href="{% url 'home' %}" class="booking-success-button">click</a></h5>
+                         
+                    </div>            
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{%endblock%}

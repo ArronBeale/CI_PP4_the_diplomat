@@ -1,6 +1,3 @@
-from django.db import models
-
-# Create your models here.
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
@@ -21,7 +18,6 @@ class Contact(models.Model):
     name = models.CharField(max_length=50, null=True)
     email = models.EmailField(max_length=254, default="")
     phone = PhoneNumberField(null=True)
-    created_date = models.DateTimeField(blank=True)
     message = models.TextField()
 
     class Meta:
