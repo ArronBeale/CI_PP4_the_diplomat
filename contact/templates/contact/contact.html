@@ -4,15 +4,15 @@
 {% block content %}
 
 <div class="container">
-    <div class="row justify-content-center mt-3">
+    <div class="row justify-content-center mt-5">
         <div class="col-md-6">
             <div class="card-body">
                 <div class="row">
                     <div class="col-12 p-5 bg-darker rounded booking-card">
                         <!-- Display if user is not logged in -->
                         {% if not user.is_authenticated %}
-                        <h3>Login Required</h3>
-                        <p>Please login to book a table</p>
+                        <h3>Message Us</h3>
+                        <p>Please login to slide into our DM's!</p>
                         <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
                                 Page</a></button>
                         {% else %}
@@ -53,7 +53,7 @@
         </div>
     </div>
     <div class="row justify-content-center mt-3">
-        <div class="col-md-6 mt-5 mb-5 p-3 bg-darker rounded">
+        <div class="col-md-6 mt-5 mb-5 p-5 bg-darker rounded">
             <div class="card-body">
                 <div class="row">
                     <div class="col">
@@ -62,7 +62,10 @@
                         <p>Grand Canal Dock</p>
                         <p>Dulin 2</p>
                         <p>thediplomat@thediplomat.com</p>
-                        <p>+353 (0)1 123456</p>
+                        <p>+353 (0)1 123456</p><hr>
+                        <p><em><h6>Opening Hours:</h6></em></p>
+                        <p><em>Mon - Thurs: 10:00 - 00:30</em></p>
+                        <p><em>Fri - Sun: 10:00 - 02:00</em></p>
                     </div>
                     <div class="col-12 rounded booking-card map-responsive">
                         <!-- Google map -->
