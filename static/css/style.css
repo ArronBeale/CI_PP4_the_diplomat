@@ -15,49 +15,43 @@ body {
     color: #ffff;
 }
 
-.active {
-    color: red;
-    border-bottom: 3px solid rgb(255, 255, 255);
-}
-
 .grow {
     transition: all .2s ease-in-out;
 }
 
 .grow:hover {
     transform: scale(1.1);
-    /* color: #000000; */
 }
 
 .card {
-    background-color: rgb(0,0,0,0.2);
+    background-color: rgb(0, 0, 0, 0.2);
     padding: 20px;
 }
 
 .booking-card {
-    color:#ced4da;
+    color: #ced4da;
 }
 
 .bg-darker {
-    background-color: rgb(0,0,0,0.2);
+    background-color: rgb(0, 0, 0, 0.2);
 }
 
 .booking-success-button {
-    color:green
+    color: green
 }
 
-.map-responsive{
+.map-responsive {
 
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-    overflow:hidden;
-    }
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    overflow: hidden;
+}
 
-    .map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-    }
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
