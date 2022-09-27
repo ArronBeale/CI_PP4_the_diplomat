@@ -9,7 +9,7 @@ from .models import FoodItem, DrinkItem
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-def foodMenu(request):
+def food_menu(request):
     """
     a view to display the food menu
     """
@@ -18,7 +18,7 @@ def foodMenu(request):
         request, 'bar_and_grill/food_menu.html', {'food_list': food_list})
 
 
-def drinkMenu(request):
+def drink_menu(request):
     """
     a view to display the drinks menu
     """

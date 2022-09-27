@@ -8,6 +8,6 @@ from bar_and_grill import views
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 urlpatterns = [
-    path('food_menu', views.foodMenu, name='food_menu'),
-    path('drink_menu', views.drinkMenu, name='drink_menu'),
+    path('food_menu', views.food_menu, name='food_menu'),
+    path('drink_menu', views.drink_menu, name='drink_menu'),
 ]
