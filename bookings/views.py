@@ -1,7 +1,7 @@
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
-from django.shortcuts import render, reverse, redirect, get_object_or_404
+from django.shortcuts import render, reverse, redirect
 from django.views import generic, View
 from django.contrib.auth.models import User
 from django.contrib import messages
@@ -10,7 +10,7 @@ from django.views.generic.edit import UpdateView
 from django.core.paginator import Paginator
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Internal:
-from .models import Table, Booking
+from .models import Booking
 from .forms import BookingForm
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
