@@ -1,0 +1,25 @@
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
+from django.test import SimpleTestCase
+from django.urls import reverse, resolve
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# Internal:
+from bookings.views import (Reservations, BookingList,
+                            Confirmed, EditBooking, cancel_booking)
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+
+class TestReservationsUrls(SimpleTestCase):
+    """
+    This class is for testing the bookings app
+    urls
+    """
+
+    def test_confirmed_resolved(self):
+        url = reverse('confirmed')
+        self.assertEquals(resolve(url).func.view_class, Confirmed)
+
+    def test_booking_list_resolved(self):
+        url = reverse('booking_list')
+        self.assertEquals(resolve(url).func.view_class, BookingList)
