@@ -72,7 +72,7 @@ class Confirmed(generic.DetailView):
     template_name = 'bookings/confirmed.html'
 
     def get(self, request):
-        return render(request, 'bookings/reservations.html')
+        return render(request, 'bookings/confirmed.html')
 
 
 class BookingList(generic.ListView):
