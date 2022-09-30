@@ -11,7 +11,6 @@
   <meta name="keywords"
     content="restaurant, bar, grill, table booking, food menu, drink menu, starters, mains, desserts, wine, beer, cocktails">
   <meta name="author" content="Arron Beale">
-
   <!-- favicon -->
   <link rel="icon" type="image/xicon" href="{% static 'favicon/favicon.ico' %}">
   <!-- Bootstrap 5 -->
@@ -26,7 +25,7 @@
   <!-- Navigation from Boostrap -->
   <nav class="navbar navbar-expand-sm navbar-dark bg-darker">
     <a class="navbar-brand" href="{% url 'home' %}">
-      <img src="{% static 'images/image-logo-200.png' %}" alt="Business logo">
+      <img src="{% static 'images/image-logo-200.png' %}" class="img-fluid" alt="Business logo">
     </a>
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
