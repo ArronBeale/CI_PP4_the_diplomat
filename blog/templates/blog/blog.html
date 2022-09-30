@@ -15,11 +15,11 @@
 
                 <a href="{% url 'post_expand' post.slug %}"><img
                         src="/static/images/image-blog-default-b.webp"
-                        class="card-img-top rounded" alt="A Chef cooking"></a>
+                        class="card-img-top rounded img-fluid" alt="A Chef cooking"></a>
 
                 {% else %}
                 <a href="{% url 'post_expand' post.slug %}"><img src="{{ post.featured_image.url }}"
-                        class="card-img-top rounded" alt="Post featured image"></a>
+                        class="card-img-top rounded img-fluid" alt="Post featured image"></a>
                 {% endif %}
 
                 <div class="card-body">
