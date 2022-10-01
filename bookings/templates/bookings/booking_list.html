@@ -6,6 +6,13 @@
     <div class="container">
         
         <div class="row justify-content-center mt-3">
+            <!-- Display if user is not logged in -->
+            {% if not user.is_authenticated %}
+            <h3>Message Us</h3>
+            <p>Please login to slide into our DM's!</p>
+            <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
+                    Page</a></button>
+            {% else %}
             <h2>My Bookings:</h2><hr>
             {% for booking in booking_page %}
             <div class="col-md-5">
@@ -22,7 +29,8 @@
                     </div>
                 </div>
             </div>
-            {%endfor%}
+            {% endfor %}
+            {% endif %}
         </div>
     </div>
     <!-- pagination -->

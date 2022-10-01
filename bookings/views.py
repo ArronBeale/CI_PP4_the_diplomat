@@ -88,7 +88,7 @@ class BookingList(generic.ListView):
     def get(self, request, *args, **kwargs):
 
         booking = Booking.objects.all()
-        paginator = Paginator(Booking.objects.all(), 4)
+        paginator = Paginator(Booking.objects.filter(user=request.user), 4)
         page = request.GET.get('page')
         booking_page = paginator.get_page(page)
 
