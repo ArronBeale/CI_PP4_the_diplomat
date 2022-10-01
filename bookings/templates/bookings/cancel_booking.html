@@ -18,7 +18,7 @@
                         <p class="card-text">Table: {{booking.table}}</p>
                         <form method="POST">
                             {% csrf_token %}
-                            <a><button class="btn btn-danger" type="submit">YES</button></a>
+                            <button class="btn btn-danger" type="submit">YES</button>
                             <a href="{% url 'booking_list' %}" class="btn btn-secondary">Return</a>
                         </form>
                     </div>

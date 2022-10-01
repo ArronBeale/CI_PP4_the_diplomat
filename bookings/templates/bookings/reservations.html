@@ -23,7 +23,7 @@
                                 <h5 class="fw-bold mt-3">Your Booking</h5>
                             </div>
                         </div>
-                        <form action="" method="POST" enctype="multipart/form-data">
+                        <form method="POST" enctype="multipart/form-data">
                             {% csrf_token %}
                             <!-- booking form -->
                             {{ booking_form| crispy }}

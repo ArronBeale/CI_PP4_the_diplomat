@@ -15,7 +15,7 @@
             {% for drink in drink_list %}
             {% if drink.drink_type == 0 and drink.available == 1 %}
             <h5>{{ drink.drink_name }}</h5>
-            <p><em>{{ drink.description | safe }} €{{ drink.price }}</em></p>
+            {{ drink.description | safe }} €{{ drink.price }}
 
             {% endif %}
             {% endfor %}
@@ -29,7 +29,7 @@
             {% for drink in drink_list %}
             {% if drink.drink_type == 1 and drink.available == 1 %}
             <h5>{{ drink.drink_name }}</h5>
-            <p><em>{{ drink.description | safe }} €{{ drink.price }}</em></p>
+            {{ drink.description | safe }} €{{ drink.price }}
 
             {% endif %}
             {% endfor %}
@@ -43,13 +43,12 @@
             {% for drink in drink_list %}
             {% if drink.drink_type == 2 and drink.available == 1 %}
             <h5>{{ drink.drink_name }}</h5>
-            <p><em>{{ drink.description | safe }} €{{ drink.price }}</em></p>
+            {{ drink.description | safe }} €{{ drink.price }}
 
             {% endif %}
             {% endfor %}
 
         </div>
-    </div>
     </div>
 </div>
 
