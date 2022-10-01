@@ -110,6 +110,11 @@ To Create a web app for a fictional local restaurant that has a booking system t
    
 ## Technologies Used
 
+### AI
+- [Blog Text Generation](https://inferkit.com/docs/generation)
+- [Image Generation](https://openai.com/dall-e-2/)
+  
+  
 ### Languages
 - [Python](https://www.python.org/)
 - [Javascript](https://www.javascript.com/)
