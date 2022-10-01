@@ -15,8 +15,9 @@
             <hr><h4>Starters</h4><hr>
             {% for food in food_list %}
             {% if food.food_type == 0 and food.available == 1 %}
-            <h5>{{ food.food_name }}</h5>
+            <br><h5>{{ food.food_name }}</h5>
             {{ food.description | safe }} €{{ food.price }}
+            <br>
 
             {% endif %}
             {% endfor %}
@@ -30,8 +31,9 @@
             <hr><h4>Mains</h4><hr>
             {% for food in food_list %}
             {% if food.food_type == 1 and food.available == 1 %}
-            <h5>{{ food.food_name }}</h5>
+            <br><h5>{{ food.food_name }}</h5>
             {{ food.description | safe }} €{{ food.price }}
+            <br>
 
             {% endif %}
             {% endfor %}
@@ -45,8 +47,9 @@
             <hr><h4>Desserts</h4><hr>
             {% for food in food_list %}
             {% if food.food_type == 2 and food.available == 1 %}
-            <h5>{{ food.food_name }}</h5>
+            <br><h5>{{ food.food_name }}</h5>
             {{ food.description | safe }} €{{ food.price }}
+            <br>
             
             {% endif %}
             {% endfor %}

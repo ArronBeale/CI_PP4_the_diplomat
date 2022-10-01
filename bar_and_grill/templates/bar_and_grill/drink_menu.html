@@ -14,8 +14,9 @@
             <hr><h4>Wines</h4><hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 0 and drink.available == 1 %}
-            <h5>{{ drink.drink_name }}</h5>
+            <br><h5>{{ drink.drink_name }}</h5>
             {{ drink.description | safe }} €{{ drink.price }}
+            <br>
 
             {% endif %}
             {% endfor %}
@@ -28,8 +29,9 @@
             <hr><h4>Beers</h4><hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 1 and drink.available == 1 %}
-            <h5>{{ drink.drink_name }}</h5>
+            <br><h5>{{ drink.drink_name }}</h5>
             {{ drink.description | safe }} €{{ drink.price }}
+            <br>
 
             {% endif %}
             {% endfor %}
@@ -42,8 +44,9 @@
             <hr><h4>Cocktails</h4><hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 2 and drink.available == 1 %}
-            <h5>{{ drink.drink_name }}</h5>
+            <br><h5>{{ drink.drink_name }}</h5>
             {{ drink.description | safe }} €{{ drink.price }}
+            <br>
 
             {% endif %}
             {% endfor %}
