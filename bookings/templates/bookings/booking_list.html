@@ -24,8 +24,14 @@
                         <h6 class="card-subtitle mb-2">Booking status: {{ booking.status }}.</h6>
                         <p class="card-text">No. of Guests: {{ booking.guest_count }}.</p>
                         <p class="card-text">Table: {{booking.table}}</p>
+                        <!-- If booking is expired edit and cancel button will be replaced with an expired button -->
+                        {% if booking.status == 'booking expired' %}
+                        <a href="#" class="btn btn-danger">Expired</a>
+                        {% else %}
                         <a href="{% url 'edit_booking' booking.pk %}" class="btn btn-success">Edit</a>
                         <a href="{% url 'cancel_booking' booking.pk %}" class="btn btn-danger">Cancel</a>
+                        {% endif %}
+
                     </div>
                 </div>
             </div>
