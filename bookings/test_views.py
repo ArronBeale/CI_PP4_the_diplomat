@@ -26,9 +26,3 @@ class TestBookingsViews(TestCase):
 
         self.assertEqual(response.status_code, 200)
         self.assertTemplateUsed(response, 'bookings/confirmed.html')
-
-    # def test_edit_booking_GET(self):
-    #     response = self.client.get(self.edit_booking_url)
-
-    #     self.assertEqual(response.status_code, 200)
-    #     self.assertTemplateUsed(response, 'bookings/edit_booking.html')
