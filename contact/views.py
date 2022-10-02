@@ -1,20 +1,17 @@
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
-from django.shortcuts import render, reverse, redirect, get_object_or_404
-from django.views import generic, View
+from django.shortcuts import render
+from django.views import View
 from django.contrib.auth.models import User
 from django.contrib import messages
-from django.contrib.messages.views import SuccessMessageMixin
-from django.views.generic.edit import UpdateView
-from django.core.paginator import Paginator
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Internal:
-from .models import Contact
 from .forms import ContactForm
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+# This will get the user information
 def get_user_instance(request):
     """
     retrieves user details if logged in
@@ -25,6 +22,8 @@ def get_user_instance(request):
     return user
 
 
+# Displays the contact form for the user, autofills their email,
+# checks all data is valid before saving it
 class ContactMessage(View):
     """
     This view displays the contact form and if the user

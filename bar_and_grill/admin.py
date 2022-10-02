@@ -9,6 +9,8 @@ from .models import FoodItem, DrinkItem
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+# Registration of the food items for the admin panel,
+# display and search filters
 @admin.register(FoodItem)
 class FoodAdmin(SummernoteModelAdmin):
     list_display = ('food_name', 'food_type', 'price', 'available')
@@ -17,6 +19,8 @@ class FoodAdmin(SummernoteModelAdmin):
     summernote_fields = ('description')
 
 
+# Registration of the drinks items for the admin panel,
+# display and search filters
 @admin.register(DrinkItem)
 class DrinkAdmin(SummernoteModelAdmin):
     list_display = ('drink_name', 'drink_type', 'price', 'available')

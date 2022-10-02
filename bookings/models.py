@@ -32,6 +32,7 @@ status_options = (
 )
 
 
+# The table model for the database
 class Table(models.Model):
     """
     a class for the Table model
@@ -48,6 +49,7 @@ class Table(models.Model):
         return self.table_name
 
 
+# The booking model for the database
 class Booking(models.Model):
     """
     a class for the Booking model

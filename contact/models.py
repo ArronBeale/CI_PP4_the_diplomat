@@ -7,6 +7,7 @@ from django.contrib.auth.models import User
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+# Model for the contact item in the database
 class Contact(models.Model):
     """
     a class for the Contact model

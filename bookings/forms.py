@@ -11,6 +11,7 @@ from .models import Booking
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+# The booking form users will use to book a table
 class BookingForm(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):

@@ -9,6 +9,7 @@ from .models import Contact
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+# Registraion of the users contact information in the admin panel
 @admin.register(Contact)
 class ContactAdmin(admin.ModelAdmin):
     list_filter = (

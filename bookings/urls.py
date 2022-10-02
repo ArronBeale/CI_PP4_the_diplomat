@@ -6,6 +6,7 @@ from django.urls import path
 from bookings import views
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+# Urls for all the pages in the bookings app
 urlpatterns = [
     path('reservations', views.Reservations.as_view(), name='reservations'),
     path('confirmed', views.Confirmed.as_view(), name='confirmed'),

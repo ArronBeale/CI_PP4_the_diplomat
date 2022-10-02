@@ -9,11 +9,13 @@ from .models import Table, Booking
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+# Registration of tables to display in the admin panel
 @admin.register(Table)
 class TableAdmin(admin.ModelAdmin):
     list_display = ('table_id', 'table_name', 'max_seats')
 
 
+# Registration of bookings to display in the admin panel
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
     list_filter = (

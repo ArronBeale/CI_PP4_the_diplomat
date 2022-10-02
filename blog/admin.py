@@ -9,6 +9,8 @@ from .models import Post, Comment
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
+# Registration of the post items for the admin panel,
+# display and search filters
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
 
@@ -19,6 +21,8 @@ class PostAdmin(SummernoteModelAdmin):
     search_fields = ['title', 'content']
 
 
+# Registration of the comment items for the admin panel,
+# display, search filters and actions
 @admin.register(Comment)
 class CommentAdmin(admin.ModelAdmin):
 
