@@ -20,16 +20,16 @@
 
                 <a href="{% url 'post_expand' post.slug %}"><img
                         src="/static/images/image-blog-default-b.webp"
-                        class="card-img-top rounded img-fluid" alt="A Chef cooking"></a>
+                        class="card-img-top rounded img-fluid" alt="default blog post photo"></a>
 
                 {% else %}
                 <a href="{% url 'post_expand' post.slug %}"><img src="{{ post.featured_image.url }}"
-                        class="card-img-top rounded img-fluid" alt="A photo for the post"></a>
+                        class="card-img-top rounded img-fluid" alt="blog post photo"></a>
                 {% endif %}
 
                 <div class="card-body">
                     <a href="{% url 'post_expand' post.slug %}" class="post-link">
-                        <h5 class="card-title mt-3">{{ post.title }}</h5>
+                        <h2 class="card-title mt-3">{{ post.title }}</h2>
                     </a>
                     <h6 class="card-subtitle mb-2 text-muted">By: {{ post.author }}</h6>
                     <a href="{% url 'post_expand' post.slug %}" class="post-link">

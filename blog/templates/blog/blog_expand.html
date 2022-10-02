@@ -3,6 +3,12 @@
 {% block content %}
 {% load crispy_forms_tags %}
 
+<div class="container-fluid mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-8 mt-5 mb-5">
+            <h1 class="text-center">Featured Blog Post</h1><hr>
+        </div>
+    </div>
 <!-- Blog Post -->
 <div class="container-fluid">
     <div class="row justify-content-center">
@@ -15,7 +21,7 @@
                 <a href="{% url 'post_expand' post.slug %}"><img src="{{ post.featured_image.url }}" class="card-img-top rounded"
                         alt="Post featured image"></a>
                 {% endif %}
-            <h1>{{ post.title }}</h1>
+            <h2>{{ post.title }}</h2>
             {{ post.content| safe }}
             {{ post.image.url }}
         </div>
