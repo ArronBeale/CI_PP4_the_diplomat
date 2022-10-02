@@ -8,17 +8,16 @@
         <div class="row justify-content-center mt-3">
             <!-- Display if user is not logged in -->
             {% if not user.is_authenticated %}
-            <h3>Message Us</h3>
-            <p>Please login to slide into our DM's!</p>
+            <p>Please login</p>
             <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
                     Page</a></button>
             {% else %}
-            <h2>My Bookings:</h2><hr>
+            <h1>My Bookings:</h1><hr>
             {% for booking in booking_page %}
             <div class="col-md-5">
                 <div class="card mb-5">
                     <div class="card-body bg-darker grow booking-card">
-                        <h5 class="card-title">{{ booking.name }}</h5>
+                        <h2 class="card-title">{{ booking.name }}</h2>
                         <h6 class="card-subtitle mb-2 text-muted">{{ booking.requested_date }} at
                             {{ booking.requested_time }}</h6><br>
                         <h6 class="card-subtitle mb-2">Booking status: {{ booking.status }}.</h6>
