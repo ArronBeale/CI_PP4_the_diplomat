@@ -8,11 +8,18 @@
 {% block head_title %}{% trans "Sign In" %}{% endblock %}
 
 {% block content %}
+
+<div class="container-fluid mt-5">
+  <div class="row d-flex justify-content-center">
+      <div class="col-sm-8 mt-5 mb-5">
+          <h1 class="text-center">Please Log In</h1><hr>
+      </div>
+  </div>
 <div class="container">
   
   <div class="row bg-darker mt-5 rounded booking-card">
     <div class="col-md-4 offset-md-2 p-3 mb-5 mx-auto">
-      <h1>{% trans "Login" %}</h1>
+      <h2>{% trans "Login" %}</h2>
       <p>{% blocktrans %}If you have not created an account yet, then please
         <a href="{{ signup_url }}">register</a> first.{% endblocktrans %}</p>
       <form class="login" method="POST" action="{% url 'account_login' %}">
