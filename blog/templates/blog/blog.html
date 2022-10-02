@@ -3,6 +3,11 @@
 {% block content %}
 
 <div class="container-fluid mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-8 mt-5 mb-5">
+            <h1 class="text-center">Blog</h1>
+        </div>
+    </div>
     <!-- cards -->
     <section class="container">
         <div class="row d-flex my-5 justify-content-center text-center">
@@ -19,7 +24,7 @@
 
                 {% else %}
                 <a href="{% url 'post_expand' post.slug %}"><img src="{{ post.featured_image.url }}"
-                        class="card-img-top rounded img-fluid" alt="Post featured image"></a>
+                        class="card-img-top rounded img-fluid" alt="A photo for the post"></a>
                 {% endif %}
 
                 <div class="card-body">

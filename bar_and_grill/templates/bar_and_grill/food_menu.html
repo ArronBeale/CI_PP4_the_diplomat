@@ -5,17 +5,17 @@
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
         <div class="col-sm-8 mt-5 mb-5">
-            <h2 class="text-center">Food Menu</h2>
+            <h1 class="text-center">Food Menu</h1>
         </div>
     </div>
     <div class="row justify-content-center">
 
         <!-- Starter Food Items-->
         <div class="col-sm-8">
-            <hr><h4>Starters</h4><hr>
+            <hr><h2>Starters</h2><hr>
             {% for food in food_list %}
             {% if food.food_type == 0 and food.available == 1 %}
-            <br><h5>{{ food.food_name }}</h5>
+            <br><h3>{{ food.food_name }}</h3>
             {{ food.description | safe }} €{{ food.price }}
             <br>
 
@@ -28,10 +28,10 @@
 
         <!-- Main Course Food Items-->
         <div class="col-sm-8">
-            <hr><h4>Mains</h4><hr>
+            <hr><h2>Mains</h2><hr>
             {% for food in food_list %}
             {% if food.food_type == 1 and food.available == 1 %}
-            <br><h5>{{ food.food_name }}</h5>
+            <br><h3>{{ food.food_name }}</h3>
             {{ food.description | safe }} €{{ food.price }}
             <br>
 
@@ -44,10 +44,10 @@
 
         <!-- Dessert Food Items-->
         <div class="col-sm-8">
-            <hr><h4>Desserts</h4><hr>
+            <hr><h2>Desserts</h2><hr>
             {% for food in food_list %}
             {% if food.food_type == 2 and food.available == 1 %}
-            <br><h5>{{ food.food_name }}</h5>
+            <br><h3>{{ food.food_name }}</h3>
             {{ food.description | safe }} €{{ food.price }}
             <br>
             

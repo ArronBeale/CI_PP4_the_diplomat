@@ -5,16 +5,16 @@
 <div class="container-fluid">
     <div class="row d-flex justify-content-center">
         <div class="col-sm-8 mt-5 mb-5">
-            <h2 class="text-center">Drinks Menu</h2>
+            <h1 class="text-center">Drinks Menu</h1>
         </div>
     </div>
     <div class="row justify-content-center">
         <!-- Wines Drink Items-->
         <div class="col-sm-8">
-            <hr><h4>Wines</h4><hr>
+            <hr><h2>Wines</h2><hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 0 and drink.available == 1 %}
-            <br><h5>{{ drink.drink_name }}</h5>
+            <br><h3>{{ drink.drink_name }}</h3>
             {{ drink.description | safe }} €{{ drink.price }}
             <br>
 
@@ -26,10 +26,10 @@
     <div class="row justify-content-center">
         <!-- Beers Drink Items-->
         <div class="col-sm-8">
-            <hr><h4>Beers</h4><hr>
+            <hr><h2>Beers</h2><hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 1 and drink.available == 1 %}
-            <br><h5>{{ drink.drink_name }}</h5>
+            <br><h3>{{ drink.drink_name }}</h3>
             {{ drink.description | safe }} €{{ drink.price }}
             <br>
 
@@ -41,10 +41,10 @@
     <div class="row justify-content-center">
         <!-- Cocktails Drink Items-->
         <div class="col-sm-8">
-            <hr><h4>Cocktails</h4><hr>
+            <hr><h2>Cocktails</h2><hr>
             {% for drink in drink_list %}
             {% if drink.drink_type == 2 and drink.available == 1 %}
-            <br><h5>{{ drink.drink_name }}</h5>
+            <br><h3>{{ drink.drink_name }}</h3>
             {{ drink.description | safe }} €{{ drink.price }}
             <br>
 
