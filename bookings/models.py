@@ -33,13 +33,18 @@ status_options = (
 
 
 # The table model for the database
+
+
 class Table(models.Model):
     """
     a class for the Table model
     """
     table_id = models.AutoField(primary_key=True)
     table_name = models.CharField(
-        max_length=50, default='New Table', unique=True)
+        max_length=50,
+        default='New Table',
+        unique=True
+        )
     max_seats = models.PositiveIntegerField(default=2)
 
     class Meta:
@@ -50,6 +55,8 @@ class Table(models.Model):
 
 
 # The booking model for the database
+
+
 class Booking(models.Model):
     """
     a class for the Booking model
@@ -58,18 +65,32 @@ class Booking(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)
     requested_date = models.DateField()
     requested_time = models.CharField(
-        max_length=25, choices=time_slots, default='17:00')
+        max_length=25,
+        choices=time_slots,
+        default='17:00'
+        )
     table = models.ForeignKey(
-        Table, on_delete=models.CASCADE, related_name="table_reserved",
-        null=True)
+        Table,
+        on_delete=models.CASCADE,
+        related_name="table_reserved",
+        null=True
+        )
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="user", null=True)
-    name = models.CharField(max_length=50, null=True)
-    email = models.EmailField(max_length=254, default="")
+    name = models.CharField(
+        max_length=50,
+        null=True
+        )
+    email = models.EmailField(
+        max_length=254,
+        default=""
+        )
     phone = PhoneNumberField(null=True)
     status = models.CharField(
-        max_length=25, choices=status_options,
-        default='awaiting confirmation')
+        max_length=25,
+        choices=status_options,
+        default='awaiting confirmation'
+        )
     seats = (
         (1, "1 Guest"),
         (2, "2 Guests"),

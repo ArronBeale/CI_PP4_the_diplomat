@@ -12,16 +12,30 @@ STATUS = ((0, 'Draft'), (1, 'Posted'))
 
 
 # Model for posts in the blog
+
+
 class Post(models.Model):
-    title = models.CharField(max_length=200, unique=True)
-    slug = models.SlugField(max_length=200, unique=True)
+    title = models.CharField(
+        max_length=200,
+        unique=True
+        )
+    slug = models.SlugField(
+        max_length=200,
+        unique=True
+        )
     post_id = models.AutoField(primary_key=True)
     author = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name='blog_posts')
+        User,
+        on_delete=models.CASCADE,
+        related_name='blog_posts'
+        )
     created_date = models.DateTimeField(blank=True)
     updated_date = models.DateTimeField()
     content = models.TextField()
-    featured_image = CloudinaryField('image', default='placeholder')
+    featured_image = CloudinaryField(
+        'image',
+        default='placeholder'
+        )
     excerpt = models.TextField(blank=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
@@ -36,6 +50,8 @@ class Post(models.Model):
 
 
 # Model for comments in the blog
+
+
 class Comment(models.Model):
     post = models.ForeignKey(
         Post, on_delete=models.CASCADE, related_name='comments')
