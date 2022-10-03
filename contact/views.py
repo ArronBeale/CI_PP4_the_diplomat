@@ -12,6 +12,8 @@ from .forms import ContactForm
 
 
 # This will get the user information
+
+
 def get_user_instance(request):
     """
     retrieves user details if logged in
@@ -24,6 +26,8 @@ def get_user_instance(request):
 
 # Displays the contact form for the user, autofills their email,
 # checks all data is valid before saving it
+
+
 class ContactMessage(View):
     """
     This view displays the contact form and if the user

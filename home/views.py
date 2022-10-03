@@ -8,6 +8,8 @@ from django.shortcuts import render
 
 
 # Displays the home page
+
+
 def home(request):
     """
     a view to display the homepage

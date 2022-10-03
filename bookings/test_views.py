@@ -9,6 +9,8 @@ from django.urls import reverse
 
 
 # test that the correct views are used when requested
+
+
 class TestBookingsViews(TestCase):
     def setUp(self):
         self.client = Client()

@@ -11,6 +11,8 @@ from bookings.views import (Reservations, BookingList,
 
 
 # Test that all the correct urls are used when requested
+
+
 class TestReservationsUrls(SimpleTestCase):
     """
     This class is for testing the bookings app

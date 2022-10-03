@@ -17,6 +17,7 @@ from .forms import BookingForm
 
 
 # This will get the user information if they are logged in
+
 def get_user_instance(request):
     """
     retrieves user details if logged in
@@ -29,6 +30,8 @@ def get_user_instance(request):
 
 # Display the booking form and auto fill users email,
 # if user is did not provide email it will stay empty
+
+
 class Reservations(View):
     """
     This view displays the booking form if the user
@@ -70,6 +73,8 @@ class Reservations(View):
 
 
 # Dispays the confirmation page upon a succesful booking
+
+
 class Confirmed(generic.DetailView):
     """
     This view will display confirmation on a successful booking
@@ -84,6 +89,8 @@ class Confirmed(generic.DetailView):
 # bookings older than today will be expired and the
 # user will not be able to edit or cancel them once
 # expired
+
+
 class BookingList(generic.ListView):
     """
     This view will display all the bookings
@@ -121,6 +128,8 @@ class BookingList(generic.ListView):
 
 # Displays the edit booking page and form so the user
 # can then change any detail of the booking and update it
+
+
 class EditBooking(SuccessMessageMixin, UpdateView):
     """
     This view will display the booking by it's primary key
@@ -136,6 +145,7 @@ class EditBooking(SuccessMessageMixin, UpdateView):
 
 
 # Deletes the selected booking the user wishes to cancel
+
 def cancel_booking(request, pk):
     """
     Deletes the booking identified by it's primary key by the user
