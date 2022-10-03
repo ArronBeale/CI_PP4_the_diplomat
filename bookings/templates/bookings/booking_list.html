@@ -18,9 +18,9 @@
                 <div class="card mb-5">
                     <div class="card-body bg-darker grow booking-card">
                         <h2 class="card-title">{{ booking.name }}</h2>
-                        <h6 class="card-subtitle mb-2 text-muted">{{ booking.requested_date }} at
-                            {{ booking.requested_time }}</h6><br>
-                        <h6 class="card-subtitle mb-2">Booking status: {{ booking.status }}.</h6>
+                        <p class="card-subtitle mb-2 text-muted">{{ booking.requested_date }} at
+                            {{ booking.requested_time }}</p><br>
+                        <p class="card-subtitle mb-2">Booking status: {{ booking.status }}.</p>
                         <p class="card-text">No. of Guests: {{ booking.guest_count }}.</p>
                         <p class="card-text">Table: {{booking.table}}</p>
                         <!-- If booking is expired edit and cancel button will be replaced with an expired button -->

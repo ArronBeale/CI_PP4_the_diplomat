@@ -17,7 +17,7 @@
                     <div class="col-12 p-5 bg-darker rounded booking-card">
                         <!-- Display if user is not logged in -->
                         {% if not user.is_authenticated %}
-                        <h3>Message Us</h3>
+                        <h2>Message Us</h2>
                         <p>Please login to slide into our DM's!</p>
                         <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
                                 Page</a></button>
