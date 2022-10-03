@@ -13,6 +13,8 @@ from .forms import CommentForm
 
 
 # View for all posts that are published
+
+
 class PublishedPosts(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_date')
@@ -33,6 +35,8 @@ class PublishedPosts(generic.ListView):
 
 
 # View for the post to be read by the user
+
+
 class PostExpand(View):
 
     def get(self, request, slug, *args, **kwargs):
@@ -52,7 +56,10 @@ class PostExpand(View):
 
     def post(self, request, slug, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
-        post = get_object_or_404(queryset, slug=slug)
+        post = get_object_or_404(
+            queryset,
+            slug=slug
+            )
         comments = post.comments.filter(
             approved=True).order_by('-created_date')
 

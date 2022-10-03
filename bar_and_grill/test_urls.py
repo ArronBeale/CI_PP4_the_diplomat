@@ -10,6 +10,8 @@ from bar_and_grill.views import food_menu, drink_menu
 
 
 # Test that the correct url for food and drinks page are used
+
+
 class TestMenuUrls(SimpleTestCase):
     """
     This class is for testing the food
