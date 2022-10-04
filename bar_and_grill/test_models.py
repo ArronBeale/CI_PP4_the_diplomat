@@ -7,6 +7,9 @@ from django.test import TestCase
 from .models import FoodItem, DrinkItem
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+# These test will create a new food and drink item,
+# it will check the name, description and price
+
 
 class TestModels(TestCase):
 
@@ -15,7 +18,6 @@ class TestModels(TestCase):
             food_name='Test Food',
             description='Test description',
             price='9.99',
-            food_type=1
             )
         self.assertFalse(food.available)
         self.assertEqual(food.price, '9.99')
@@ -26,7 +28,6 @@ class TestModels(TestCase):
             drink_name='Test drink',
             description='Test description',
             price='9.99',
-            drink_type=1
             )
         self.assertFalse(drink.available)
         self.assertEqual(drink.price, '9.99')
