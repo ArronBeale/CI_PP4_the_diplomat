@@ -34,7 +34,7 @@ class TestModels(TestCase):
             email='test@aaa.com',
             )
 
-    def test_booking(self):
+    def test_create_booking(self):
         self.assertEqual(self.booking.name, 'Tester Test')
         self.assertEqual(self.booking.booking_id, 32)
         self.assertEqual(self.booking.requested_date, '2022-12-12')
