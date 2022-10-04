@@ -16,10 +16,10 @@
             {% if 'placeholder' in post.featured_image.url %}
                 <a href="{% url 'post_expand' post.slug %}"><img
                         src="https://images.pexels.com/photos/2403392/pexels-photo-2403392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                        class="card-img-top rounded" alt="A Chef cooking"></a>
+                        class="card-img-top rounded" alt="A photo for the blog"></a>
                 {% else %}
                 <a href="{% url 'post_expand' post.slug %}"><img src="{{ post.featured_image.url }}" class="card-img-top rounded"
-                        alt="Post featured image"></a>
+                        alt="a photo for the blog"></a>
                 {% endif %}
             <h2>{{ post.title }}</h2>
             {{ post.content| safe }}
@@ -33,7 +33,7 @@
     <div class="row justify-content-center">
         {% for comment in comments %}
         <div class="col-md-8  col-lg-6 mx-auto bg-darker rounded p-3 mt-3 mb-3">
-            <h6><em>{{ comment.name }}:</em></h6>
+            <p><em>{{ comment.name }}:</em></p>
             {{ comment.body | linebreaks }}<hr>
             <em>{{comment.created_date }}</em>
         </div>
@@ -53,7 +53,7 @@
     {% if user.is_authenticated %}
     <div class="row justify-content-center">
         <div class="col-md-8 col-lg-6 mx-auto mt-5 p-3 bg-darker rounded">
-            <h4>Add a Comment</h4>
+            <h2>Add a Comment</h2>
             <p>Post as: {{ user.username }}</p>
             <form method="POST">
                 {{ comment_form| crispy }}

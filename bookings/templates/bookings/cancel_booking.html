@@ -15,10 +15,10 @@
                 <h2>Are you sure?:</h2>
                 <div class="card mb-5">
                     <div class="card-body">
-                        <h5 class="card-title">{{ booking.name }}</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">{{ booking.requested_date }} at
-                            {{ booking.requested_time }}</h6><br>
-                        <h6 class="card-subtitle mb-2">Booking status: {{ booking.status }}.</h6>
+                        <h3 class="card-title">{{ booking.name }}</h3>
+                        <p class="card-subtitle mb-2 text-muted">{{ booking.requested_date }} at
+                            {{ booking.requested_time }}</p><br>
+                        <p class="card-subtitle mb-2">Booking status: {{ booking.status }}.</p>
                         <p class="card-text">No. of Guests: {{ booking.guest_count }}.</p>
                         <p class="card-text">Table: {{booking.table}}</p>
                         <form method="POST">
