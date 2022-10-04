@@ -31,7 +31,7 @@
                     <a href="{% url 'post_expand' post.slug %}" class="post-link">
                         <h2 class="card-title mt-3">{{ post.title }}</h2>
                     </a>
-                    <h6 class="card-subtitle mb-2 text-muted">By: {{ post.author }}</h6>
+                    <p class="card-subtitle mb-2 text-muted">By: {{ post.author }}</p>
                     <a href="{% url 'post_expand' post.slug %}" class="post-link">
                         <p class="card-text mt-3"><em>{{ post.excerpt }}</em></p>
                     </a>
