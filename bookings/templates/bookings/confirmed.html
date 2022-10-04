@@ -2,6 +2,12 @@
 
 {% block content %}
 
+<div class="container-fluid mt-5">
+    <div class="row d-flex justify-content-center">
+        <div class="col-sm-8 mt-5 mb-5">
+            <h1 class="text-center">Booking Successful</h1><hr>
+        </div>
+    </div>
 <section>
     <div class="container">
         <div class="row justify-content-center">
@@ -9,12 +15,13 @@
                 <div class="card-body">
                     <div class="row">
                         
-                        <h2>Booking Successful</h2><br>
+                        <h2>Awaiting Confirmation</h2><br>
                         <hr>
-                        <p>We look forward to seeing you!</p><br>
-                        <h5>Visit food menu, <a href="{% url 'food_menu' %}" class="booking-success-button">click</a></h5>
-                        <h5>Visit drinks menu, <a href="{% url 'drink_menu' %}" class="booking-success-button">click</a></h5><br>
-                        <h5>Return home, <a href="{% url 'home' %}" class="booking-success-button">click</a></h5>
+                        <p>Your booking will be confirmed soon, <a href="{% url 'booking_list' %}" class="booking-success-button">click here</a></p><br>
+                        <p>Visit food menu, <a href="{% url 'food_menu' %}" class="booking-success-button">click here</a><p>
+                        <p>Visit drinks menu, <a href="{% url 'drink_menu' %}" class="booking-success-button">click here</a><p>
+                        <p>Return home, <a href="{% url 'home' %}" class="booking-success-button">click here</a><p><br>
+                        <p>We look forward to seeing you!</p>
                          
                     </div>            
                 </div>
