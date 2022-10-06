@@ -15,6 +15,15 @@
                 <h2>Are you sure?:</h2>
                 <div class="card mb-5">
                     <div class="card-body">
+                        <!-- Display if user is not logged in -->
+                        {% if not user.is_authenticated %}
+                        <h2>Login required</h2>
+                        <p>Please login to cancel bookings</p>
+                        <button class="btn btn-success" type="submit"><a href="{% url 'account_login' %}">Go to Login
+                                Page</a></button>
+                        {% else %}
+                        <!-- Display form if user is logged in-->
+                        {% if user.is_authenticated %}
                         <h3 class="card-title">{{ booking.name }}</h3>
                         <p class="card-subtitle mb-2 text-muted">{{ booking.requested_date }} at
                             {{ booking.requested_time }}</p><br>
@@ -26,6 +35,8 @@
                             <button class="btn btn-danger" type="submit">YES</button>
                             <a href="{% url 'booking_list' %}" class="btn btn-secondary">Return</a>
                         </form>
+                        {% endif %}
+                        {% endif %}
                     </div>
                 </div>
             </div>
