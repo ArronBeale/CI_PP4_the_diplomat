@@ -3,7 +3,7 @@
 
 Developer: **Arron Beale**
 
-Deployed: [The Diplomat | Bar & Grill](https://ci-pp4-the-diplomat.herokuapp.com/)
+Deployed: [The Diplomat | Bar & Grill](https://github.com/ArronBeale/CI_PP4_the_diplomat/blob/main/docs/am-i-responsive.PNG?raw=true)
 (Note: Ctrl + click to open in a new tab)  
   
 
