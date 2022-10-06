@@ -1,284 +1,579 @@
-<h1 align=center> The Diplomat | Bar & Grill</h1>
-<img src="docs/image-am-i-responsive.PNG">
+# The Diplomat | Bar & Grill
 
-Developer: **Arron Beale**
+![Am I Responsive](docs/am-i-responsive.PNG)
 
-Deployed: [The Diplomat | Bar & Grill](https://github.com/ArronBeale/CI_PP4_the_diplomat/blob/main/docs/am-i-responsive.PNG?raw=true)
-(Note: Ctrl + click to open in a new tab)  
-  
+**Developer: Arron Beale**
 
+💻 [Visit live website](https://ci-pp4-the-diplomat.herokuapp.com/)
 
 
-## Table of Content
-1. [Project Goals](#project-goals)
-   1. [User Goals](#user-goals)
-   2. [Site owner Goals](#site-owner-goals)
-2. [User Experience](#User-Experience)
-   1. [Target Audience](#target-audience)
-   2. [User Requirements and Expectations](#user-requirments-and-expectations)
-   3. [Manual](#manual)
-   4. [User Stories](#user-stories)
-3. [Technical Design](#technical-design)
-   1. [Flowcharts](#flowcharts)
-   2. [Wireframes](#wireframes)
-4. [Technologies Used](#technologies-used)
-   1. [Languages](#Languages)
-   2. [Frameworks and Tools](#frameworks-and-tools)
-5. [Features](#features)
-6. [Testing](#validation)
-7. [PEP8 Validation](#pep8-validation)
-8. [Bugs](#bugs)
-9. [Deployment](#deployment)
-10. [Credits](#credits)
-11. [Acknowledgements](#ackowledgements)
 
-## Project Goals
-To Create a web app for a fictional local restaurant that has a booking system to allow users to book a table online.
+## Table of Contents
+  - [About](#about)
+  - [User Goals](#user-goals)
+  - [Site Owner Goals](#site-owner-goals)
+  - [User Experience](#user-experience)
+  - [User Stories](#user-stories)
+  - [Design](#design)
+    - [Colours](#colours)
+    - [Fonts](#fonts)
+    - [Structure](#structure)
+      - [Website pages](#website-pages)
+      - [Database](#database)
+    - [Wireframes](#wireframes)
+  - [Technologies Used](#technologies-used)
+  - [Features](#features)
+  - [Validation](#validation)
+  - [Testing](#testing)
+    - [Manual testing](#manual-testing)
+    - [Automated testing](#automated-testing)
+    - [tests on various devices](#tests-on-various-devices)
+    - [Browser compatibility](#browser-compatibility)
+  - [Bugs](#bugs)
+  - [Heroku Deployment](#heroku-deployment)
+  - [Credits](#credits)
+  - [Acknowledgements](#acknowledgements)
+
+### About
+
+The Diplomat Bar & Grill is a fictional business where users can create an account, book a table, read a blog and view the food and drinks menu.
 
 ### User Goals
-- To be able to book a table using an online booking system
-- To be able to view a food menu
-- To be able to view a drinks menu
-- To be able to edit, or cancel bookings
-- To be able to view all bookings made
+
+- To create a table booking
+- To be able to view edit and cancel bookings
+- To view menus, a blog and contact info
 
 ### Site Owner Goals
-- 
-- 
-- 
-- 
 
-[Back to Top](<#table-of-content>)
+- To provide a solution to allow users to book a table online
+- To attract more business with a well crafted site
+- Provide a modern application with an easy navigation
+- Fully responsive and accessible
+
+
 ## User Experience
 
 ### Target Audience
-- 
+- Users that wish to book a table for a meal or a party with family and friends
+- Past and new customers for the business
+- Tourists visiting the area that are looking for a meal or a drink or both
+- Fans visiting the area for a sports event or a music concert
+- People employed in the area to eat and drink after work
 
-### User Requirments and Expectations
+### User Requirements and Expectations
+
+- Fully responsive
+- Accessible
 - 
-- 
-- 
-- 
+- A welcoming design
+- Social media
+- Contact information
+- Accessibility
+
+##### Back to [top](#table-of-contents)
 
 
-[Back to Top](<#table-of-content>)  
 ## User Stories
 
-### User
-1. As a User I can 
-2. As a User I can 
-3. As a User I can 
-4. As a User I can 
-5. As a User I can 
-6. As a User I can 
-7. As a User I can 
- 
-### Admin/Authorised User
-8. As an Admin/Authorised User I can 
-9. As an Admin/Authorised User I can 
-10. As an Admin/Authorised User I can 
-11. As an Admin/Authorised User I can 
-12. As an Admin/Authorised User I can 
-13. As an Admin/Authorised User I can 
-14. As an Admin/Authorised User I can 
-15. As an Admin/User I can 
+### Users
+
+1.	As a User, I can 
+2.	As a User, I can 
+3.	As a User, I can 
+4.	As a User, I can 
+5.	As a User, I can 
+6.	As a User, I can 
+7.	As a User, I can 
+8.	As a User, I can 
+9.	As a User, I can 
+10. As a User, I can 
+11. As a User, I can 
+12. As a User, I can 
+13. As a User, I can 
+14. As a User, I can 
+
+
 
 ### Site Owner
-16. As a Site Owner I can v
-17. As a Site Owner I can 
-18. As a Site Owner I can 
- 
-[Back to Top](<#table-of-content>)
-## Technical Design
+11.	
+12.	
+13.	
+14.	
+15.	
+16.	
+17.	
+18.	
 
 
-### Flow Charts
+##### Back to [top](#table-of-contents)
 
-<details><summary>Flow</summary>
-<img src="">
-</details>  
+
+## Design
+
+### Colours
+
+I chose dark colors to keep a theme of a dimly lit room as seen in a lot of espionage movies.
+Dark themes are popular so I wanted to keep the site on a dark theme and not overly bright.
+
+The colors I wanted to stay close to  [Coolors.co](https://coolors.co/)
+<details><summary>See colour pallet</summary>
+<img src="docs/coloors.png">
+</details>
+
+### Fonts
+
+ Fonts here
+
+### Structure
+
+#### Website pages
+
+Decsription here
+
+Expand on details
+
+- The site consists of the following pages:
+  - Homepage
+  - Food menu
+  - Drinks menu
+  - Blog
+  - Blog expanded
+  - Book
+  - My bookings
+  - Edit booking
+  - Cancel bookin
+  - Contact us
+  - Login / Logout
+  - Register
+  - 404 error page.
+
+#### Database
+
+- Python built with the Django framework with a database of a Postgres for the deployed Heroku version(production)
+- Two database model shows all the fields stored in the database
+
+<details><summary>Show diagram</summary>
+<img src="docs/database-schema.PNG">
+</details>
+
+
+##### User Model
+- The User model contains information about the user. It is part of the Django allauth library
+
+##### Model
+- The WorkoutPlan model contains the following fields: first_day and User
+- The model has a one-to-one relationship with User
+
+##### Model
+- The WorkoutTime model contains the workout_time_name field
+- The model contains information about the workout time (AM or PM)
+
+##### Model
+- The Workout model contains the following fields: workout_name, workout_time, workout_plan and day
+- It contains WorkoutTime as a foreign key
+- It contains WorkoutPlan as a foreign key
+- The day field contains the date of week for the plan
+
+
+##### Model
+- The Exercise model contains the following fields: name, description, body_part, type, equipment, level and image
+- The model represents an exercise and its details
+- The name fields contains the exercise name
+- The description field contains exercise description
+- It contains BodyPart as a foreign-key
+- It contains Type as a foreign key
+- It contains Level as a foreign key
+- The image field contains the exercise image
+
+##### Model
+- The model contains the body type category for an exercise
+- The model contains the following fields: part
+
+##### Model
+- The model contains the type of an exercise
+- The model contains the following fields: type
+
+##### Model
+- The model contains the equipment type for an exercise
+- The model contains the following fields: equipment
+- It contains Exercise as many-to-many field
 
 
 ### Wireframes
 
-<details><summary>Home & Article Page</summary>
+<details><summary></summary>
 <img src="">
-</details>  
+</details>
 
 
-
-   
 ## Technologies Used
 
-### AI
-- [Blog Text Generation](https://inferkit.com/docs/generation)
-- [Image Generation](https://openai.com/dall-e-2/)
-  
-  
-### Languages
-- [Python](https://www.python.org/)
-- [Javascript](https://www.javascript.com/)
-- [HTML](https://www.w3.org/)
-- [CSS](https://www.w3.org/)
+### Languages & Frameworks
+
+- HTML
+- CSS
+- Javascript
+- Python
+- Django
 
 
+### Libraries & Tools
 
-### Resources Used
-- [Canva](https://www.canva.com/)
-- [Colors.co](https://coolors.co/)
-
-
-### Frameworks and Tools
-- [Bootstrap](https://getbootstrap.com//)
-
+- [Am I Responsive](http://ami.responsivedesign.is/)
 - [Balsamiq](https://balsamiq.com/)
-
-- [GitPod](https://gitpod.io/)
-
+- [Bootstrap v5.1.3](https://getbootstrap.com/)
+- [Cloudinary](https://cloudinary.com/)
+- [Favicon.io](https://favicon.io)
+- [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
+- [Font Awesome](https://fontawesome.com/)
+- [Git](https://git-scm.com/)
 - [GitHub](https://github.com/)
+- [Google Fonts](https://fonts.google.com/)
+- [Heroku Platform](https://id.heroku.com/login)
+- [jQuery](https://jquery.com)
+- [Postgres](https://www.postgresql.org/)
+- [Summernote](https://summernote.org/)
+- [Visual Studio Code (VSCode)](https://code.visualstudio.com/)
+- Validation:
+  - [WC3 Validator](https://validator.w3.org/)
+  - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
+  - [JShint](https://jshint.com/)
+  - [Pycodestyle(PEP8)](https://pypi.org/project/pycodestyle/)
+  - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
+  - [Wave Validator](https://wave.webaim.org/)
 
-[Back to Top](<#Table-of-Content>)
-
-### Libraries
-
-#### Python Libraries
-- [OS](https://docs.python.org/3/library/os.html)
-- [Date time](https://docs.python.org/3/library/datetime.html)
-
+##### Back to [top](#table-of-contents)
 
 
 ## Features
-  
-<details><summary>Home</summary>
-</details>  
-  
-<details><summary>Feature</summary>
-</details>  
-  
-<details><summary>Feature</summary>
-</details>  
-  
-<details><summary>Feature</summary>
-</details>  
-  
-<details><summary>About</summary>
-</details>  
 
-<details><summary>Contact</summary>
-</details> 
- 
+### Logo and Navigation Bar
+- 
+- 
+- 
+- 
+- 
 
-[Back to Top](<#table-of-content>)
+<details><summary>See feature images</summary>
+
+![Logo and navbar]()
+![Logo and navbar]()
+</details>
+
+
+### Home page
+- Home page includes nav bar, main body and a footer
+
+
+<details><summary>See feature images</summary>
+
+![Home page]()
+</details>
+
+
+### Footer
+- 
+- 
+
+<details><summary>See feature images</summary>
+
+![Footer]()
+</details>
+
+
+### Sign up / Register
+- 
+- 
+
+<details><summary>See feature images</summary>
+
+![Register]()
+![Register]()
+</details>
+
+
+### Login
+- 
+
+
+<details><summary>See feature images</summary>
+
+![Login]()
+![Login]()
+</details>
+
+
+### Logout
+- 
+
+<details><summary>See feature images</summary>
+
+![Logout]()
+</details>
+
+
+### Book
+- 
+
+<details><summary>See feature images</summary>
+
+![Profile]()
+</details>
+
+
+### My Bookings
+- 
+
+<details><summary>See feature images</summary>
+
+![Delete profile]()
+</details>
+
+
+### Edit Booking
+- 
+<details><summary>See feature images</summary>
+
+![Planner]()
+![Planner]()
+</details>
+
+
+### Feature 
+- 
+  
+<details><summary>See feature images</summary>
+
+![Choose date]()
+![Choose date]()
+</details>
+
+
+### Feature
+- 
+  
+<details><summary>See feature images</summary>
+
+![Choose date]()
+![Choose date]()
+</details>
+
+
+### Feature
+- 
+  
+<details><summary>See feature images</summary>
+
+![Choose date]()
+![Choose date]()
+</details>
+
+
+### Feature
+- 
+  
+<details><summary>See feature images</summary>
+
+![Choose date]()
+![Choose date]()
+</details>
+
+
+### Feature
+- 
+  
+<details><summary>See feature images</summary>
+
+![Choose date]()
+![Choose date]()
+</details>
+
+
+### Feature
+- 
+  
+<details><summary>See feature images</summary>
+
+![Choose date]()
+![Choose date]()
+</details>
+
+
+### Feature
+- 
+  
+<details><summary>See feature images</summary>
+
+![Choose date]()
+![Choose date]()
+</details>
+
+
+### Feature
+- 
+  
+<details><summary>See feature images</summary>
+
+![Choose date]()
+![Choose date]()
+</details>
+
+
+### Feature
+- 
+  
+<details><summary>See feature images</summary>
+
+![Choose date]()
+![Choose date]()
+</details>
+
+
+### Feature
+- 
+  
+<details><summary>See feature images</summary>
+
+![Choose date]()
+![Choose date]()
+</details>
+
+
+### Feature
+- 
+  
+<details><summary>See feature images</summary>
+
+![Choose date]()
+![Choose date]()
+</details>
+
+
+##### Back to [top](#table-of-contents)
+
+
 ## Validation
 
+The W3C Markup Validation Service
+<details><summary>Home</summary>
+<img src="">
+</details>
+
+
+### CSS Validation
+The W3C Jigsaw CSS Validation Service
+
+<details><summary>Style.css</summary>
+<img src="">
+</details>
+
+### JavaScript Validation
+JSHint JS Validation Service
+
+<details><summary>Script.js</summary>
+<img src="">
+</details>
+
 ### PEP8 Validation
-<details><summary>page</summary>
+PEP8 Validation Service was used to check the code for PEP8 requirements via Pycodestyle as PEP8online is currently down
+
+<details><summary></summary>
+
+<details><summary>App</summary>
 <img src="">
 </details>
 
-<details><summary>Page</summary>
+<details><summary>File</summary>
 <img src="">
 </details>
 
-<details><summary>Page</summary>
+
+
+### Lighthouse
+
+Lighthouse
+
+#### Desktop
+<details><summary>View results</summary>
 <img src="">
-</details>  
+</details>
+
+#### Mobile
+<details><summary>View results</summary>
+<img src="">
+</details>
+
+### Wave
+WAVE was used to test the websites accessibility.
+
+<details><summary></summary>
+<img src="">
+</details>
+
+
+##### Back to [top](#table-of-contents)
 
 
 ## Testing
 
-* 
-* 
-* 
-* 
-* 
+1. Manual testing
+2. Automated testing
 
+### Manual testing
 
-### Manual Testing
+1. 
 
-<details><summary>View manual testing</summary>
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  | |
 
-### Testing User Stories
-
- User:
-1. As a User, I would like to...
-
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|||||
-|Navbar|Click links|Direction to page|Navigation is successful|
-<details><summary>Images</summary>
-![](https://)
-
-</details>
+<details><summary></summary>
+<img src="">
 </details>
 
 
 
-Site Owner
-8. As the site owner, I would like...
+### Automated testing
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|-------------|------------|---------------------|-------------------|
-|Responsivness|Site viewport is resized|Good view on mobile|Site is responsive|
-|Validation|Form data entered|Errors are displayed where applicable| Success |
+Django unit test
 
-<details><summary>Images</summary>
-
-</details>
-
-### Automated Testing
- 
- <details><summary>View automated testing</summary>
-
-- Automated testing was done using the unittest and coverage librararies for Python.
-
-
-### Unit Tests
-- Test...
+- app, file:
 
 <img src="">
 
-- Test results....
-
-<img src="">
-
-### Coverage 
-
-- Coverage was installed via the terminal, pip install coverage
-<img src="">
 
 
-- Coverage was then used to test using the following...
-<img src="">
+### Device Testing
+
+Site used
 
 
-- The results of the test were the following:
-<img src="">
+- 
+- 
+- 
 
-- A HTML report was also generated using the command, coverage html
-<img src="">
+### Browser compatibility
 
-</details>
+- Testing has been carried out on the following browsers:
+  - 
+  - 
+  - 
+
+##### Back to [top](#table-of-contents)
 
 
-
-
-
-
-[Back to Top](<#table-of-content>)
 ## Bugs
 
 | **Bug** | **Fix** |
-| ----------- | ----------- |
-| **Bug** | **Fix** |
-| Bug I had | I fixed it by... |
+| ------- | ------- |
+|||
+
+##### Back to [top](#table-of-contents)
 
 
-
-[Back to Top](<#table-of-content>)
-## Deployment
-### Heroku / Firebase
+### Heroku Deployment
+This application has been deployed from GitHub to Heroku by following the steps:
 
 [Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
 1. Log in to your account at heroku.com.
@@ -308,17 +603,28 @@ You can clone the repository by following these steps:
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7.Press Enter to create your local clone.
 
-[Back to Top](<#table-of-content>)
+##### Back to [top](#table-of-contents)
+
+
 ## Credits
 
+- [Bodybuilding.com](https://www.bodybuilding.com/exercises/) & [Regainedwellness](https://www.regainedwellness.com/kneeling-squat/) for description of the exercises used within this app
 
-### Media
-- [Favicon](https://favicon.io/): Witch Icon</a>
-- [Card Images](https://www.pexels.com/)</a>
+### Images
+
+Images used were sourced from Pexels.com and an AI image generator (Dalle2) was used for an image with the permission from OpenAI
+- 
+-
+-
+-
 
 ### Code
-- [Site](https://www.google.com)
 
+- 
+- 
+- 
+
+##### Back to [top](#table-of-contents)
 
 ## Acknowledgements
 
@@ -327,5 +633,3 @@ You can clone the repository by following these steps:
 - 
 - 
 - 
-
-[Back to Top](<#table-of-content>)
