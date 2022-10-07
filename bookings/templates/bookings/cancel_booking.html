@@ -23,7 +23,7 @@
                                 Page</a></button>
                         {% else %}
                         <!-- Display form if user is logged in-->
-                        {% if user.is_authenticated %}
+                        {% if user.is_authenticated and user == booking.user %}
                         <h3 class="card-title">{{ booking.name }}</h3>
                         <p class="card-subtitle mb-2 text-muted">{{ booking.requested_date }} at
                             {{ booking.requested_time }}</p><br>

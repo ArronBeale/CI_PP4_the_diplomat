@@ -23,7 +23,7 @@
                                 Page</a></button>
                         {% else %}
                         <!-- Display form if user is logged in-->
-                        {% if user.is_authenticated %}
+                        {% if user.is_authenticated and user == booking.user %}
                         <h2>Edit Booking</h2>
                         <form action="{% url 'edit_booking' booking.pk %}" method="POST" enctype="multipart/form-data">
                             {% csrf_token %}
