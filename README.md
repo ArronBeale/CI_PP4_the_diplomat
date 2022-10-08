@@ -131,7 +131,7 @@ Dark themes are popular so I wanted to keep the site on a dark theme and not ove
 
 The colors I wanted to stay close to  [Coolors.co](https://coolors.co/)
 <details><summary>See colour pallet</summary>
-<img src="docs/coloors.png">
+<img src="docs/coolors.png">
 </details>
 
 ### Fonts
@@ -238,7 +238,6 @@ Expand on details
 - [jQuery](https://jquery.com)
 - [Postgres](https://www.postgresql.org/)
 - [Summernote](https://summernote.org/)
-- [Visual Studio Code (VSCode)](https://code.visualstudio.com/)
 - Validation:
   - [WC3 Validator](https://validator.w3.org/)
   - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
