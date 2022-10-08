@@ -274,7 +274,7 @@ The wireframes were created using Balsamiq
 
 - [Am I Responsive](http://ami.responsivedesign.is/)
 - [Balsamiq](https://balsamiq.com/)
-- [Bootstrap v5.1.3](https://getbootstrap.com/)
+- [Bootstrap v5.2](https://getbootstrap.com/)
 - [Cloudinary](https://cloudinary.com/)
 - [Favicon.io](https://favicon.io)
 - [Chrome dev tools](https://developers.google.com/web/tools/chrome-devtools/)
@@ -299,204 +299,203 @@ The wireframes were created using Balsamiq
 
 ## Features
 
-### Logo and Navigation Bar
-- 
-- 
-- 
-- 
-- 
-
-<details><summary>See feature images</summary>
-
-![Logo and navbar]()
-![Logo and navbar]()
-</details>
-
-
 ### Home page
 - Home page includes nav bar, main body and a footer
 
 
 <details><summary>See feature images</summary>
 
-![Home page]()
+![Home page](docs/features/feature-homepage.PNG)
+</details>
+
+
+### Logo & Navigation
+- Custom logo for the business
+- Fully Responsive
+- On small screens switches to hamburger menu
+- Indicates login/logout in status
+- displayed on all pages
+
+<details><summary>See feature images</summary>
+
+![Footer](docs/features/feature-logo-navbar.PNG)
+![Footer](docs/features/feature-logo-navbar-login.PNG)
+![Footer](docs/features/feature-logo-navbar-logout.PNG)
+![Footer](docs/features/feature-logo-navbar-hamburger.PNG)
 </details>
 
 
 ### Footer
-- 
-- 
+- Contains social media links and copyright
+- displayed across all pages
 
 <details><summary>See feature images</summary>
 
-![Footer]()
+![Footer](docs/features/feature-footer.PNG)
 </details>
 
 
 ### Sign up / Register
-- 
-- 
+- Allow users to register an acoount
+- Username and password is required, email is optional
 
 <details><summary>See feature images</summary>
 
-![Register]()
+![Register](docs/features/feature-register.PNG)
 ![Register]()
 </details>
 
 
 ### Login
-- 
-
+- User can login to create a booking, view bookings, edit and delete bookings
 
 <details><summary>See feature images</summary>
 
-![Login]()
-![Login]()
+![Login](docs/features/feature-login.PNG)
+![Login](docs/features/feature-login2.PNG)
 </details>
 
 
 ### Logout
-- 
+- Allows the user to securely log out
+- Ask user if they are sure they want to log out
 
 <details><summary>See feature images</summary>
 
-![Logout]()
+![Logout](docs/features/feature-logout.PNG)
 </details>
 
 
 ### Book
-- 
+- Allows the user to book a table using the booking form
+- Messages are displayed if the data is not valid such as phone number lenght is too short and the email address is not a valid format
 
 <details><summary>See feature images</summary>
 
-![Profile]()
+![Profile](docs/features/feature-book-table.PNG)
+![Profile](docs/features/feature-book-table2.PNG)
+![Profile](docs/features/feature-book-table3.PNG)
 </details>
 
 
 ### My Bookings
-- 
+- Allows the user to see all their bookings in a paginated layout, 4 per page
+- If the booking is older than today it is automatically expired for the user
+- Status of the booking is displayed, awaiting confirmation and when approved will then change to confirmed status for the user
 
 <details><summary>See feature images</summary>
 
-![Delete profile]()
+![Delete profile](docs/features/feature-my-bookings.PNG)
 </details>
 
 
 ### Edit Booking
-- 
+- Allows the user to edit their booking to another date, time, guest count and table
 <details><summary>See feature images</summary>
 
+![Planner](docs/features/feature-edit-booking.PNG)
+![Planner](docs/features/feature-edit-booking2.PNG)
 ![Planner]()
-![Planner]()
 </details>
 
 
-### Feature 
-- 
+### Cancel Booking 
+- Allows the user to cancel their booking, asks user are they sure
   
 <details><summary>See feature images</summary>
 
-![Choose date]()
-![Choose date]()
+![Choose date](docs/features/feature-cancel-booking.PNG)
 </details>
 
 
-### Feature
-- 
+### Food Menu
+- The food menu displays all available foods on the menu
+- Menu is seperated by starters, mains and desserts
+- Items can be added via the admin panel in the backend by staff
+- Staff can create, update and delete foods via the admin panel
   
 <details><summary>See feature images</summary>
 
-![Choose date]()
-![Choose date]()
+![Choose date](docs/features/feature-food-menu.PNG)
 </details>
 
 
-### Feature
-- 
+### Drinks Menu
+- The drinks menu displays all available foods on the menu
+- Menu is seperated by wines, beers and cocktails
+- Items can be added via the admin panel in the backend by staff
+- Staff can create, update and delete foods via the admin panel 
   
 <details><summary>See feature images</summary>
 
-![Choose date]()
-![Choose date]()
+![Choose date](docs/features/feature-drinks-menu.PNG)
 </details>
 
 
-### Feature
-- 
+### Blog
+- The blog displays each post made by a staff member
+- Paginations is used to display 4 posts per page
   
 <details><summary>See feature images</summary>
 
-![Choose date]()
-![Choose date]()
+![Choose date](docs/features/feature-blog.PNG)
 </details>
 
 
-### Feature
-- 
+### Blog Expanded
+- Expands into the selected blog the user wishes to read
+- Displays a featured image uploaded by the poster
+- If no image is uploaded a default image is then used
+- Registerd user can comment on the blog
   
 <details><summary>See feature images</summary>
 
-![Choose date]()
-![Choose date]()
-</details>
-
-
-### Feature
-- 
-  
-<details><summary>See feature images</summary>
-
-![Choose date]()
+![Choose date](docs/features/feature-blog2.PNG)
 ![Choose date]()
 </details>
 
 
-### Feature
-- 
+### Comments
+- Comments made are set to pending approval status to ensure nothing bad is displayed
+- Only registered users can comment on a blog post
+- Staff can approve comments via the admin panel on the backend
   
 <details><summary>See feature images</summary>
 
-![Choose date]()
-![Choose date]()
+![Choose date](docs/features/feature-comments.PNG)
 </details>
 
 
-### Feature
-- 
+### Contact Us
+- Registered users can DM staff via the message box
+- Contact info such as, phone, email, and address is displayed
+- A Google Map is embedded with the address for users to use
   
 <details><summary>See feature images</summary>
 
-![Choose date]()
-![Choose date]()
+![Choose date](docs/features/feature-contact-us.PNG)
+![Choose date](docs/features/feature-contact-us2.PNG)
 </details>
 
 
-### Feature
-- 
+### Social Media Links
+- A logo and link is used for each social media displayed
+- All links open in a new tab to ensure user is not directed away from the business
+- Displayed on all pages
   
 <details><summary>See feature images</summary>
 
-![Choose date]()
-![Choose date]()
+![Choose date](docs/features/feature-social-links.PNG)
 </details>
 
 
-### Feature
-- 
+### Pagination
+- Pagination is used on the bookings list and the blog page
+- Ensures the page is kept tidy as only 4 items are displayed per page
   
 <details><summary>See feature images</summary>
 
-![Choose date]()
-![Choose date]()
-</details>
-
-
-### Feature
-- 
-  
-<details><summary>See feature images</summary>
-
-![Choose date]()
+![Choose date](docs/features/feature-pagination.PNG)
 ![Choose date]()
 </details>
 
