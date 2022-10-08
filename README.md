@@ -253,9 +253,9 @@ The ContactUs Model contains the following:
 
 
 ### Wireframes
-
+The wireframes were created using Balsamiq
 <details><summary></summary>
-<img src="">
+<img src="docs/wireframes.png">
 </details>
 
 
