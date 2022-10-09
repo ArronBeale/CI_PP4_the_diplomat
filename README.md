@@ -605,6 +605,7 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bar-and-grill-test-urls.PNG">
 </details>
 
+</details>
 
 <details><summary>Bookings</summary>
 
@@ -640,6 +641,7 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bookings-forms.PNG">
 </details>
 
+</details>
 
 <details><summary>Blog</summary>
 
@@ -675,6 +677,7 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-blog-forms.PNG">
 </details>
 
+</details>
 
 <details><summary>Contact</summary>
 
@@ -683,7 +686,7 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 </details>
 
 <details><summary>models.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-blcontactog-models.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-contact-models.PNG">
 </details>
 
 <details><summary>urls.py</summary>
@@ -702,18 +705,79 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-contact-test-urls.PNG">
 </details>
 
+</details>
+
+<details><summary>Home</summary>
+
+<details><summary>urls.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-home-urls.PNG">
+</details>
+
+<details><summary>views.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-home-views.PNG">
+</details>
+
+</details>
 
 ### Lighthouse
 
 Lighthouse
 
 #### Desktop
-<details><summary>View results</summary>
-<img src="">
+<details><summary>Index</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-index.PNG">
+</details>
+
+<details><summary>Register</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-signup.PNG">
+</details>
+
+<details><summary>Login</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-login.PNG">
+</details>
+
+<details><summary>Logout</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-logout.PNG">
+</details>
+
+<details><summary>Food Menu</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-food-menu.PNG">
+</details>
+
+<details><summary>Drinks Menu</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-drinks-menu.PNG">
+</details>
+
+<details><summary>Blog</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-blog.PNG">
+</details>
+
+<details><summary>Blog Expanded</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-blog-expanded.PNG">
+</details>
+
+<details><summary>Book</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-reservations.PNG">
+</details>
+
+<details><summary>Booking List</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-booking-list.PNG">
+</details>
+
+<details><summary>Edit Booking</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-edit-booking.PNG">
+</details>
+
+<details><summary>Index</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-index.PNG">
+</details>
+
+<details><summary>Cancel Booking</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-desktop-contact-us.PNG">
 </details>
 
 #### Mobile
-<details><summary>View results</summary>
+<details><summary>Contact Us</summary>
 <img src="">
 </details>
 
