@@ -511,51 +511,51 @@ The W3C Markup Validation Service
 </details>
 
 <details><summary>Login</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-login.PNG">
 </details>
 
 <details><summary>Logout</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-logout.PNG">
 </details>
 
 <details><summary>Bookings</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-booking-list.PNG">
 </details>
 
 <details><summary>Edit Booking</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-edit-booking.PNG">
 </details>
 
 <details><summary>Cancel Booking</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-cancel-booking.PNG">
 </details>
 
 <details><summary>Food Menu</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-food-menu.PNG">
 </details>
 
 <details><summary>Drinks Menu</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-drinks-menu.PNG">
 </details>
 
 <details><summary>Blog</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-blog.PNG">
 </details>
 
 <details><summary>Blog Expanded</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-blog-expanded.PNG">
 </details>
 
 <details><summary>Contact Us</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-contact-us.PNG">
 </details>
 
 <details><summary>Confirmed</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-confirmed.PNG">
 </details>
 
 <details><summary>404</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-404.PNG">
 </details>
 
 
