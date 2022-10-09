@@ -342,7 +342,6 @@ The wireframes were created using Balsamiq
 <details><summary>See feature images</summary>
 
 ![Register](docs/features/feature-register.PNG)
-![Register]()
 </details>
 
 
@@ -372,9 +371,9 @@ The wireframes were created using Balsamiq
 
 <details><summary>See feature images</summary>
 
-![Profile](docs/features/feature-book-table.PNG)
-![Profile](docs/features/feature-book-table2.PNG)
-![Profile](docs/features/feature-book-table3.PNG)
+![Book](docs/features/feature-book-table.PNG)
+![Book](docs/features/feature-book-table2.PNG)
+![Book](docs/features/feature-book-table3.PNG)
 </details>
 
 
@@ -385,7 +384,7 @@ The wireframes were created using Balsamiq
 
 <details><summary>See feature images</summary>
 
-![Delete profile](docs/features/feature-my-bookings.PNG)
+![My Bookings](docs/features/feature-my-bookings.PNG)
 </details>
 
 
@@ -393,9 +392,8 @@ The wireframes were created using Balsamiq
 - Allows the user to edit their booking to another date, time, guest count and table
 <details><summary>See feature images</summary>
 
-![Planner](docs/features/feature-edit-booking.PNG)
-![Planner](docs/features/feature-edit-booking2.PNG)
-![Planner]()
+![Edit Booking](docs/features/feature-edit-booking.PNG)
+![ImaEdit Bookingge](docs/features/feature-edit-booking2.PNG)
 </details>
 
 
@@ -404,7 +402,7 @@ The wireframes were created using Balsamiq
   
 <details><summary>See feature images</summary>
 
-![Choose date](docs/features/feature-cancel-booking.PNG)
+![Cancel Booking](docs/features/feature-cancel-booking.PNG)
 </details>
 
 
@@ -416,7 +414,7 @@ The wireframes were created using Balsamiq
   
 <details><summary>See feature images</summary>
 
-![Choose date](docs/features/feature-food-menu.PNG)
+![Food Menu](docs/features/feature-food-menu.PNG)
 </details>
 
 
@@ -428,7 +426,7 @@ The wireframes were created using Balsamiq
   
 <details><summary>See feature images</summary>
 
-![Choose date](docs/features/feature-drinks-menu.PNG)
+![Drinks Menu](docs/features/feature-drinks-menu.PNG)
 </details>
 
 
@@ -438,7 +436,7 @@ The wireframes were created using Balsamiq
   
 <details><summary>See feature images</summary>
 
-![Choose date](docs/features/feature-blog.PNG)
+![Blog](docs/features/feature-blog.PNG)
 </details>
 
 
@@ -450,8 +448,7 @@ The wireframes were created using Balsamiq
   
 <details><summary>See feature images</summary>
 
-![Choose date](docs/features/feature-blog2.PNG)
-![Choose date]()
+![Blog Expanded](docs/features/feature-blog2.PNG)
 </details>
 
 
@@ -462,7 +459,7 @@ The wireframes were created using Balsamiq
   
 <details><summary>See feature images</summary>
 
-![Choose date](docs/features/feature-comments.PNG)
+![Comments](docs/features/feature-comments.PNG)
 </details>
 
 
@@ -473,8 +470,8 @@ The wireframes were created using Balsamiq
   
 <details><summary>See feature images</summary>
 
-![Choose date](docs/features/feature-contact-us.PNG)
-![Choose date](docs/features/feature-contact-us2.PNG)
+![Contact Us](docs/features/feature-contact-us.PNG)
+![Contact Us](docs/features/feature-contact-us2.PNG)
 </details>
 
 
@@ -485,7 +482,7 @@ The wireframes were created using Balsamiq
   
 <details><summary>See feature images</summary>
 
-![Choose date](docs/features/feature-social-links.PNG)
+![Social Media Links](docs/features/feature-social-links.PNG)
 </details>
 
 
@@ -495,8 +492,7 @@ The wireframes were created using Balsamiq
   
 <details><summary>See feature images</summary>
 
-![Choose date](docs/features/feature-pagination.PNG)
-![Choose date]()
+![Pagination](docs/features/feature-pagination.PNG)
 </details>
 
 
@@ -507,6 +503,58 @@ The wireframes were created using Balsamiq
 
 The W3C Markup Validation Service
 <details><summary>Home</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-index.PNG">
+</details>
+
+<details><summary>Register</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-register.PNG">
+</details>
+
+<details><summary>Login</summary>
+<img src="">
+</details>
+
+<details><summary>Logout</summary>
+<img src="">
+</details>
+
+<details><summary>Bookings</summary>
+<img src="">
+</details>
+
+<details><summary>Edit Booking</summary>
+<img src="">
+</details>
+
+<details><summary>Cancel Booking</summary>
+<img src="">
+</details>
+
+<details><summary>Food Menu</summary>
+<img src="">
+</details>
+
+<details><summary>Drinks Menu</summary>
+<img src="">
+</details>
+
+<details><summary>Blog</summary>
+<img src="">
+</details>
+
+<details><summary>Blog Expanded</summary>
+<img src="">
+</details>
+
+<details><summary>Contact Us</summary>
+<img src="">
+</details>
+
+<details><summary>Confirmed</summary>
+<img src="">
+</details>
+
+<details><summary>404</summary>
 <img src="">
 </details>
 
