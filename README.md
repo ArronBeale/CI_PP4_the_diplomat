@@ -832,8 +832,74 @@ Performance, best practices and SEO was tested using Lighthouse.
 ### Wave
 WAVE was used to test the websites accessibility.
 
-<details><summary></summary>
+<details><summary>Index</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-index.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-index2.PNG">
+</details>
+
+<details><summary>Register</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-index.PNG">
 <img src="">
+</details>
+
+<details><summary>Login</summary>
+<img src="">
+<img src="">
+</details>
+
+<details><summary>Logout</summary>
+<img src="">
+<img src="">
+</details>
+
+<details><summary>Food Menu</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-food-menu.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-food-menu2.PNG">
+</details>
+
+<details><summary>Drinks Menu</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-drinks-menu.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-drinks-menu2.PNG">
+</details>
+
+<details><summary>Book</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-booking.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-booking2.PNG">
+</details>
+
+<details><summary>My Bookings</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-booking-list.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-booking-list2.PNG">
+</details>
+
+<details><summary>Edit Booking</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-edit-booking.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-edit-booking2.PNG">
+</details>
+
+<details><summary>Cancel Booking</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-cancel-booking.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-cancel-booking2.PNG">
+</details>
+
+<details><summary>Blog</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-blog.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-blog2.PNG">
+</details>
+
+<details><summary>Blog Expanded</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-blog-expanded.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-blog-expanded2.PNG">
+</details>
+
+<details><summary>Contact Us</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-contact-us.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-contact-us2.PNG">
+</details>
+
+<details><summary>404</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-404.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/wave-4042.PNG">
 </details>
 
 
@@ -855,6 +921,7 @@ WAVE was used to test the websites accessibility.
 
 <details><summary></summary>
 <img src="">
+<img src="">
 </details>
 
 
@@ -865,6 +932,7 @@ Django unit test
 
 - app, file:
 
+<img src="">
 <img src="">
 
 
