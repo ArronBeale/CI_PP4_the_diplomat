@@ -962,7 +962,8 @@ Testing was done using the built in Django module, unittest.
 
 ### Device Testing & Browser compatibility
 
-The site uses to test on various real world devices was [BrowserStack](https://ci-pp4-the-diplomat.herokuapp.com/)
+The site uses to test on various real world devices was [BrowserStack](https://ci-pp4-the-diplomat.herokuapp.com/)  
+
 This allowed me to test on real devices and not just device emulators.
 
 The following devices were used to test my site:
