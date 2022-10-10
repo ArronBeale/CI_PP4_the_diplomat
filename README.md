@@ -27,7 +27,7 @@
   - [Testing](#testing)
     - [Manual testing](#manual-testing)
     - [Automated testing](#automated-testing)
-    - [tests on various devices](#tests-on-various-devices)
+    - [Tests on various devices](#tests-on-various-devices)
     - [Browser compatibility](#browser-compatibility)
   - [Bugs](#bugs)
   - [Heroku Deployment](#heroku-deployment)
@@ -936,7 +936,7 @@ Testing was done using the built in Django module, unittest.
 
 
 <details><summary>Bar & Grill App, models.py</summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bar-and-grill-models.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bar-and-grill-test-models.PNG">
 </details>
 
 <details><summary>Bar & Grill App, views.py</summary>
