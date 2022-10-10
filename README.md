@@ -186,7 +186,7 @@ The User Model contains the following:
 - date_joined
 
 ##### FoodItem Model
-The User Model contains the following:
+The FoodItem Model contains the following:
 - food_id
 - food_name
 - description
@@ -194,7 +194,7 @@ The User Model contains the following:
 - available
 
 ##### DrinkItem Model
-The FoodItem Model contains the following:
+The DrinkItem Model contains the following:
 - drink_id
 - drink_name
 - description
@@ -960,7 +960,7 @@ Bookings App, urls.py:
 
 
 
-### Device Testing
+### Device Testing & Browser compatibility
 
 The site uses to test on various real world devices was [BrowserStack](https://ci-pp4-the-diplomat.herokuapp.com/)
 This allowed me to test on real devices and not just device emulators.
@@ -991,12 +991,6 @@ The following devices were used to test my site:
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/device-test-safari-monteray-15.3.PNG">
 </details>
 
-### Browser compatibility
-
-- Testing has been carried out on the following browsers:
-  - 
-  - 
-  - 
 
 ##### Back to [top](#table-of-contents)
 
