@@ -575,6 +575,10 @@ JSHint JS Validation Service
 ### PEP8 Validation
 PEP8 Validation Service was used to check the code for PEP8 requirements via Pycodestyle as PEP8online was down
 
+<details><summary>Tool used: Pycodestyle</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle.PNG">
+</details>
+
 <details><summary>Bar & Grill</summary>
 
 <details><summary>Admin.py</summary>
@@ -928,23 +932,64 @@ WAVE was used to test the websites accessibility.
 
 ### Automated testing
 
-Django unit test
+Testing was done using the built in Django module, unittest.
 
-- app, file:
+- Bar & Grill App, models.py:
 
-<img src="">
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/image-unittest-bar-and-grill-models.PNG">
+
+- Bar & Grill App, views.py:
+
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/image-unittest-bar-and-grill-test-views.PNG">
+
+Bar & Grill App, urls.py:
+
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/image-unittest-bar-and-grill-test-urls.PNG">
+
+Bookings App, models.py:
+
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/image-unittest-bookings-test-models.PNG">
+
+Bookings App, views.py:
+
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/image-unittest-bookings-test-views.PNG">
+
+Bookings App, urls.py:
+
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/image-unittest-bookings-test-urls.PNG">
 
 
 
 ### Device Testing
 
-Site used
+The site uses to test on various real world devices was [BrowserStack](https://ci-pp4-the-diplomat.herokuapp.com/)
+This allowed me to test on real devices and not just device emulators.
 
+The following devices were used to test my site:
 
-- 
-- 
-- 
+- <details><summary>Samsung Galaxy S22 Ultra</summary>
+<img src="">
+</details>
+
+<details><summary>Apple iPhone 13</summary>
+<img src="">
+</details>
+
+<details><summary>Google Pixel 5</summary>
+<img src="">
+</details>
+
+<details><summary>Mozilla Firefox (v105 latest)</summary>
+<img src="">
+</details>
+
+<details><summary>Google Chrome (v106 latest)</summary>
+<img src="">
+</details>
+
+<details><summary>Safari (Monteray 15.3)</summary>
+<img src="">
+</details>
 
 ### Browser compatibility
 
@@ -1001,15 +1046,11 @@ You can clone the repository by following these steps:
 
 ## Credits
 
-- [Bodybuilding.com](https://www.bodybuilding.com/exercises/) & [Regainedwellness](https://www.regainedwellness.com/kneeling-squat/) for description of the exercises used within this app
-
 ### Images
 
 Images used were sourced from Pexels.com and an AI image generator (Dalle2) was used for an image with the permission from OpenAI
 - 
--
--
--
+- 
 
 ### Code
 
@@ -1023,6 +1064,4 @@ Images used were sourced from Pexels.com and an AI image generator (Dalle2) was 
 
 ### Special thanks to the following:
 - Code Institute
-- 
-- 
-- 
+- My Mentor Mo Shami
