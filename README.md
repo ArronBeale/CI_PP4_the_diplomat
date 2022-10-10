@@ -934,30 +934,30 @@ WAVE was used to test the websites accessibility.
 
 Testing was done using the built in Django module, unittest.
 
-- Bar & Grill App, models.py:
 
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/image-unittest-bar-and-grill-models.PNG">
+<details><summary>Bar & Grill App, models.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bar-and-grill-models.PNG">
+</details>
 
-- Bar & Grill App, views.py:
+<details><summary>Bar & Grill App, views.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bar-and-grill-test-views.PNG">
+</details>
 
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/image-unittest-bar-and-grill-test-views.PNG">
+<details><summary>Bar & Grill App, urls.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bar-and-grill-test-urls.PNG">
+</details>
 
-Bar & Grill App, urls.py:
+<details><summary>Bookings App, models.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bookings-test-models.PNG">
+</details>
 
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/image-unittest-bar-and-grill-test-urls.PNG">
+<details><summary>Bookings App, views.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bookings-test-views.PNG">
+</details>
 
-Bookings App, models.py:
-
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/image-unittest-bookings-test-models.PNG">
-
-Bookings App, views.py:
-
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/image-unittest-bookings-test-views.PNG">
-
-Bookings App, urls.py:
-
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/image-unittest-bookings-test-urls.PNG">
-
+<details><summary>Bookings App, urls.py</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bookings-test-urls.PNG">
+</details>
 
 
 ### Device Testing & Browser compatibility
@@ -967,7 +967,7 @@ This allowed me to test on real devices and not just device emulators.
 
 The following devices were used to test my site:
 
-- <details><summary>Samsung Galaxy S22 Ultra</summary>
+<details><summary>Samsung Galaxy S22 Ultra</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/device-test-samsung-s22-ultra.PNG">
 </details>
 
