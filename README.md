@@ -968,27 +968,27 @@ This allowed me to test on real devices and not just device emulators.
 The following devices were used to test my site:
 
 - <details><summary>Samsung Galaxy S22 Ultra</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/device-test-samsung-s22-ultra.PNG">
 </details>
 
 <details><summary>Apple iPhone 13</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/device-test-iphone-13.PNG">
 </details>
 
 <details><summary>Google Pixel 5</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/device-test-google-pixel-5.PNG">
 </details>
 
 <details><summary>Mozilla Firefox (v105 latest)</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/device-test-firefox.PNG">
 </details>
 
 <details><summary>Google Chrome (v106 latest)</summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/device-test-chrome.PNG">
 </details>
 
-<details><summary>Safari (Monteray 15.3)</summary>
-<img src="">
+<details><summary>Safari (Monteray v15.3 latest)</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/device-test-safari-monteray-15.3.PNG">
 </details>
 
 ### Browser compatibility
