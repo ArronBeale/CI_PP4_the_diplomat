@@ -935,27 +935,27 @@ WAVE was used to test the websites accessibility.
 Testing was done using the built in Django module, unittest.
 
 
-<details><summary>Bar & Grill App, models.py</summary>
+<details><summary>Bar & Grill App, test_models.py</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bar-and-grill-test-models.PNG">
 </details>
 
-<details><summary>Bar & Grill App, views.py</summary>
+<details><summary>Bar & Grill App, test_views.py</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bar-and-grill-test-views.PNG">
 </details>
 
-<details><summary>Bar & Grill App, urls.py</summary>
+<details><summary>Bar & Grill App, test_urls.py</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bar-and-grill-test-urls.PNG">
 </details>
 
-<details><summary>Bookings App, models.py</summary>
+<details><summary>Bookings App, test_models.py</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bookings-test-models.PNG">
 </details>
 
-<details><summary>Bookings App, views.py</summary>
+<details><summary>Bookings App, test_views.py</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bookings-test-views.PNG">
 </details>
 
-<details><summary>Bookings App, urls.py</summary>
+<details><summary>Bookings App, test_urls.py</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bookings-test-urls.PNG">
 </details>
 
