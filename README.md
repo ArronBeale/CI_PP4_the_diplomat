@@ -953,10 +953,13 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  | | Works as expected |
+ | See test 1 | See test 1 | Works as expected |
+ | Scroll to footer at bottom of page | find footer | Works as expected |
+ | Scroll to footer at bottom of page | find social links | Works as expected |
 
 <details><summary></summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-11">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-12">
 
 </details>
 
