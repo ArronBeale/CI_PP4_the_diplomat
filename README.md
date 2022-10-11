@@ -963,6 +963,41 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
+3. As a Site Owner I can provide a contact us page so that users can get in touch with my business
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ | Click on the 'Contact Us' link in the navigation bar | Contact us page will load| Works as expected |
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-06">
+
+</details>
+
+4. As a User I can view the opening hours and contact details so that I know when the business is open and how to contact them via email, phone and socials
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ | Click on the 'Contact Us' link in the navigation bar, scroll to bottom of page | Find contact details and opening hours | Works as expected |
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-06">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-13">
+
+</details>
+
+5. As a User I can create a booking by selecting a date and time so that I can reserve my table
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ | Click on the 'Book' link in the navigation bar | Find the booking form on the reservations page | Works as expected |
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-05">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-14">
+
+</details>
+
 
 
 ### Automated testing
