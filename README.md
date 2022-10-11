@@ -1103,6 +1103,148 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
+14. As a user I can see my login status so that I know if I am logged in or not
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+|  |  | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="">
+
+</details>
+
+15. As a user I can see my login status so that I know if I am logged in or not
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+|  |  | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="">
+
+</details>
+
+16. As a user I can see my login status so that I know if I am logged in or not
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+|  |  | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="">
+
+</details>
+
+17. As a user I can see my login status so that I know if I am logged in or not
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+|  |  | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="">
+
+</details>
+
+18. As a user I can see my login status so that I know if I am logged in or not
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+|  |  | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="">
+
+</details>
+
+19. As a user I can see my login status so that I know if I am logged in or not
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+|  |  | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="">
+
+</details>
+
+20. As a user I can see my login status so that I know if I am logged in or not
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+|  |  | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="">
+
+</details>
+
+21. As a user I can see my login status so that I know if I am logged in or not
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+|  |  | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="">
+
+</details>
+
+22. As a user I can see my login status so that I know if I am logged in or not
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+|  |  | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="">
+
+</details>
+
+23. As a user I can see my login status so that I know if I am logged in or not
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+|  |  | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="">
+
+</details>
+
+24. As a user I can see my login status so that I know if I am logged in or not
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+|  |  | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="">
+
+</details>
 
 
 ### Automated testing
