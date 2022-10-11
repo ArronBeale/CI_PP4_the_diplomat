@@ -935,16 +935,17 @@ WAVE was used to test the websites accessibility.
 | Click on the 'Logout' link in the navigation bar | Logout page will load| Works as expected |
 
 <details><summary></summary>
-<img src="docs/testing/user-story-testing-01">
-<img src="docs/testing/user-story-testing-08">
-<img src="docs/testing/user-story-testing-10">
-<img src="docs/testing/user-story-testing-02">
-<img src="docs/testing/user-story-testing-03">
-<img src="docs/testing/user-story-testing-04">
-<img src="docs/testing/user-story-testing-05">
-<img src="docs/testing/user-story-testing-06">
-<img src="docs/testing/user-story-testing-07">
-<img src="docs/testing/user-story-testing-09">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-01">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-08">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-10">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-02">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-02">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-03">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-04">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-05">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-06">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-07">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-09">
 
 </details>
 
