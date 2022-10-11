@@ -1060,7 +1060,7 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
-10. As a User I can register to create an account so that my details are stored for faster booking in future
+11. As a User I can register to create an account so that my details are stored for faster booking in future
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1069,6 +1069,18 @@ WAVE was used to test the websites accessibility.
 
 <details><summary></summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-05.PNG">
+
+
+</details>
+
+12. As a user I can login so that I can book a table
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'Login' link in the navigation bar | Login page will load allowing user to now be able to book a table | Works as expected |
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-10.PNG">
 
 
 </details>
