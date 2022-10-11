@@ -917,15 +917,46 @@ WAVE was used to test the websites accessibility.
 
 ### Manual testing
 
-1. Javascript
+1. As a User I can navigate across the site so that I can move to each feature of the site easily
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- |  | |
+| Click on the 'Home' link in the navigation bar | Homepage will load| Works as expected |
+| Click on the 'Register' link in the navigation bar | Sign up page will load| Works as expected |
+| Click on the 'Login' link in the navigation bar | Login page will load| Works as expected |
+| Click on the 'Menus' link in the navigation bar, select 'Food Menu' | Food menu page will load| Works as expected |
+| Click on the 'Menus' link in the navigation bar, select 'Drinks Menu' | Drinks menu page will load| Works as expected |
+| Click on the 'Menus' link in the navigation bar, select 'Drinks Menu' | Drinks menu page will load| Works as expected |
+| Click on the 'Blog' link in the navigation bar | Blog page will load| Works as expected |
+| Click on the 'Book' link in the navigation bar | Reservations page will load| Works as expected |
+| Click on the 'Book' link in the navigation bar | Reservations page will load| Works as expected |
+| Click on the 'Contact Us' link in the navigation bar | Contact us page will load| Works as expected |
+| Click on the 'My Bookings' link in the navigation bar | Booking list page will load| Works as expected |
+| Click on the 'Logout' link in the navigation bar | Logout page will load| Works as expected |
+
+<details><summary></summary>
+<img src="docs/testing/user-story-testing-01">
+<img src="docs/testing/user-story-testing-08">
+<img src="docs/testing/user-story-testing-10">
+<img src="docs/testing/user-story-testing-02">
+<img src="docs/testing/user-story-testing-03">
+<img src="docs/testing/user-story-testing-04">
+<img src="docs/testing/user-story-testing-05">
+<img src="docs/testing/user-story-testing-06">
+<img src="docs/testing/user-story-testing-07">
+<img src="docs/testing/user-story-testing-09">
+
+</details>
+
+2. As a User I can use a navbar, footer, and social icons so that I can navigate the site, access menus, and access socials
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+ |  | | Works as expected |
 
 <details><summary></summary>
 <img src="">
-<img src="">
+
 </details>
 
 
@@ -1000,7 +1031,8 @@ The following devices were used to test my site:
 
 | **Bug** | **Fix** |
 | ------- | ------- |
-|||
+| css not loading| the css folder was created in uppercase as CSS, renamed and fixed |
+|  |  |
 
 ##### Back to [top](#table-of-contents)
 
