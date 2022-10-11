@@ -935,17 +935,17 @@ WAVE was used to test the websites accessibility.
 | Click on the 'Logout' link in the navigation bar | Logout page will load| Works as expected |
 
 <details><summary></summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-08.png">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-01.png">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-10.png">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-02.png">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-02.png">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-03.png">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-04.png">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-05.png">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-06.png">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-07.png">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-09.png">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-08.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-01.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-10.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-02.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-02.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-03.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-04.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-05.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-06.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-07.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-09.PNG">
 
 </details>
 
@@ -958,8 +958,8 @@ WAVE was used to test the websites accessibility.
  | Scroll to footer at bottom of page | find social links | Works as expected |
 
 <details><summary></summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-11.png">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-12.png">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-11.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-12.PNG">
 
 </details>
 
@@ -967,10 +967,10 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- | Click on the 'Contact Us' link in the navigation bar | Contact us page will load| Works as expected |
+| Click on the 'Contact Us' link in the navigation bar | Contact us page will load| Works as expected |
 
 <details><summary></summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-06.png">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-06.PNG">
 
 </details>
 
@@ -978,11 +978,11 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- | Click on the 'Contact Us' link in the navigation bar, scroll to bottom of page | Find contact details and opening hours | Works as expected |
+| Click on the 'Contact Us' link in the navigation bar, scroll to bottom of page | Find contact details and opening hours | Works as expected |
 
 <details><summary></summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-06.png">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-13.png">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-06.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-13.PNG">
 
 </details>
 
@@ -990,11 +990,46 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
- | Click on the 'Book' link in the navigation bar | Find the booking form on the reservations page | Works as expected |
+| Click on the 'Book' link in the navigation bar | Find the booking form on the reservations page | Works as expected |
 
 <details><summary></summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-05.png">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-14.png">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-05.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-14.PNG">
+
+</details>
+
+6. As a User I can update my booking so that I can choose another available time and date
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| From 'My Bookings' click 'Edit' on booking to be edited| Find the edit booking form loaded  | Works as expected |
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-15.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-16.PNG">
+
+</details>
+
+7. As a User I can delete my booking so that I can cancel my table reservation
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| From 'My Bookings' click 'Cancel' on booking to be cancelled| Find the cancel booking prompt loaded  | Works as expected |
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-18.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-17.PNG">
+
+</details>
+
+8. As a user I can view my booking so that I can remind myself of the date and time I have booked
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Click on the 'My Bookings' link in the navigation bar | Booking list will display all bookings made| Works as expected |
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-19.PNG">
 
 </details>
 
