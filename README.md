@@ -1077,10 +1077,28 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| Click on the 'Login' link in the navigation bar | Login page will load allowing user to now be able to book a table | Works as expected |
+| Click on the 'Login' link in the navigation bar | Log in, user now able to book a table | Works as expected |
+| Click on the 'Book' link in the navigation bar | Find the booking form on the reservations page | Works as expected |
 
 <details><summary></summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-10.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-05.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-14.PNG">
+
+
+</details>
+
+13. As a user I can see my login status so that I know if I am logged in or not
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| While logged in, view navigation bar | Log out will be displayed to user | Works as expected |
+| While logged out, view navigation bar | Login will be displayed to user | Works as expected |
+
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-23.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-24.PNG">
 
 
 </details>
