@@ -1033,6 +1033,21 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
+9. As a User I can I am notified so that I know my action of creation, edit, or deletion of a booking has been successful
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| From the reservations page, create a booking | A message will be displayed upon completion | Works as expected |
+| From the bookings list page, edit a booking | A message will be displayed upon completion | Works as expected |
+| From the bookings list page, cancel a booking | A message will be displayed upon completion | Works as expected |
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-20.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-21.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-22.PNG">
+
+</details>
+
 
 
 ### Automated testing
