@@ -1200,12 +1200,12 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-|  |  | Works as expected |
+| From the admin panel, select Bookings | Find  filters on displayed right panel of page | Works as expected |
 
 
 
 <details><summary></summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-31.PNG">
 
 </details>
 
@@ -1213,12 +1213,12 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-|  |  | Works as expected |
+| Select Blog in navigation panel at top of page | Blog page loads with published Blog posts | Works as expected |
 
 
 
 <details><summary></summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-04.PNG">
 
 </details>
 
