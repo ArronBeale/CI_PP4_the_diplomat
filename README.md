@@ -1278,29 +1278,16 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
-27. As a User I can view blog posts page by page so that I can browse without seeing an overloaded page
+27. As a User I can not book a table already booked so that my booking is valid and not double booked
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-|  |  | Works as expected |
+| From the bookings page, attempt to book a table and date already booked | Error message displays to say booking not possible | Works as expected |
 
 
 
 <details><summary></summary>
-<img src="">
-
-</details>
-
-28. As a User I can not book a table already booked so that my booking is valid and not double booked
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
-|  |  | Works as expected |
-
-
-
-<details><summary></summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/feature-book-table3.PNG">
 
 </details>
 
