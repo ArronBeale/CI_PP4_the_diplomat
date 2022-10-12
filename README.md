@@ -1165,12 +1165,12 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-|  |  | Works as expected |
+| While logged in, view navigation bar | Logout button should be visible | Works as expected |
 
 
 
 <details><summary></summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-09.PNG">
 
 </details>
 
@@ -1178,12 +1178,7 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-|  |  | Works as expected |
-
-
-
-<details><summary></summary>
-<img src="">
+| User story not implemented | Possible future feature | N/A |
 
 </details>
 
@@ -1191,12 +1186,13 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-|  |  | Works as expected |
+| From the admin panel, select Bookings / Food, drinks menus | Find search box and filters on displayed page | Works as expected |
 
 
 
 <details><summary></summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-31.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-32.PNG">
 
 </details>
 
