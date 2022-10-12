@@ -1226,12 +1226,14 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-|  |  | Works as expected |
+| Select Menus then food menu dropdown in navigation panel at top of page | Food Menu page loads | Works as expected |
+| Select Menus then drinks menu dropdown in navigation panel at top of page | Drinks Menu page loads | Works as expected |
 
 
 
 <details><summary></summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-02.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-03.PNG">
 
 </details>
 
@@ -1239,12 +1241,14 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-|  |  | Works as expected |
+| From Booking page, make a booking with a phone number that is too short | Error message is displayed | Works as expected |
+| From Booking page, make a booking with a date / table that is already booked | Error message is displayed | Works as expected |
 
 
 
 <details><summary></summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/feature-edit-booking2.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/feature-book-table2.PNG">
 
 </details>
 
