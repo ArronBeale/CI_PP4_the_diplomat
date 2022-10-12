@@ -1138,7 +1138,7 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| See test 10 | See test 10 | Works as expected |
+| See test 15 | See test 15 | Works as expected |
 | Click on the 'Book' link in the navigation bar | Find the booking form with user email inserted automatically | Works as expected |
 
 <details><summary></summary>
@@ -1157,7 +1157,6 @@ WAVE was used to test the websites accessibility.
 <details><summary></summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-10.PNG">
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-05.PNG">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-14.PNG">
 
 
 </details>
