@@ -1033,52 +1033,56 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
-9. As a User I can I am notified so that I know my action of creation, edit, or deletion of a booking has been successful
+9. As an Admin / Authorised User I can log in so that I can access the back end of the site
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| From the reservations page, create a booking | A message will be displayed upon completion | Works as expected |
-| From the bookings list page, edit a booking | A message will be displayed upon completion | Works as expected |
-| From the bookings list page, cancel a booking | A message will be displayed upon completion | Works as expected |
+| Visit the admin page https://ci-pp4-the-diplomat.herokuapp.com/admin/login/?next=/admin/ | Enter admin login credentials, gain access to back end | Works as expected |
+
 
 <details><summary></summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-20.PNG">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-21.PNG">
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-22.PNG">
-
-</details>
-
-10. As a User I can register as prompted so that I can make a booking if I wish reserve a table
-
-**Step** | **Expected Result** | **Actual Result**
------------- | ------------ | ------------ |
-| Click on the 'Register' link in the navigation bar | Register an account to allow bookings to be made | Works as expected |
-
-<details><summary></summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-08.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-25.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-26.PNG">
 
 
 </details>
 
-11. As a User I can register to create an account so that my details are stored for faster booking in future
+10. As an Admin / Authorised User I can manually add a booking so that I can book a table if someone phones, or emails the business
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| See test 10 | See test 10 | Works as expected |
-| Click on the 'Book' link in the navigation bar | Find the booking form with user email inserted automatically | Works as expected |
+| Visit the admin page https://ci-pp4-the-diplomat.herokuapp.com/admin/login/?next=/admin/ | Enter admin login credentials, gain access to back end | Works as expected |
+| Click on the Bookings button the the left panel, select add booking | Booking form is displayed | Works as expected |
 
 <details><summary></summary>
-<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-05.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-26.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-27.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-28.PNG">
 
 
 </details>
 
-12. As a user I can login so that I can book a table
+11. As an Admin / Authorised User I can accept or reject bookings so that we avoid double bookings
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+| Visit the admin page https://ci-pp4-the-diplomat.herokuapp.com/admin/login/?next=/admin/ | Enter admin login credentials, gain access to back end | Works as expected |
+| Click on the Bookings button the the left panel, select a booking id | Booking info is displayed | Works as expected |
+| Click Status dropdown | Find different booking status to select and save | Works as expected |
+
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-30.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-29.PNG">
+
+
+</details>
+
+12. As an Admin I can login to add or remove items from the food and cocktail menu so that we can add more food and drinks or remove them
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
 | Click on the 'Login' link in the navigation bar | Log in, user now able to book a table | Works as expected |
-| Click on the 'Book' link in the navigation bar | Find the booking form on the reservations page | Works as expected |
+
 
 <details><summary></summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-10.PNG">
@@ -1088,7 +1092,7 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
-13. As a user I can see my login status so that I know if I am logged in or not
+13. As a Admin I can create, read, update and delete food and drinks items from the database so that we can add, remove, rename and view all our food and drinks items
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1103,55 +1107,58 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
-14. As a user I can see my login status so that I know if I am logged in or not
+14. As a User I can I am notified so that I know my action of creation, edit, or deletion of a booking has been successful
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-|  |  | Works as expected |
-
-
+| From the reservations page, create a booking | A message will be displayed upon completion | Works as expected |
+| From the bookings list page, edit a booking | A message will be displayed upon completion | Works as expected |
+| From the bookings list page, cancel a booking | A message will be displayed upon completion | Works as expected |
 
 <details><summary></summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-20.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-21.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-22.PNG">
 
 </details>
 
-15. As a user I can see my login status so that I know if I am logged in or not
+15. As a User I can register as prompted so that I can make a booking if I wish reserve a table
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-|  |  | Works as expected |
-
-
+| Click on the 'Register' link in the navigation bar | Register an account to allow bookings to be made | Works as expected |
 
 <details><summary></summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-08.PNG">
+
 
 </details>
 
-16. As a user I can see my login status so that I know if I am logged in or not
+16.  As a User I can register to create an account so that my details are stored for faster booking in future
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-|  |  | Works as expected |
-
-
+| See test 10 | See test 10 | Works as expected |
+| Click on the 'Book' link in the navigation bar | Find the booking form with user email inserted automatically | Works as expected |
 
 <details><summary></summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-05.PNG">
+
 
 </details>
 
-17. As a user I can see my login status so that I know if I am logged in or not
+17. As a user I can login so that I can book a table
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-|  |  | Works as expected |
-
-
+| Click on the 'Login' link in the navigation bar | Log in, user now able to book a table | Works as expected |
+| Click on the 'Book' link in the navigation bar | Find the booking form on the reservations page | Works as expected |
 
 <details><summary></summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-10.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-05.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-14.PNG">
+
 
 </details>
 
@@ -1168,7 +1175,7 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
-19. As a user I can see my login status so that I know if I am logged in or not
+19. As an Admin / Authorised User I can toggle booking confirmation to auto or manual mode so that on busy days manual mode can be used to reduce double bookings
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1181,7 +1188,7 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
-20. As a user I can see my login status so that I know if I am logged in or not
+20. As an Admin / Authorised User I can search through bookings and menus so that I can find the information I am looking for
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1194,7 +1201,7 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
-21. As a user I can see my login status so that I know if I am logged in or not
+21. As an Admin / Authorised User I can filter bookings by date so that I can see what bookings we have for a particular day
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1207,7 +1214,7 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
-22. As a user I can see my login status so that I know if I am logged in or not
+22. As a User I can view the site's blog so that I can learn additional information and read articles
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1220,7 +1227,7 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
-23. As a user I can see my login status so that I know if I am logged in or not
+23. As a User I can view the food and drink menu so that I can decide wether to eat at the business
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
@@ -1233,7 +1240,59 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
-24. As a user I can see my login status so that I know if I am logged in or not
+24. As a Site Owner I can validate data entered into my site so that all submitted data is correct to avoid errors
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+|  |  | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="">
+
+</details>
+
+25. As a User I can view the food and drink menu so that I can decide wether to eat at the business
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+|  |  | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="">
+
+</details>
+
+26. As a User I can not book a date in the past so that my booking is valid
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+|  |  | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="">
+
+</details>
+
+27. As a User I can view blog posts page by page so that I can browse without seeing an overloaded page
+
+**Step** | **Expected Result** | **Actual Result**
+------------ | ------------ | ------------ |
+|  |  | Works as expected |
+
+
+
+<details><summary></summary>
+<img src="">
+
+</details>
+
+28. As a User I can not book a table already booked so that my booking is valid and not double booked
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
