@@ -93,10 +93,9 @@ The Diplomat Bar & Grill is a fictional business where users can create an accou
 19. As an Admin / Authorised User I can toggle booking confirmation to auto or manual mode so that on busy days manual mode can be used to reduce double bookings (Must have)
 22. As a User I can view the site's blog so that I can learn additional information and read articles (Should have)
 23. As a User I can view the food and drink menu so that I can decide wether to eat at the business (Must have)
-25. As a User I can view the food and drink menu so that I can decide wether to eat at the business (Must have)
-26. As a User I can not book a date in the past so that my booking is valid (Must have)
-27. As a User I can view blog posts page by page so that I can browse without seeing an overloaded page (Should have)
-28. As a User I can not book a table already booked so that my booking is valid and not double booked (Must have)
+25. As a User I can not book a date in the past so that my booking is valid (Must have)
+26. As a User I can view blog posts page by page so that I can browse without seeing an overloaded page (Should have)
+27. As a User I can not book a table already booked so that my booking is valid and not double booked (Must have)
 
 
 
@@ -1252,29 +1251,30 @@ WAVE was used to test the websites accessibility.
 
 </details>
 
-25. As a User I can view the food and drink menu so that I can decide wether to eat at the business
+25. As a User I can not book a date in the past so that my booking is valid
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-|  |  | Works as expected |
+| From the booking page, click requested date calender icon | Calender will open with all dates from yesterday and older greyed out, cannot select | Works as expected |
 
 
 
 <details><summary></summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-33.PNG">
 
 </details>
 
-26. As a User I can not book a date in the past so that my booking is valid
+26. As a User I can view blog posts page by page so that I can browse without seeing an overloaded page
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-|  |  | Works as expected |
+| Select Blog from navigation panel at top of page | Blog page loads, paginated to display only 4 per page | Works as expected |
 
 
 
 <details><summary></summary>
-<img src="">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-04.PNG">
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-34.PNG">
 
 </details>
 
