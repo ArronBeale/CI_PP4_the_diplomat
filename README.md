@@ -1396,6 +1396,7 @@ The following devices were used to test my site:
 | css not loading| the css folder was created in uppercase as CSS, renamed and fixed |
 | While logged in as a user, on edit bookings page, if you changed the url booking number and if the number was a valid booking for another user it would access the booking | Defensive programming to make sure that only bookings made by the user would be visible |
 | Double bookings | Adjusted code to check that the date, time and table were unique together and to give an error to indicate to the user that the booking was unavailable for that date, time and table combination |
+| Food item description not showing on menu | A "p" element was used to encase the jinja code, once removed the food item description was then visible |
 
 ##### Back to [top](#table-of-contents)
 
