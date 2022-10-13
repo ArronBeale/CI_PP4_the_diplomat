@@ -1411,20 +1411,62 @@ The following devices were used to test my site:
 
 
 ### Heroku Deployment
-This application has been deployed from GitHub to Heroku by following the steps:
 
 [Official Page](https://devcenter.heroku.com/articles/git) (Ctrl + click)
-1. Log in to your account at heroku.com.
-2. Create a new app, add a unique app name and choose your region.
-3. Click on create app.
-4. Go to "Settings".
-5. Under Config Vars store any sensitive data in .json file. Name 'Key' field, copy the .json file paste it to 'Value' field. Also add a key 'PORT' and value '8000'.
-6. Add required buildpacks. For this project, I set up 'Python' and 'node.js' in that order.
-7. Go to "Deploy" and select "GitHub" in "Deployment method"
-8. To link up the Heroku app to our Github repository code enter your repository name, click 'Search' and then 'Connect' when it shows below.
-9.  Choose the branch you want to buid your app from.
-10. If prefered, click on "Enable Automatic Deploys", which keeps the app up to date with your GitHub repository
-11. Wait for the app to build. Once ready you will see the “App was successfully deployed” message and a 'View' button to take you to your deployed link.
+
+This application has been deployed from Github using Heroku. Here's how:
+
+1. Create an account at heroku.com
+
+2. Create an app, give it a name for such as ci-pp4-the-diplomat, and select a region
+
+3. Under resources search for postgres, and add a Postgres database to the app
+
+Heroku Postgres
+
+1. Note the DATABASE_URL, this can be set as an environment variable in Heroku and your local deployment(env.py)
+
+2. Install the plugins dj-database-url and psycopg2-binary.
+
+3. Run pip3 freeze > requirements.txt so both are added to the requirements.txt file
+
+4. Create a Procfile with the text: web: gunicorn the_diplomat.wsgi
+
+5. In the settings.py ensure the connection is to the Heroku postgres database
+
+6. Ensure debug is set to false in the settings.py file
+
+7. Add localhost/127.0.0.1, and https://ci-pp4-the-diplomat.herokuapp.com/ to the ALLOWED_HOSTS variable in settings.py
+
+8. Run "python3 manage.py showmigrations" to check the status of the migrations
+
+9. Run "python3 manage.py migrate" to migrate the database
+
+10. Run "python3 manage.py createsuperuser" to create a super/admin user
+
+11. Run "python3 manage.py loaddata categories.json" on the categories file in products/fixtures to create the categories
+
+12. Run "python3 manage.py loaddata products.json" on the products file in products/fixtures to create the products
+
+13. Install gunicorn and add it to the requirements.txt file using the command pip3 freeze > requirements.txt
+
+14. From the CLI login to Heroku using the command heroku git:remote -a ci-pp4-the-diplomat
+
+15. Disable collectstatic in Heroku before any code is pushed using the command heroku config:set DISABLE_COLLECTSTATIC=1 -a ci-pp4-the-diplomat
+
+16. Push the code to Heroku using the command git push heroku master
+
+17. Ensure the following environment variables are set in Heroku
+18. Heroku Env variables
+
+19. Connect the app to GitHub, and enable automatic deploys from main
+Heroku Postgres
+
+20. Click deploy to deploy your application to Heroku for the first time
+
+21. Click on the link provided to access the application
+
+22. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
 
 ### Fork Repository
 To fork the repository by following these steps:
