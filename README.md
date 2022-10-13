@@ -1325,7 +1325,8 @@ WAVE was used to test the websites accessibility.
 
 ### Automated testing
 
-Testing was done using the built in Django module, unittest.
+- Testing was done using the built in Django module, unittest.
+- Coverage was also usesd to generate a report
 
 
 <details><summary>Bar & Grill App, test_models.py</summary>
@@ -1340,6 +1341,10 @@ Testing was done using the built in Django module, unittest.
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bar-and-grill-test-urls.PNG">
 </details>
 
+<details><summary>Bar & Grill App, Coverage</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/coverage-bar-and-grill.PNG">
+</details>
+
 <details><summary>Bookings App, test_models.py</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bookings-test-models.PNG">
 </details>
@@ -1350,6 +1355,10 @@ Testing was done using the built in Django module, unittest.
 
 <details><summary>Bookings App, test_urls.py</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/unittest-bookings-test-urls.PNG">
+</details>
+
+<details><summary>Bookings App, Coverage</summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/coverage-bookings.PNG">
 </details>
 
 
@@ -1440,14 +1449,10 @@ You can clone the repository by following these steps:
 ### Images
 
 Images used were sourced from Pexels.com and an AI image generator (Dalle2) was used for an image with the permission from OpenAI
-- 
-- 
 
 ### Code
 
-- 
-- 
-- 
+Bootstrap dark navigation theme was used alongside boostrap classes and carousel
 
 ##### Back to [top](#table-of-contents)
 
