@@ -116,6 +116,32 @@ The Diplomat Bar & Grill is a fictional business where users can create an accou
 24. As a Site Owner I can validate data entered into my site so that all submitted data is correct to avoid errors (Must have)
 
 
+### Kanban, Epics & User Stories
+- GitHub Kanban was used to track all open user stories
+- Epics were created using the milestones feature
+- Backlog, In Progress, Done headings were used in the kanban
+
+<details><summary>Epics</summary>
+
+![Footer](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-epics.PNG)
+![Footer](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-epic1.PNG)
+![Footer](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-epic2.PNG)
+![Footer](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-epic3.PNG)
+![Footer](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-epic4.PNG)
+</details>
+
+<details><summary>User Stories</summary>
+
+![Footer](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-user-stories.PNG)
+
+</details>
+
+<details><summary>Kanban</summary>
+
+![Footer](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-mid.PNG)
+![Footer](https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/features/kanban-finish.PNG)
+
+</details>
 
 
 ##### Back to [top](#table-of-contents)
