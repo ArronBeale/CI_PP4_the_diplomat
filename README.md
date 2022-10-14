@@ -1409,6 +1409,7 @@ The following devices were used to test my site:
 | Foods not listing by type, starters, manins and desserts | I needed to fix the database loop for the food items to specify the food type had to be a starter to display in the starter section of the menu, and the same for mains and desserts |
 | Drinks not listing by type, wines, beers and cocktails | I needed to fix the database loop for the drinks item to specify the drink type had to be a wine to display in the wine section of the menu, and the same for beers and cocktails |
 | Card links not working on home page for book a table, food menu and drinks menu | The links were not set within urls.py so just needed to be wired up to load each relevant page |
+| Booking form accepting phone number that are too short | I used Django PhoneNumberField to ensure only valid phone formats were accepted |
 
 ##### Back to [top](#table-of-contents)
 
