@@ -1441,6 +1441,7 @@ This application has been deployed from Github using Heroku. Here's how:
 Heroku Postgres
 
 1. Note the DATABASE_URL, this can be set as an environment variable in Heroku and your local deployment(env.py)
+<details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-18.PNG">
 </details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-17.PNG">
@@ -1449,21 +1450,25 @@ Heroku Postgres
 2. Install the plugins dj-database-url and psycopg2-binary.
 
 3. Run pip3 freeze > requirements.txt so both are added to the requirements.txt file
+<details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-05.PNG">
 </details>
 
 4. Create a Procfile with the text: web: gunicorn the_diplomat.wsgi
+<details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-06.PNG">
 </details>
 
 5. In the settings.py ensure the connection is to the Heroku postgres database, no indentation if you are not using a seperate test database.
 I store mine in env.py
+<details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-07.PNG">
 </details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-08.PNG">
 </details>
 
 6. Ensure debug is set to false in the settings.py file
+<details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-09.PNG">
 </details>
 
@@ -1481,33 +1486,31 @@ I store mine in env.py
 
 13. Install gunicorn and add it to the requirements.txt file using the command pip3 freeze > requirements.txt
 
-14. From the CLI login to Heroku using the command heroku git:remote -a ci-pp4-the-diplomat
-
-15. Disable collectstatic in Heroku before any code is pushed using the command heroku config:set DISABLE_COLLECTSTATIC=1 -a ci-pp4-the-diplomat
+14. Disable collectstatic in Heroku before any code is pushed using the command heroku config:set DISABLE_COLLECTSTATIC=1 -a ci-pp4-the-diplomat
+<details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-19.PNG">
 </details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-10.PNG">
 </details>
 
 
-16. Push the code to Heroku using the command git push heroku master
-
-17. Ensure the following environment variables are set in Heroku
+15. Ensure the following environment variables are set in Heroku
+<details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-11.PNG">
 </details>
 
-18. Connect the app to GitHub, and enable automatic deploys from main if you wish
-Heroku Postgres
+16. Connect the app to GitHub, and enable automatic deploys from main if you wish
+<details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-13.PNG">
 </details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-14.PNG">
 </details>
 
-19. Click deploy to deploy your application to Heroku for the first time
+17. Click deploy to deploy your application to Heroku for the first time
 
-20. Click on the link provided to access the application
+18. Click on the link provided to access the application
 
-21. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
+19. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
 
 ### Fork Repository
 To fork the repository by following these steps:
