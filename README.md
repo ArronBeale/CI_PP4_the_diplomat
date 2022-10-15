@@ -1421,20 +1421,18 @@ The following devices were used to test my site:
 This application has been deployed from Github using Heroku. Here's how:
 
 1. Create an account at heroku.com
-<details><summary></summary>
+<details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-01.PNG">
 </details>
 
 2. Create an app, give it a name for such as ci-pp4-the-diplomat, and select a region
-<details><summary></summary>
+<details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-02.PNG">
-</details>
-<details><summary></summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-03.PNG">
 </details>
 
 3. Under resources search for postgres, and add a Postgres database to the app
-<details><summary></summary>
+<details>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-04.PNG">
 </details>
 
