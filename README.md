@@ -1141,9 +1141,9 @@ WAVE was used to test the websites accessibility.
 
 **Step** | **Expected Result** | **Actual Result**
 ------------ | ------------ | ------------ |
-| From the reservations page, create a booking | A message will be displayed upon completion | Works as expected |
-| From the bookings list page, edit a booking | A message will be displayed upon completion | Works as expected |
-| From the bookings list page, cancel a booking | A message will be displayed upon completion | Works as expected |
+| From the reservations page, create a booking | A message will be displayed upon completion, Javascript makes it disappear after 3 seconds | Works as expected |
+| From the bookings list page, edit a booking | A message will be displayed upon completion, Javascript makes it disappear after 3 seconds | Works as expected |
+| From the bookings list page, cancel a booking | A message will be displayed upon completion, Javascript makes it disappear after 3 seconds | Works as expected |
 
 <details><summary></summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/testing/user-story-testing-20.PNG">
