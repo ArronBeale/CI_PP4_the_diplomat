@@ -1421,26 +1421,53 @@ The following devices were used to test my site:
 This application has been deployed from Github using Heroku. Here's how:
 
 1. Create an account at heroku.com
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-01.PNG">
+</details>
 
 2. Create an app, give it a name for such as ci-pp4-the-diplomat, and select a region
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-02.PNG">
+</details>
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-03.PNG">
+</details>
 
 3. Under resources search for postgres, and add a Postgres database to the app
+<details><summary></summary>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-04.PNG">
+</details>
 
 Heroku Postgres
 
 1. Note the DATABASE_URL, this can be set as an environment variable in Heroku and your local deployment(env.py)
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-18.PNG">
+</details>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-17.PNG">
+</details>
 
 2. Install the plugins dj-database-url and psycopg2-binary.
 
 3. Run pip3 freeze > requirements.txt so both are added to the requirements.txt file
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-05.PNG">
+</details>
 
 4. Create a Procfile with the text: web: gunicorn the_diplomat.wsgi
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-06.PNG">
+</details>
 
-5. In the settings.py ensure the connection is to the Heroku postgres database
+5. In the settings.py ensure the connection is to the Heroku postgres database, no indentation if you are not using a seperate test database.
+I store mine in env.py
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-07.PNG">
+</details>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-08.PNG">
+</details>
 
 6. Ensure debug is set to false in the settings.py file
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-09.PNG">
+</details>
 
-7. Add localhost/127.0.0.1, and https://ci-pp4-the-diplomat.herokuapp.com/ to the ALLOWED_HOSTS variable in settings.py
+7. Add localhost, and ci-pp4-the-diplomat.herokuapp.com to the ALLOWED_HOSTS variable in settings.py
 
 8. Run "python3 manage.py showmigrations" to check the status of the migrations
 
@@ -1457,20 +1484,30 @@ Heroku Postgres
 14. From the CLI login to Heroku using the command heroku git:remote -a ci-pp4-the-diplomat
 
 15. Disable collectstatic in Heroku before any code is pushed using the command heroku config:set DISABLE_COLLECTSTATIC=1 -a ci-pp4-the-diplomat
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-19.PNG">
+</details>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-10.PNG">
+</details>
+
 
 16. Push the code to Heroku using the command git push heroku master
 
 17. Ensure the following environment variables are set in Heroku
-18. Heroku Env variables
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-11.PNG">
+</details>
 
-19. Connect the app to GitHub, and enable automatic deploys from main
+18. Connect the app to GitHub, and enable automatic deploys from main if you wish
 Heroku Postgres
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-13.PNG">
+</details>
+<img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/heroku/heroku-deployment-14.PNG">
+</details>
 
-20. Click deploy to deploy your application to Heroku for the first time
+19. Click deploy to deploy your application to Heroku for the first time
 
-21. Click on the link provided to access the application
+20. Click on the link provided to access the application
 
-22. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
+21. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
 
 ### Fork Repository
 To fork the repository by following these steps:
