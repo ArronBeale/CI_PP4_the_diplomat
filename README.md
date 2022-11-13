@@ -37,6 +37,7 @@
 ### About
 
 The Diplomat Bar & Grill is a fictional business where users can create an account, book a table, read a blog and view the food and drinks menu.
+<hr>
 
 ### User Goals
 
@@ -50,6 +51,7 @@ The Diplomat Bar & Grill is a fictional business where users can create an accou
 - To attract more business with a well crafted site
 - Provide a modern application with an easy navigation
 - Fully responsive and accessible
+<hr>
 
 
 ## User Experience
@@ -70,7 +72,7 @@ The Diplomat Bar & Grill is a fictional business where users can create an accou
 - Contact information
 - Accessibility
 
-##### Back to [top](#table-of-contents)
+##### Back to [top](#table-of-contents)<hr>
 
 
 ## User Stories
@@ -144,7 +146,7 @@ The Diplomat Bar & Grill is a fictional business where users can create an accou
 </details>
 
 
-##### Back to [top](#table-of-contents)
+##### Back to [top](#table-of-contents)<hr>
 
 
 ## Design
@@ -520,7 +522,7 @@ The wireframes were created using Balsamiq
 </details>
 
 
-##### Back to [top](#table-of-contents)
+##### Back to [top](#table-of-contents)<hr>
 
 
 ## Validation
@@ -580,7 +582,7 @@ The W3C Markup Validation Service
 
 <details><summary>404</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-html-404.PNG">
-</details>
+</details><hr>
 
 
 ### CSS Validation
@@ -588,14 +590,14 @@ The W3C Jigsaw CSS Validation Service
 
 <details><summary>Style.css</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-css.PNG">
-</details>
+</details><hr>
 
 ### JavaScript Validation
 JSHint JS Validation Service
 
 <details><summary>Script.js</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/validation-js.PNG">
-</details>
+</details><hr>
 
 ### PEP8 Validation
 PEP8 Validation Service was used to check the code for PEP8 requirements via Pycodestyle as PEP8online was down
@@ -604,7 +606,8 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle.PNG">
 </details>
 
-<details><summary>Bar & Grill</summary>
+<hr><summary>Bar & Grill</summary><hr>
+
 
 <details><summary>Admin.py</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bar-and-grill-admin.PNG">
@@ -634,9 +637,8 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bar-and-grill-test-urls.PNG">
 </details>
 
-</details>
 
-<details><summary>Bookings</summary>
+<hr><summary>Bookings</summary><hr>
 
 <details><summary>Admin.py</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bookings-admin.PNG">
@@ -670,9 +672,8 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-bookings-forms.PNG">
 </details>
 
-</details>
 
-<details><summary>Blog</summary>
+<hr><summary>Blog</summary><hr>
 
 <details><summary>Admin.py</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-blog-admin.PNG">
@@ -706,9 +707,8 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-blog-forms.PNG">
 </details>
 
-</details>
 
-<details><summary>Contact</summary>
+<hr><summary>Contact</summary><hr>
 
 <details><summary>Admin.py</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-contact-admin.PNG">
@@ -734,9 +734,8 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-contact-test-urls.PNG">
 </details>
 
-</details>
 
-<details><summary>Home</summary>
+<hr><summary>Home</summary><hr>
 
 <details><summary>urls.py</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-home-urls.PNG">
@@ -744,9 +743,8 @@ PEP8 Validation Service was used to check the code for PEP8 requirements via Pyc
 
 <details><summary>views.py</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/pep8-validation-pycodestyle-home-views.PNG">
-</details>
+</details><hr>
 
-</details>
 
 ### Lighthouse
 
@@ -856,7 +854,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 <details><summary>Contact Us</summary>
 <img src="https://raw.githubusercontent.com/ArronBeale/CI_PP4_the_diplomat/main/docs/validation/lighthouse-mobile-contact-us.PNG">
-</details>
+</details><hr>
 
 ### Wave
 WAVE was used to test the websites accessibility.
@@ -932,7 +930,7 @@ WAVE was used to test the websites accessibility.
 </details>
 
 
-##### Back to [top](#table-of-contents)
+##### Back to [top](#table-of-contents)<hr>
 
 
 ## Testing
@@ -1395,7 +1393,7 @@ The following devices were used to test my site:
 </details>
 
 
-##### Back to [top](#table-of-contents)
+##### Back to [top](#table-of-contents)<hr>
 
 
 ## Bugs
@@ -1411,7 +1409,7 @@ The following devices were used to test my site:
 | Card links not working on home page for book a table, food menu and drinks menu | The links were not set within urls.py so just needed to be wired up to load each relevant page |
 | Booking form accepting phone number that are too short | I used Django PhoneNumberField to ensure only valid phone formats were accepted |
 
-##### Back to [top](#table-of-contents)
+##### Back to [top](#table-of-contents)<hr>
 
 
 ### Heroku Deployment
@@ -1505,11 +1503,13 @@ I store mine in env.py
 18. Click on the link provided to access the application
 
 19. If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
+<hr>
 
 ### Fork Repository
 To fork the repository by following these steps:
 1. Go to the GitHub repository
 2. Click on Fork button in upper right hand corner
+<hr>
 
 ### Clone Repository
 You can clone the repository by following these steps:
@@ -1521,7 +1521,7 @@ You can clone the repository by following these steps:
 6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
 7.Press Enter to create your local clone.
 
-##### Back to [top](#table-of-contents)
+##### Back to [top](#table-of-contents)<hr>
 
 
 ## Credits
@@ -1534,7 +1534,7 @@ Images used were sourced from Pexels.com and an AI image generator (Dalle2) was 
 
 Bootstrap dark navigation theme was used alongside boostrap classes and carousel
 
-##### Back to [top](#table-of-contents)
+##### Back to [top](#table-of-contents)<hr>
 
 ## Acknowledgements
 
