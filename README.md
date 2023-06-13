@@ -4,7 +4,8 @@
 
 **Developer: Arron Beale**
 
-💻 [Visit live website](https://ci-pp4-the-diplomat.herokuapp.com/)
+💻 [Visit live website](https://ci-pp4-the-diplomat.herokuapp.com/)  
+(Ctrl + click to open in new tab)
 
 
 
